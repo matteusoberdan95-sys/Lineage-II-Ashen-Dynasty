@@ -21,8 +21,11 @@ comando de sistema, criação de usuário ou grant foi encontrado nos SQLs upstr
 | SQLs de Login Server | 4 |
 | SQLs de Game Server | 96 |
 | Tabelas criadas | 100 |
+| Índices standalone auditados | 27 |
 | SQLs com `DROP TABLE IF EXISTS` | 15 |
 | Instruções de seed `INSERT`/`REPLACE` | 22 |
+| Arquivos com seeds | 17 |
+| Linhas literais de seed | 5.127 |
 | Tabelas InnoDB após importação | 100 |
 | Tabelas `utf8mb3_unicode_ci` | 44 |
 | Tabelas `latin1_general_ci` | 56 |
@@ -52,7 +55,8 @@ Seeds relevantes validados:
 - imprime a instrução SQL completa quando ocorre erro.
 
 O projeto não executou o JAR do Database Installer. Scripts próprios usam o cliente
-oficial MariaDB, falham no primeiro erro e verificam o conjunto final de tabelas.
+oficial MariaDB, falham no primeiro erro e verificam o conjunto final de tabelas e
+índices standalone.
 
 ## Achados
 
@@ -89,7 +93,10 @@ oficial MariaDB, falham no primeiro erro e verificam o conjunto final de tabelas
 
 - **Severidade:** alto
 - **Evidência:** o modo gráfico executa `DROP DATABASE` após confirmação.
-- **Risco:** perda total de dados se backup falhar ou estiver incompleto.
+- **Risco:** perda total de dados se backup falhar ou estiver incompleto. O backup
+  interno reconstrói colunas manualmente e não preserva de forma confiável índices,
+  chaves, engine, charset, collation ou outros objetos; valores SQL `NULL` também
+  percorrem uma chamada insegura a `.replace`.
 - **Controle:** Database Installer não é usado; restauração/reset exigem autorização
   separada.
 - **Estado:** isolado.
@@ -101,7 +108,9 @@ oficial MariaDB, falham no primeiro erro e verificam o conjunto final de tabelas
   `Continue`.
 - **Risco:** schema aparentemente instalado com tabelas ou seeds ausentes.
 - **Controle:** o importador próprio interrompe no primeiro arquivo com falha e
-  compara exatamente as 100 tabelas.
+  compara exatamente as 100 tabelas e os 27 índices standalone. O parser upstream
+  também trunca qualquer linha a partir de `--`, ignora statements sem `;` final e
+  pode continuar após erro de índice duplicado.
 - **Estado:** mitigado.
 
 ### DBA-006 — Charsets mistos
@@ -111,6 +120,9 @@ oficial MariaDB, falham no primeiro erro e verificam o conjunto final de tabelas
 - **Risco:** conversão implícita, perda de caracteres e diferenças de comparação.
 - **Controle:** declarações upstream preservadas; conexão usa UTF-8; nenhuma migração
   para `utf8mb4` nesta baseline.
+- **Observação:** nenhum SQL fixa `ENGINE`; todas as tabelas resultaram em InnoDB pelo
+  default local. `seven_signs_festival.sql` usa strings com aspas duplas e dependeria
+  de `ANSI_QUOTES` permanecer desabilitado, como no SQL mode validado.
 - **Estado:** aceito com monitoramento.
 
 ### DBA-007 — Ausência de foreign keys
@@ -168,6 +180,7 @@ SQL mode: STRICT_TRANS_TABLES, ERROR_FOR_DIVISION_BY_ZERO,
 - autenticação do usuário restrito;
 - importação dos 100 SQLs sem erro;
 - comparação das 100 tabelas reais com os SQLs;
+- presença dos 27 índices standalone declarados;
 - quatro tabelas de login presentes;
 - grants sem privilégio global;
 - acesso a `mysql.user` negado;

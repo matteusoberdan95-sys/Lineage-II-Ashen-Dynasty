@@ -59,6 +59,37 @@ try {
         throw "Expected 4 login tables, found $loginTableCount."
     }
 
+    $sourceSqlRoot = Join-Path (Get-L2RepositoryRoot) 'server\source\l2jmobius-upstream\L2J_Mobius_CT_0_Interlude\dist\db_installer\sql'
+    $expectedIndexes = @()
+    foreach ($sqlFile in Get-ChildItem -LiteralPath $sourceSqlRoot -Filter '*.sql' -File -Recurse) {
+        $content = Get-Content -LiteralPath $sqlFile.FullName -Raw -Encoding UTF8
+        $indexMatches = [regex]::Matches(
+            $content,
+            '(?im)^\s*CREATE\s+(?:UNIQUE\s+)?INDEX\s+`?([A-Za-z0-9_]+)`?\s+ON\s+`?([A-Za-z0-9_]+)`?'
+        )
+        foreach ($indexMatch in $indexMatches) {
+            $expectedIndexes += "$($indexMatch.Groups[2].Value).$($indexMatch.Groups[1].Value)"
+        }
+    }
+    $expectedIndexes = @($expectedIndexes | Sort-Object -Unique)
+    if ($expectedIndexes.Count -eq 0) {
+        throw 'No standalone indexes were identified in the audited SQL files.'
+    }
+
+    $actualIndexOutput = Invoke-L2MariaDbSql `
+        -User $script:L2DatabaseUser `
+        -PlainTextPassword $plainTextPassword `
+        -Database $script:L2DatabaseName `
+        -Sql "SELECT CONCAT(TABLE_NAME, '.', INDEX_NAME) FROM information_schema.STATISTICS WHERE TABLE_SCHEMA = '$script:L2DatabaseName' AND INDEX_NAME <> 'PRIMARY' GROUP BY TABLE_NAME, INDEX_NAME ORDER BY TABLE_NAME, INDEX_NAME;"
+    $actualIndexes = @($actualIndexOutput -split "\r?\n" | Where-Object { $_ } | Sort-Object -Unique)
+    $missingIndexes = @(
+        Compare-Object -ReferenceObject $expectedIndexes -DifferenceObject $actualIndexes |
+            Where-Object SideIndicator -eq '<='
+    )
+    if ($missingIndexes.Count -gt 0) {
+        throw "Expected standalone indexes are missing: $($missingIndexes.InputObject -join ', ')"
+    }
+
     $grants = Invoke-L2MariaDbSql `
         -User $script:L2DatabaseUser `
         -PlainTextPassword $plainTextPassword `
@@ -97,6 +128,7 @@ try {
     Write-Host "Charset/collation: $schemaInfo"
     Write-Host "Tables: $tableCount"
     Write-Host "Login tables: $loginTableCount"
+    Write-Host "Audited standalone indexes: $($expectedIndexes.Count)"
     Write-Host 'System schema access: denied as expected'
 
     $plainTextPassword = $null

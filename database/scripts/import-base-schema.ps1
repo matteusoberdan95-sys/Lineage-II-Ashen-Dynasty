@@ -35,18 +35,29 @@ try {
         throw "Expected 96 game SQL files, found $($gameFiles.Count)."
     }
 
-    $expectedTables = foreach ($sqlFile in $sqlFiles) {
+    $expectedTables = @()
+    $expectedIndexes = @()
+    foreach ($sqlFile in $sqlFiles) {
         $content = Get-Content -LiteralPath $sqlFile.FullName -Raw -Encoding UTF8
-        $match = [regex]::Match(
+        $tableMatch = [regex]::Match(
             $content,
             '(?im)^\s*CREATE\s+TABLE\s+(?:IF\s+NOT\s+EXISTS\s+)?`?([A-Za-z0-9_]+)`?'
         )
-        if (-not $match.Success) {
+        if (-not $tableMatch.Success) {
             throw "Unable to identify the table created by: $($sqlFile.FullName)"
         }
-        $match.Groups[1].Value
+        $expectedTables += $tableMatch.Groups[1].Value
+
+        $indexMatches = [regex]::Matches(
+            $content,
+            '(?im)^\s*CREATE\s+(?:UNIQUE\s+)?INDEX\s+`?([A-Za-z0-9_]+)`?\s+ON\s+`?([A-Za-z0-9_]+)`?'
+        )
+        foreach ($indexMatch in $indexMatches) {
+            $expectedIndexes += "$($indexMatch.Groups[2].Value).$($indexMatch.Groups[1].Value)"
+        }
     }
     $expectedTables = @($expectedTables | Sort-Object -Unique)
+    $expectedIndexes = @($expectedIndexes | Sort-Object -Unique)
 
     if ($expectedTables.Count -ne 100) {
         throw "Expected 100 unique tables, found $($expectedTables.Count)."
@@ -130,6 +141,20 @@ try {
         throw "Imported table set differs from the 100 audited SQL files: $($tableDifference | Out-String)"
     }
 
+    $actualIndexOutput = Invoke-L2MariaDbSql `
+        -User $script:L2DatabaseUser `
+        -PlainTextPassword $applicationPassword `
+        -Database $script:L2DatabaseName `
+        -Sql "SELECT CONCAT(TABLE_NAME, '.', INDEX_NAME) FROM information_schema.STATISTICS WHERE TABLE_SCHEMA = '$script:L2DatabaseName' AND INDEX_NAME <> 'PRIMARY' GROUP BY TABLE_NAME, INDEX_NAME ORDER BY TABLE_NAME, INDEX_NAME;"
+    $actualIndexes = @($actualIndexOutput -split "\r?\n" | Where-Object { $_ } | Sort-Object -Unique)
+    $missingIndexes = @(
+        Compare-Object -ReferenceObject $expectedIndexes -DifferenceObject $actualIndexes |
+            Where-Object SideIndicator -eq '<='
+    )
+    if ($missingIndexes.Count -gt 0) {
+        throw "Expected standalone indexes are missing: $($missingIndexes.InputObject -join ', ')"
+    }
+
     $authenticatedAccount = Invoke-L2MariaDbSql `
         -User $script:L2DatabaseUser `
         -PlainTextPassword $applicationPassword `
@@ -157,6 +182,7 @@ try {
     Write-Host 'Database bootstrap completed.'
     Write-Host "Schema: $script:L2DatabaseName"
     Write-Host "Tables: $($actualTables.Count)"
+    Write-Host "Audited standalone indexes: $($expectedIndexes.Count)"
     Write-Host "Application account: $authenticatedAccount"
     Write-Host 'Credential: DPAPI-protected local file (path intentionally not printed).'
     exit 0

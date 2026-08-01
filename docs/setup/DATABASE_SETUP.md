@@ -85,7 +85,8 @@ O script:
 8. concede privilégios somente em `l2jmobiusinterlude.*`;
 9. importa os arquivos em ordem alfabética, como o instalador upstream;
 10. compara as tabelas reais com o inventário auditado;
-11. confirma a identidade e os grants da aplicação.
+11. confirma os 27 índices standalone declarados;
+12. confirma a identidade e os grants da aplicação.
 
 O script não oferece reset automático. Uma reinstalação destrutiva exige backup,
 revisão e autorização separada.
@@ -106,6 +107,7 @@ Account: l2server@127.0.0.1
 Schema: l2jmobiusinterlude
 Tables: 100
 Login tables: 4
+Audited standalone indexes: 27
 System schema access: denied as expected
 ```
 
