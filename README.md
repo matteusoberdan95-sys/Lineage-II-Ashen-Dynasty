@@ -16,16 +16,16 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 a 5 estão concluídas localmente. L2JMobius
+As Sprints 0 a 6 estão concluídas localmente. L2JMobius
 `L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
 `e4d1d8336ed28fc0916e7caad3ca752d06169eac`, após auditoria estática inicial.
 
 O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
 .NET futuros conforme a ADR-002. A source permanece limpa; um patch local reproduzível
 corrige exclusivamente o bind 7777 conforme a ADR-003. MariaDB 11.4.3, Login Server e
-Game Server estão em execução somente por localhost. O banco possui 100 tabelas, o
-Game está registrado como ID 1 e nenhuma conexão Java externa foi observada. Nenhum
-cliente foi executado.
+Game Server rodam somente em localhost. O cliente limpo em `D:\L2-ASHEN-DYNASTY`
+autenticou, criou o personagem `NEIDE157` e persistiu no banco. Nenhuma conexão Java
+externa foi observada. O cliente permanece fora do Git.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -103,16 +103,15 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-A próxima sprint deverá preparar um cliente Interlude legítimo, apontá-lo somente
-para `127.0.0.1` e validar login, criação controlada de conta/personagem e
-persistência. O cliente e seus assets permanecerão fora do Git.
+A próxima sprint deverá validar relogin, logout limpo, inventário inicial e um
+checklist mínimo de mundo local, ainda sem customizações de rates ou itens.
 
 ## Segurança e propriedade intelectual
 
 O cliente completo de Lineage 2 e seus executáveis não pertencem a este repositório.
-Uma instalação legítima deverá ser fornecida manualmente pelo proprietário em etapa
-posterior. Credenciais locais deverão ficar em arquivos ignorados pelo Git, usando
-templates sem valores secretos para documentação.
+A instalação limpa usada na Sprint 6 fica em `D:\L2-ASHEN-DYNASTY` e não é
+versionada. Credenciais locais ficam em arquivos ignorados pelo Git, com templates
+sem valores secretos na documentação.
 
 ## Documentação
 
@@ -126,6 +125,9 @@ templates sem valores secretos para documentação.
 - [configuração do banco](docs/setup/DATABASE_SETUP.md);
 - [configuração dos servidores locais](docs/setup/LOCAL_SERVER_SETUP.md);
 - [relatório da primeira execução](docs/setup/FIRST_RUN_REPORT.md);
+- [configuração do cliente local](docs/setup/CLIENT_SETUP.md);
+- [relatório do primeiro login](docs/setup/FIRST_CLIENT_REPORT.md);
+- [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);
 - [changelog](CHANGELOG.md).

@@ -10,8 +10,13 @@ Não adicione aqui:
 - credenciais de conta;
 - downloads obtidos de origem desconhecida.
 
-Em uma sprint futura, o proprietário fornecerá manualmente uma instalação legítima e
-compatível. Antes de qualquer alteração será feito backup da cópia limpa e serão
-documentados protocolo, endpoint local e arquivos estritamente necessários.
+## Estado atual
 
-Consulte futuramente `docs/CLIENT_COMPATIBILITY.md`.
+O proprietário forneceu o cliente limpo em `D:\L2-ASHEN-DYNASTY`. A configuração
+local, o endpoint `127.0.0.1` e o fluxo de conta estão documentados em:
+
+- [`docs/setup/CLIENT_SETUP.md`](../docs/setup/CLIENT_SETUP.md)
+- [`docs/CLIENT_COMPATIBILITY.md`](../docs/CLIENT_COMPATIBILITY.md)
+
+Qualquer patch versionável e redistribuível só será adicionado depois de comprovação
+de licença e necessidade técnica. Até lá, esta pasta permanece documental.

@@ -23,7 +23,7 @@ L2JMobius Interlude. O projeto exige JDK 25 e Apache Ant 1.8.2 ou superior.
 | MariaDB | Obrigatório para execução | 11.4.3 LTS instalado e validado | Manter restrito a localhost |
 | Docker Desktop | Alternativa não adotada para MariaDB | Instalado, Engine parado | Não é necessário para a baseline atual |
 | .NET SDK | Futuro | 10.0.301 instalado | Nenhuma nesta fase |
-| Cliente Interlude legítimo | Necessário no primeiro login | Não avaliado | Disponibilização manual somente na Sprint 6 |
+| Cliente Interlude limpo | Necessário para login local | `D:\L2-ASHEN-DYNASTY` validado | Manter fora do Git; abrir `L2.exe` como admin |
 
 ## JDK
 
@@ -181,8 +181,8 @@ Nenhum script do projeto abrirá firewall ou configurará roteador automaticamen
 ## Cliente Interlude
 
 O cliente é software proprietário e não será baixado, distribuído ou versionado pelo
-projeto. Na Sprint 6, o proprietário deverá fornecer manualmente uma instalação
-legítima e compatível. Até lá, nenhuma ação é necessária.
+projeto. A cópia limpa validada está em `D:\L2-ASHEN-DYNASTY`. Consulte
+[`CLIENT_SETUP.md`](CLIENT_SETUP.md).
 
 ## Instalações necessárias por etapa
 

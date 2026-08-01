@@ -1,5 +1,21 @@
 # Solução de problemas
 
+## Cliente fecha sem conectar
+
+1. Execute `D:\L2-ASHEN-DYNASTY\system\L2.exe` como administrador.
+2. Confirme `ServerAddr=127.0.0.1` com `configure-local-client.ps1`.
+3. Não use o pack `Lineage II - Chronicle Interlude` (L2Agonia).
+4. Confirme Login/Game com `status-local-stack.ps1 -RequireRunning`.
+
+## Conta ou senha de teste
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File .\infrastructure\scripts\show-local-account.ps1
+```
+
+Se a conta não existir, rode `create-local-account.ps1`.
+
 ## Login não abre 2106 ou 9014
 
 1. Confirme MariaDB em `127.0.0.1:3306`.

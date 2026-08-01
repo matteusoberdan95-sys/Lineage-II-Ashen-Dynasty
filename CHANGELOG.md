@@ -28,11 +28,14 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   servidores Java.
 - Configuração e relatório da primeira execução local.
 - ADR-003 para patches de segurança fora do submódulo.
+- Configuração do cliente limpo, conta local controlada e relatório do primeiro login.
+- Scripts para `l2.ini` Ver413, criação/exibição de conta e verificação de personagem.
 
 ### Segurança
 
 - Login, Game e MariaDB restritos a listeners `127.0.0.1`.
 - Cliente proprietário, credenciais, runtime, logs, builds e backups excluídos do Git.
+- Conta de teste local com senha DPAPI; `AutoCreateAccounts` permanece desabilitado.
 - Artefatos do Ant redirecionados para `server/runtime/build`, fora do submódulo.
 - MariaDB restrito a `127.0.0.1:3306`.
 - Importação recusa schemas não vazios e evita o instalador destrutivo upstream.

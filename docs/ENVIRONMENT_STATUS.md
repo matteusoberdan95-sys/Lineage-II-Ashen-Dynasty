@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado após a primeira execução na
-Sprint 5. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado após o primeiro login na
+Sprint 6. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -11,7 +11,8 @@ instalado e validado na Sprint 4. O Docker CLI e o Docker Compose estão instala
 mas o Docker Engine não é necessário para a opção de banco adotada.
 
 Login Server e Game Server foram compilados, configurados e executados na Sprint 5.
-Os processos Java e o banco usam somente loopback.
+Os processos Java e o banco usam somente loopback. O cliente limpo validou login e
+personagem na Sprint 6.
 
 As instruções condicionais de instalação e validação estão em
 [`docs/setup/PREREQUISITES.md`](setup/PREREQUISITES.md).
@@ -74,7 +75,7 @@ As consultas foram feitas somente para listeners TCP.
 2. JDK 25 e Ant 1.10.17 estão instalados; três clean builds foram aprovados.
 3. MariaDB local, schema e usuário restrito foram preparados.
 4. Bind, JDBC, descoberta de IP e registro foram isolados na Sprint 5.
-5. O próximo bloqueio é preparar e validar um cliente legítimo fora do Git.
+5. Cliente limpo validado na Sprint 6; próximo foco é relogin e checklist de mundo.
 
 ## Estado das ferramentas por etapa
 
@@ -158,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Na sprint de cliente, registrar compatibilidade de protocolo e fluxo de login.
+Na próxima sprint, registrar relogin, logout e checklist mínimo de mundo local.
 
 ## Conclusão da Sprint 0
 
@@ -185,3 +186,9 @@ O build local aplicou um patch mínimo para o bind 7777 sem alterar o submódulo
 Login, Game e canal interno abriram somente em loopback. Os pools JDBC conectaram com
 `l2server`; skills, itens, NPCs e spawns carregaram; o ID 1 foi registrado e novos
 cadastros foram bloqueados. Não houve conexão Java externa nem erro crítico.
+
+## Conclusão da Sprint 6
+
+O cliente limpo em `D:\L2-ASHEN-DYNASTY` autenticou em localhost. A conta controlada
+`ashen_test` criou o personagem `NEIDE157`, persistido no MariaDB com
+`lastIP=127.0.0.1`. `L2.exe` exige elevação UAC. O pack L2Agonia foi rejeitado.
