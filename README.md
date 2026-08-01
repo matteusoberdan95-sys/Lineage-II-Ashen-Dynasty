@@ -16,13 +16,13 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0, 1 e 2 estão concluídas localmente. L2JMobius
+As Sprints 0 a 3 estão concluídas localmente. L2JMobius
 `L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
 `e4d1d8336ed28fc0916e7caad3ca752d06169eac`, após auditoria estática inicial.
 
 O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
-.NET futuros conforme a ADR-002. Não há banco, cliente, runtime, customizações, build
-ou serviços executados.
+.NET futuros conforme a ADR-002. A source compilou três vezes com Liberica JDK 25 e
+Ant 1.10.17, sem customizações. Não há banco, cliente ou serviços executados.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -99,9 +99,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-A Sprint 3 deverá preparar e validar o build reproduzível. JDK 25 e Apache Ant 1.10.17
-ainda não estão instalados. A instalação depende de autorização e ação manual do
-proprietário.
+A Sprint 4 deverá preparar MariaDB local com usuário dedicado e importar o schema
+auditado. MariaDB ainda não está instalado e o Docker Engine não foi revalidado.
 
 Login Server, Game Server e instalador de banco continuam bloqueados enquanto os
 achados altos de configuração e banco não forem isolados.
@@ -120,6 +119,8 @@ templates sem valores secretos para documentação.
 - [fluxo de desenvolvimento](docs/DEVELOPMENT_WORKFLOW.md);
 - [avaliação da source](docs/SOURCE_EVALUATION.md);
 - [estado do ambiente](docs/ENVIRONMENT_STATUS.md);
+- [guia de build](docs/setup/BUILD_GUIDE.md);
+- [relatório do primeiro build](docs/setup/FIRST_BUILD_REPORT.md);
 - [changelog](CHANGELOG.md).
 
 ## Fluxo incremental

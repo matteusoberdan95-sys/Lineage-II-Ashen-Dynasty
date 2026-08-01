@@ -16,12 +16,16 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   `e4d1d8336ed28fc0916e7caad3ca752d06169eac`.
 - Documentação de arquitetura, segurança, visão e fluxo de desenvolvimento.
 - Configurações básicas de editor, Git e ambiente local.
+- Scripts PowerShell repetíveis para clean, build e detecção de testes.
+- Guia de build e relatório das duas primeiras compilações limpas.
+- Validação de Liberica JDK 25.0.4+9 e Apache Ant 1.10.17.
 
 ### Segurança
 
 - Execução bloqueada enquanto bind de rede, usuário de banco e SQL destrutivo não
   estiverem isolados.
 - Cliente proprietário, credenciais, runtime, logs, builds e backups excluídos do Git.
+- Artefatos do Ant redirecionados para `server/runtime/build`, fora do submódulo.
 
 ## Política
 

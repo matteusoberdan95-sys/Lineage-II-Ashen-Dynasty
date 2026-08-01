@@ -1,7 +1,7 @@
 # Pré-requisitos locais
 
 Este documento descreve os pré-requisitos do Lineage II: Ashen Dynasty (L2AD) para
-Windows. Ele não autoriza instalações nesta sprint.
+Windows e registra as ferramentas validadas na Sprint 3.
 
 O estado efetivamente detectado está em
 [`docs/ENVIRONMENT_STATUS.md`](../ENVIRONMENT_STATUS.md).
@@ -18,8 +18,8 @@ L2JMobius Interlude. O projeto exige JDK 25 e Apache Ant 1.8.2 ou superior.
 | Windows x64 | Obrigatório | Windows 11 Pro x64 | Nenhuma |
 | Git | Obrigatório | 2.55.0 instalado | Nenhuma |
 | PowerShell | Obrigatório | 5.1 instalado | Suficiente para os scripts locais planejados |
-| JDK 25 x64 | Obrigatório para build e execução | Ausente | Instalação manual antes da Sprint 3 |
-| Apache Ant 1.8.2+ | Obrigatório; não há wrapper | Ausente | Instalação manual antes da Sprint 3 |
+| JDK 25 x64 | Obrigatório para build e execução | Liberica Full JDK 25.0.4+9 instalado | Manter na linha 25 durante a baseline |
+| Apache Ant 1.8.2+ | Obrigatório; não há wrapper | Ant 1.10.17 instalado | Usar 1.10.17 para reproduzir o build |
 | MariaDB | Obrigatório para execução | Ausente | Preparar somente na Sprint 4 |
 | Docker Desktop | Alternativa para MariaDB | Instalado, Engine parado | Iniciar manualmente apenas quando necessário |
 | .NET SDK | Futuro | 10.0.301 instalado | Nenhuma nesta fase |
@@ -38,19 +38,21 @@ BellSoft Liberica JDK 25, Windows x64
 
 JDK 21 não é suficiente para esse commit.
 
-### Instalação manual futura
+### Instalação validada
 
-1. Aguardar autorização para preparar as ferramentas de build.
-2. Acessar `https://bell-sw.com/pages/downloads/`.
-3. Selecionar:
+O pacote `BellSoft.LibericaJDK.25.Full` versão 25.0.4.9 foi instalado pelo WinGet
+após autorização explícita. Para reinstalação manual:
+
+1. Acessar `https://bell-sw.com/pages/downloads/`.
+2. Selecionar:
    - Java: 25;
    - sistema operacional: Windows;
    - arquitetura: x86 64-bit;
    - pacote: Full JDK;
    - instalador: MSI.
-4. Conferir que o publicador é BellSoft.
-5. No instalador, habilitar a definição de `JAVA_HOME` e a inclusão no `PATH`.
-6. Fechar e abrir novamente o terminal.
+3. Conferir que o publicador é BellSoft.
+4. No instalador, habilitar a definição de `JAVA_HOME` e a inclusão no `PATH`.
+5. Fechar e abrir novamente o terminal.
 
 ### Validação
 
@@ -71,10 +73,10 @@ O módulo usa Apache Ant e não contém wrapper. O requisito mínimo declarado �
 1.8.2. A versão recomendada é **Apache Ant 1.10.17**, release estável atual,
 compatível com JDK 25 e obtida em `https://ant.apache.org/bindownload.cgi`.
 
-Instalação manual futura:
+Instalação validada:
 
 1. baixar `apache-ant-1.10.17-bin.zip` do site oficial Apache;
-2. verificar checksum publicado;
+2. verificar o SHA-512 publicado;
 3. extrair em uma pasta de ferramentas local;
 4. definir `ANT_HOME` para a pasta extraída;
 5. adicionar `%ANT_HOME%\bin` ao `PATH`;
@@ -87,6 +89,9 @@ ant -version
 ```
 
 Maven e Gradle não são necessários para esta source.
+
+O Ant 1.10.17 foi instalado em escopo de usuário. O SHA-512 validado e os comandos de
+build estão em [`BUILD_GUIDE.md`](BUILD_GUIDE.md).
 
 ## MariaDB
 
@@ -147,9 +152,8 @@ criado ou iniciado container antes da Sprint 4.
 
 ## Git
 
-O Git está instalado, mas a pasta ainda não foi inicializada como repositório. A
-estratégia de branches e os comandos de inicialização pertencem à Sprint 2 e exigirão
-autorização.
+O Git está instalado e a pasta é um repositório sincronizado com `origin/main`. A
+source L2JMobius é um submódulo fixado por commit.
 
 Validação atual:
 
@@ -188,10 +192,10 @@ legítima e compatível. Até lá, nenhuma ação é necessária.
 
 Nenhuma.
 
-### Antes do build
+### Para o build
 
-- BellSoft Liberica JDK 25 x64.
-- Apache Ant compatível com JDK 25.
+- BellSoft Liberica Full JDK 25.0.4+9 x64: instalado.
+- Apache Ant 1.10.17: instalado.
 
 ### Antes da primeira execução
 

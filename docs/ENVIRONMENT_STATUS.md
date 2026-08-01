@@ -1,15 +1,15 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026, no início da preparação local do projeto.
-Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado após o primeiro build na
+Sprint 3. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
-O computador atende aos requisitos básicos de sistema, Git e .NET. O Docker CLI e o
-Docker Compose estão instalados, mas o Docker Engine não estava em execução durante a
-verificação. Java/JDK, MariaDB/MySQL e ferramentas de build Java não foram encontrados.
+O computador atende aos requisitos de sistema e build. Liberica Full JDK 25.0.4+9 e
+Apache Ant 1.10.17 foram instalados e validados na Sprint 3. O Docker CLI e o Docker
+Compose estão instalados, mas o Docker Engine ainda não foi revalidado.
 
-Nenhuma instalação foi realizada.
+MariaDB/MySQL permanece ausente e pertence à Sprint 4.
 
 As instruções condicionais de instalação e validação estão em
 [`docs/setup/PREREQUISITES.md`](setup/PREREQUISITES.md).
@@ -23,16 +23,16 @@ As instruções condicionais de instalação e validação estão em
 | Arquitetura do processo | x64 |
 | PowerShell | 5.1.26100.8894 |
 | Pasta do projeto | `C:\Users\mober\OneDrive\Desktop\Lineage II Ashen Dynasty` |
-| Repositório Git | Ainda não inicializado |
-| Código-fonte existente | L2JMobius Interlude em checkout esparso; commit `e4d1d8336ed28fc0916e7caad3ca752d06169eac` |
+| Repositório Git | Inicializado e sincronizado com `origin/main` |
+| Código-fonte existente | L2JMobius Interlude como submódulo; commit `e4d1d8336ed28fc0916e7caad3ca752d06169eac` |
 
 ### Observação sobre o OneDrive
 
 O projeto está dentro de uma pasta sincronizada pelo OneDrive. Isso é funcional, mas
 pode causar bloqueios de arquivos, sincronização de artefatos grandes e conflitos em
-pastas de runtime. Antes do primeiro build, deve-se decidir entre manter o repositório
-nesse local com exclusões adequadas ou movê-lo manualmente para uma pasta de
-desenvolvimento não sincronizada.
+pastas de runtime. Dois builds foram concluídos nesse local sem bloqueio. Runtime e
+artefatos estão ignorados pelo Git, mas eventuais erros de arquivo em uso devem
+considerar a sincronização do OneDrive como possível causa.
 
 ## Ferramentas encontradas
 
@@ -43,24 +43,19 @@ desenvolvimento não sincronizada.
 | Docker CLI | 29.6.1 | `C:\Program Files\Docker\Docker\resources\bin\docker.exe` |
 | Docker Compose | 5.3.0 | Plugin do Docker CLI |
 | Docker Engine | Indisponível no diagnóstico | O named pipe do Docker Desktop Linux Engine não existia; provavelmente o Docker Desktop estava fechado |
+| Java runtime | BellSoft Liberica OpenJDK 25.0.4+9 LTS | `C:\Program Files\BellSoft\LibericaJDK-25-Full\bin\java.exe` |
+| Java compiler | `javac 25.0.4` | Mesmo `JAVA_HOME` do runtime |
+| Apache Ant | 1.10.17 | Instalação de usuário validada por SHA-512 |
 
-## Ferramentas ausentes ou indisponíveis
+## Ferramentas ainda ausentes ou indisponíveis
 
 | Ferramenta | Resultado |
 |---|---|
-| Java runtime (`java`) | Não encontrado no `PATH` nem na lista de programas instalada |
-| Java compiler (`javac`) | Não encontrado |
-| `JAVA_HOME` | Não definido |
 | MariaDB CLI (`mariadb`) | Não encontrado |
 | MySQL CLI (`mysql`) | Não encontrado |
 | Serviço MariaDB/MySQL | Nenhum serviço detectado |
-| Maven (`mvn`) | Não encontrado |
-| Gradle (`gradle`) | Não encontrado |
-| Ant (`ant`) | Não encontrado |
-
-Não há entrada de Java no `PATH`. Maven, Gradle e Ant não devem ser instalados por
-suposição: primeiro será identificado o sistema de build da source escolhida, dando
-preferência ao wrapper versionado pelo próprio projeto quando existir.
+| Maven (`mvn`) | Não encontrado; não é necessário para esta source |
+| Gradle (`gradle`) | Não encontrado; não é necessário para esta source |
 
 ## Portas locais
 
@@ -78,16 +73,12 @@ validação deverá ser repetida antes de iniciar os serviços.
 ## Incompatibilidades e bloqueios
 
 1. L2JMobius Interlude foi aceito na ADR-001 e está fixado no commit auditado.
-2. O `build.xml` confirma JDK 25 e Apache Ant 1.8.2 ou superior; ambos estão ausentes.
+2. JDK 25 e Ant 1.10.17 estão instalados; três clean builds foram aprovados.
 3. Sem MariaDB local ou Docker Engine ativo, o banco ainda não pode ser preparado.
-4. A pasta ainda não é um repositório Git.
-5. O local sincronizado pelo OneDrive precisa ser avaliado antes de gerar runtime,
-   logs e artefatos de build.
+4. Para execução, os achados altos da auditoria devem ser isolados antes de iniciar
+   qualquer serviço.
 
-Para o futuro build, serão necessários JDK 25 e Ant; para execução, os achados altos
-da auditoria deverão ser isolados antes de iniciar qualquer serviço.
-
-## Ações manuais recomendadas, ainda não executadas
+## Estado das ferramentas por etapa
 
 ### Java/JDK
 
@@ -95,11 +86,10 @@ da auditoria deverão ser isolados antes de iniciar qualquer serviço.
 - **Versão confirmada:** JDK 25.
 - **Motivo:** o `build.xml` usa source/target 25 e a documentação oficial L2JMobius
   recomenda Liberica JDK 25.
-- **Importante:** não foi instalado nesta sprint.
-- **Instalação futura:** baixar o instalador JDK 25 x64 somente de
-  `https://bell-sw.com/pages/downloads/`, habilitando `JAVA_HOME` e a inclusão no
-  `PATH`.
-- **Validação futura:**
+- **Versão instalada:** BellSoft Liberica Full JDK 25.0.4+9 LTS.
+- **Origem:** pacote WinGet `BellSoft.LibericaJDK.25.Full`, cujo MSI veio de
+  `download.bell-sw.com`.
+- **Validação executada:**
 
   ```powershell
   java --version
@@ -144,10 +134,10 @@ definidos somente depois de inspecionar o modelo de banco da source.
 ### Apache Ant
 
 - **Versão mínima confirmada:** 1.8.2.
-- **Versão recomendada para instalação:** 1.10.17.
+- **Versão instalada:** 1.10.17.
 - **Sistema de build:** `build.xml` do Apache Ant; não há wrapper.
-- **Instalação:** será detalhada e executada manualmente antes da Sprint 3.
-- **Validação futura:** `ant -version`.
+- **Integridade:** SHA-512 coincidente com o publicado pela Apache.
+- **Validação executada:** `ant -version`.
 
 ## Comandos usados no diagnóstico
 
@@ -172,14 +162,18 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,3306
 
 ## Próxima atualização deste documento
 
-Repetir o diagnóstico depois que o proprietário autorizar e concluir as instalações
-de JDK 25 e Ant. Registrar também o estado real do Docker Engine e, na Sprint 4, a
-estratégia escolhida para MariaDB.
+Na Sprint 4, registrar o estado real do Docker Engine e a estratégia escolhida para
+MariaDB.
 
 ## Conclusão da Sprint 0
 
-O ambiente foi inventariado sem executar código externo. Não há incompatibilidade
-crítica no sistema operacional, Git, PowerShell ou .NET. As ausências de JDK e banco
-são esperadas nesta etapa e devem ser resolvidas somente após as decisões das sprints
-correspondentes. O Docker Engine parado é uma pendência operacional, não um bloqueio
-para encerrar o diagnóstico.
+O ambiente foi inventariado sem executar código externo. Não houve incompatibilidade
+crítica no sistema operacional, Git, PowerShell ou .NET. Na Sprint 0, as ausências de
+JDK e banco eram esperadas. O JDK foi resolvido na Sprint 3; o banco permanece para a
+Sprint 4. O Docker Engine parado não bloqueou o diagnóstico.
+
+## Conclusão da Sprint 3
+
+JDK 25 e Ant foram instalados e validados. A source compilou três vezes, sem warning
+do compilador, e gerou o pacote esperado fora do submódulo. Consulte
+[`docs/setup/FIRST_BUILD_REPORT.md`](setup/FIRST_BUILD_REPORT.md).
