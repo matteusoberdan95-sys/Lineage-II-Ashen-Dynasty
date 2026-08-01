@@ -16,10 +16,13 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 e 1 estão concluídas. L2JMobius `L2J_Mobius_CT_0_Interlude` foi
-recomendado no commit `e4d1d8336ed28fc0916e7caad3ca752d06169eac`, após auditoria
-estática inicial, e aceito na ADR-001. Não há banco, cliente, runtime ou customizações.
-Ferramentas futuras poderão ser desenvolvidas em C#/.NET.
+As Sprints 0, 1 e 2 estão concluídas localmente. L2JMobius
+`L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
+`e4d1d8336ed28fc0916e7caad3ca752d06169eac`, após auditoria estática inicial.
+
+O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
+.NET futuros conforme a ADR-002. Não há banco, cliente, runtime, customizações, build
+ou serviços executados.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -39,63 +42,31 @@ ferramentas.
 ## Arquitetura pretendida
 
 ```text
-Cliente Interlude
+Cliente Interlude --> Login Server Java
         |
-Login Server Java
-        |
-Game Server Java
-        |
-MariaDB
+        +-----------> Game Server Java --> MariaDB
 ```
 
 ASP.NET Core, portal, painel administrativo, launcher e ferramentas de auditoria
-pertencem a fases futuras.
+pertencem a fases futuras. Consulte
+[a arquitetura detalhada](docs/ARCHITECTURE.md).
 
-## Estrutura inicial proposta
+## Estrutura do repositório
 
-A pasta atual será a raiz do repositório. Não será criada uma pasta
-`l2-phoenix-legacy` adicional dentro dela, evitando uma raiz duplicada. A estrutura
-abaixo é uma proposta e poderá ser ajustada ao layout consolidado da source escolhida:
+A pasta atual é a raiz do repositório. Não existe uma pasta adicional
+`l2-phoenix-legacy` ou `l2-ashen-dynasty` dentro dela.
 
 ```text
 .
 ├── server/
-│   ├── source/
-│   ├── runtime/
-│   ├── login-server/
-│   ├── game-server/
-│   ├── datapack/
-│   └── tools/
-├── database/
-│   ├── schema/
-│   ├── migrations/
-│   ├── seeds/
-│   ├── scripts/
-│   └── backups/
-├── client-patch/
-│   ├── system/
-│   ├── textures/
-│   ├── animations/
-│   ├── sounds/
-│   └── README.md
-├── web/
-│   ├── api/
-│   ├── portal/
-│   └── admin/
-├── launcher/
-├── infrastructure/
-│   ├── docker/
-│   ├── scripts/
-│   ├── configuration/
-│   └── monitoring/
-├── docs/
-│   ├── adr/
-│   ├── architecture/
-│   ├── economy/
-│   ├── game-design/
-│   ├── setup/
-│   ├── security/
-│   └── testing/
+│   ├── source/l2jmobius-upstream/  # submódulo fixado
+│   └── runtime/                    # local e ignorado
+├── database/                       # banco local em sprint futura
+├── client-patch/                   # documentação; assets proibidos
+├── web/                            # ASP.NET Core futuro
+├── launcher/                       # C#/.NET futuro
+├── infrastructure/                 # scripts e serviços auxiliares
+├── docs/                           # arquitetura, ADR, setup e segurança
 ├── .editorconfig
 ├── .env.example
 ├── .gitattributes
@@ -105,8 +76,9 @@ abaixo é uma proposta e poderá ser ajustada ao layout consolidado da source es
 └── README.md
 ```
 
-Os diretórios ainda não foram materializados. Primeiro será avaliada uma única base
-Java para evitar duplicação de módulos, datapacks ou sistemas de build.
+Login Server, Game Server, datapack e ferramentas permanecem dentro do módulo
+Interlude upstream. Não há diretórios paralelos na raiz. Subdiretórios ainda
+inexistentes serão criados somente quando sua sprint começar.
 
 ## Source recomendada
 
@@ -122,13 +94,17 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 - [avaliação das bases](docs/SOURCE_EVALUATION.md);
 - [auditoria da source](docs/security/SOURCE_AUDIT.md);
 - [ADR-001](docs/adr/ADR-001-SERVER-SOURCE.md);
+- [ADR-002](docs/adr/ADR-002-REPOSITORY-STRUCTURE.md);
 - [notas de licença](LICENSE-NOTES.md).
 
 ## Próximo bloqueio
 
-A Sprint 2 organizará o repositório e separará source, runtime e configurações locais.
-Login Server, Game Server e instalador de banco não podem ser executados enquanto os
-achados altos de configuração e banco não estiverem isolados.
+A Sprint 3 deverá preparar e validar o build reproduzível. JDK 25 e Apache Ant 1.10.17
+ainda não estão instalados. A instalação depende de autorização e ação manual do
+proprietário.
+
+Login Server, Game Server e instalador de banco continuam bloqueados enquanto os
+achados altos de configuração e banco não forem isolados.
 
 ## Segurança e propriedade intelectual
 
@@ -136,6 +112,15 @@ O cliente completo de Lineage 2 e seus executáveis não pertencem a este reposi
 Uma instalação legítima deverá ser fornecida manualmente pelo proprietário em etapa
 posterior. Credenciais locais deverão ficar em arquivos ignorados pelo Git, usando
 templates sem valores secretos para documentação.
+
+## Documentação
+
+- [visão futura do jogo](docs/GAME_VISION.md);
+- [arquitetura](docs/ARCHITECTURE.md);
+- [fluxo de desenvolvimento](docs/DEVELOPMENT_WORKFLOW.md);
+- [avaliação da source](docs/SOURCE_EVALUATION.md);
+- [estado do ambiente](docs/ENVIRONMENT_STATUS.md);
+- [changelog](CHANGELOG.md).
 
 ## Fluxo incremental
 
@@ -147,4 +132,6 @@ Cada fase deverá:
 4. atualizar a documentação;
 5. parar diante de bloqueio ou ação manual.
 
-Nenhum commit, tag, publicação remota, download ou instalação é automático.
+Ao concluir e validar cada sprint, suas alterações são commitadas com Conventional
+Commits e enviadas por push normal. Tags, novas branches, downloads e instalações
+continuam dependentes de autorização específica.

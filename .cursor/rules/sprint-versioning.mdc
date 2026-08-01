@@ -1,0 +1,24 @@
+---
+description: Versiona e publica automaticamente cada sprint concluída
+alwaysApply: true
+---
+
+# Versionamento ao concluir sprints
+
+Após concluir e validar uma sprint:
+
+1. Revise o status e o diff.
+2. Não inclua mudanças preexistentes ou fora do escopo da sprint.
+3. Verifique segredos, credenciais, dados pessoais e artefatos proibidos.
+4. Execute as validações proporcionais ao risco.
+5. Atualize a documentação aplicável.
+6. Crie um commit Conventional Commits em inglês e no imperativo.
+7. Envie a branch atual ao remote configurado com push normal.
+8. Informe branch, hash, mensagem, validações e resultado do push.
+
+Tipos permitidos: `feat`, `fix`, `docs`, `test`, `refactor`, `perf`, `build`, `ci`,
+`chore` e `revert`. Use `fix` para correções de bugs; não use `bug`.
+
+Nunca faça `force push`, nunca contorne hooks ou validações e nunca publique segredos.
+Se houver conflito, alteração alheia, falha de validação, autenticação ou divergência
+remota, pare e apresente o bloqueio sem sobrescrever trabalho.

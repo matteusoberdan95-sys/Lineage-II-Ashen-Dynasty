@@ -1,0 +1,128 @@
+# Arquitetura
+
+## Escopo atual
+
+O Ashen Dynasty usa uma base L2JMobius Interlude existente. Login Server e Game
+Server permanecem em Java; não haverá reimplementação da engine em C#.
+
+```text
+Cliente Interlude (proprietário, fora do Git)
+                  |
+                  | TCP 127.0.0.1:2106
+                  v
+          Login Server Java
+                  |
+                  | TCP 127.0.0.1:9014
+                  v
+           Game Server Java
+                  |
+                  | TCP 127.0.0.1:3306
+                  v
+              MariaDB
+
+Cliente Interlude -- TCP 127.0.0.1:7777 --> Game Server
+```
+
+A porta 9014 é usada internamente entre Game Server e Login Server na source
+escolhida. Ela não substitui a porta 2106 usada pelo cliente.
+
+## Componentes
+
+### Source upstream
+
+```text
+server/source/l2jmobius-upstream/
+└── L2J_Mobius_CT_0_Interlude/
+    ├── build.xml
+    ├── java/
+    └── dist/
+        ├── login/
+        ├── game/
+        ├── db_installer/
+        └── libs/
+```
+
+O repositório upstream é um submódulo Git fixado por commit. Seu módulo Interlude já
+contém Login Server, Game Server e datapack. Criar cópias paralelas desses módulos na
+raiz aumentaria o risco de divergência e mistura, portanto isso foi rejeitado.
+
+### Runtime local
+
+`server/runtime/` receberá apenas artefatos gerados, configurações locais, logs,
+HexID e arquivos necessários à execução. Todo o diretório é ignorado pelo Git.
+
+O runtime nunca será usado como source of truth. Ele poderá ser apagado e recriado a
+partir do commit fixado, build e templates versionados.
+
+### Banco
+
+`database/` será reservado para scripts controlados pelo Ashen Dynasty:
+
+- bootstrap local;
+- verificações;
+- migrations futuras;
+- seeds explicitamente aprovados;
+- documentação de backup.
+
+Os 100 scripts SQL originais permanecem dentro do submódulo. Eles não serão copiados
+ou alterados antes da Sprint 4. A source atualmente usa um schema conceitual chamado
+`l2jmobiusinterlude`; a separação em `l2_login` e `l2_game` não será inventada.
+
+### Infraestrutura
+
+`infrastructure/` conterá scripts PowerShell, Docker Compose auxiliar, templates de
+configuração e monitoramento local. Nenhum script alterará firewall, roteador ou
+produção.
+
+### Cliente
+
+`client-patch/` conterá somente documentação e, futuramente, arquivos cuja
+distribuição seja comprovadamente permitida. O cliente completo, executáveis e assets
+proprietários permanecem fora do repositório.
+
+## Arquitetura futura
+
+Somente nas sprints correspondentes:
+
+```text
+ASP.NET Core API
+├── contas e autenticação compatível
+├── ranking e status
+└── serviços administrativos controlados
+
+ASP.NET Core Portal
+ASP.NET Core Admin
+C#/.NET Launcher e Updater
+Dashboard econômico
+Serviços de auditoria
+```
+
+Esses componentes não acessarão o banco sem uma camada controlada e não exporão
+comandos GM diretamente.
+
+## Limites de confiança
+
+```text
+[Cliente proprietário]
+          |
+          v
+[Protocolos Login/Game] ---- entrada não confiável
+          |
+          v
+[Servidores Java] ---------- código e datapack executáveis
+          |
+          v
+[MariaDB local] ------------ dados persistentes e credenciais
+```
+
+- Entrada de rede deve ser tratada como não confiável.
+- Scripts Java do datapack são código executável.
+- Configurações locais e segredos não pertencem ao Git.
+- Acesso administrativo deve ser auditável.
+- Atualizações upstream exigem nova revisão de diff e segurança.
+
+## Decisões relacionadas
+
+- `docs/adr/ADR-001-SERVER-SOURCE.md`
+- `docs/adr/ADR-002-REPOSITORY-STRUCTURE.md`
+- `docs/security/SOURCE_AUDIT.md`

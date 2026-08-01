@@ -7,6 +7,12 @@
 *.credentials
 secrets/
 credentials/
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.keystore
 
 # Local server configuration
 **/config/local/
@@ -43,8 +49,9 @@ database/backups/
 # Proprietary client files
 client/
 client-full/
-client-patch/system/*
-!client-patch/system/.gitkeep
+client-patch/**
+!client-patch/
+!client-patch/README.md
 *.exe
 *.dll
 *.dat
@@ -52,12 +59,16 @@ client-patch/system/*
 *.ukx
 *.usx
 *.uax
+*.unr
+*.dds
 
 # IDEs and editors
 .idea/
 .vscode/
 .vs/
-.cursor/
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/*.mdc
 *.suo
 *.user
 *.userosscache
