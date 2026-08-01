@@ -19,6 +19,10 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - Scripts PowerShell repetíveis para clean, build e detecção de testes.
 - Guia de build e relatório das duas primeiras compilações limpas.
 - Validação de Liberica JDK 25.0.4+9 e Apache Ant 1.10.17.
+- Bootstrap auditado do schema `l2jmobiusinterlude` em MariaDB 11.4.3.
+- Scripts de importação, verificação, backup e controle do serviço MariaDB.
+- Usuário local `l2server` com credencial protegida por DPAPI.
+- Documentação de setup e auditoria do banco.
 
 ### Segurança
 
@@ -26,6 +30,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   estiverem isolados.
 - Cliente proprietário, credenciais, runtime, logs, builds e backups excluídos do Git.
 - Artefatos do Ant redirecionados para `server/runtime/build`, fora do submódulo.
+- MariaDB restrito a `127.0.0.1:3306`.
+- Importação recusa schemas não vazios e evita o instalador destrutivo upstream.
 
 ## Política
 

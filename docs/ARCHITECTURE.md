@@ -56,7 +56,7 @@ partir do commit fixado, build e templates versionados.
 
 ### Banco
 
-`database/` será reservado para scripts controlados pelo Ashen Dynasty:
+`database/` contém scripts controlados pelo Ashen Dynasty para:
 
 - bootstrap local;
 - verificações;
@@ -64,9 +64,12 @@ partir do commit fixado, build e templates versionados.
 - seeds explicitamente aprovados;
 - documentação de backup.
 
-Os 100 scripts SQL originais permanecem dentro do submódulo. Eles não serão copiados
-ou alterados antes da Sprint 4. A source atualmente usa um schema conceitual chamado
-`l2jmobiusinterlude`; a separação em `l2_login` e `l2_game` não será inventada.
+Os 100 scripts SQL originais permanecem dentro do submódulo e são importados sem
+cópia ou alteração. Login e Game Server compartilham o schema
+`l2jmobiusinterlude`; a separação em `l2_login` e `l2_game` não foi inventada.
+
+MariaDB 11.4.3 escuta somente em `127.0.0.1:3306`. O usuário
+`l2server@127.0.0.1` possui privilégios somente nesse schema.
 
 ### Infraestrutura
 

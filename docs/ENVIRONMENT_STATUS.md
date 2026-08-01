@@ -6,10 +6,9 @@ Sprint 3. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 ## Resumo
 
 O computador atende aos requisitos de sistema e build. Liberica Full JDK 25.0.4+9 e
-Apache Ant 1.10.17 foram instalados e validados na Sprint 3. O Docker CLI e o Docker
-Compose estão instalados, mas o Docker Engine ainda não foi revalidado.
-
-MariaDB/MySQL permanece ausente e pertence à Sprint 4.
+Apache Ant 1.10.17 foram instalados e validados na Sprint 3. MariaDB 11.4.3 foi
+instalado e validado na Sprint 4. O Docker CLI e o Docker Compose estão instalados,
+mas o Docker Engine não é necessário para a opção de banco adotada.
 
 As instruções condicionais de instalação e validação estão em
 [`docs/setup/PREREQUISITES.md`](setup/PREREQUISITES.md).
@@ -46,14 +45,12 @@ considerar a sincronização do OneDrive como possível causa.
 | Java runtime | BellSoft Liberica OpenJDK 25.0.4+9 LTS | `C:\Program Files\BellSoft\LibericaJDK-25-Full\bin\java.exe` |
 | Java compiler | `javac 25.0.4` | Mesmo `JAVA_HOME` do runtime |
 | Apache Ant | 1.10.17 | Instalação de usuário validada por SHA-512 |
+| MariaDB Server/CLI | 11.4.3 LTS | Serviço Windows ativo em `127.0.0.1:3306` |
 
 ## Ferramentas ainda ausentes ou indisponíveis
 
 | Ferramenta | Resultado |
 |---|---|
-| MariaDB CLI (`mariadb`) | Não encontrado |
-| MySQL CLI (`mysql`) | Não encontrado |
-| Serviço MariaDB/MySQL | Nenhum serviço detectado |
 | Maven (`mvn`) | Não encontrado; não é necessário para esta source |
 | Gradle (`gradle`) | Não encontrado; não é necessário para esta source |
 
@@ -65,7 +62,7 @@ As consultas foram feitas somente para listeners TCP.
 |---|---|---|
 | 2106 | Login Server | Livre |
 | 7777 | Game Server | Livre |
-| 3306 | MariaDB | Livre |
+| 3306 | MariaDB | Em uso somente por `127.0.0.1` |
 
 Uma porta livre agora não garante disponibilidade durante a futura execução. A
 validação deverá ser repetida antes de iniciar os serviços.
@@ -74,9 +71,9 @@ validação deverá ser repetida antes de iniciar os serviços.
 
 1. L2JMobius Interlude foi aceito na ADR-001 e está fixado no commit auditado.
 2. JDK 25 e Ant 1.10.17 estão instalados; três clean builds foram aprovados.
-3. Sem MariaDB local ou Docker Engine ativo, o banco ainda não pode ser preparado.
-4. Para execução, os achados altos da auditoria devem ser isolados antes de iniciar
-   qualquer serviço.
+3. MariaDB local, schema e usuário restrito foram preparados.
+4. Bind de Login/Game Server, configuração JDBC e registro do Game Server ainda
+   precisam ser isolados antes da primeira execução.
 
 ## Estado das ferramentas por etapa
 
@@ -100,14 +97,12 @@ validação deverá ser repetida antes de iniciar os serviços.
 ### MariaDB
 
 - **Nome:** MariaDB Server x64.
-- **Versão recomendada:** linha LTS 11.4, condicionada à compatibilidade da source.
+- **Versão instalada:** 11.4.3 LTS.
 - **Motivo:** banco relacional pretendido para Login Server e Game Server, com suporte
   prolongado.
-- **Instalação futura no Windows:** usar somente o instalador oficial disponível em
-  `https://mariadb.org/download/`.
-- **Alternativa futura:** container MariaDB com tag fixada em Docker Compose, depois
-  de ativar e validar o Docker Engine.
-- **Validação futura:**
+- **Modo adotado:** serviço Windows local; Docker não é usado para o banco.
+- **Bind:** `127.0.0.1:3306`.
+- **Validação executada:**
 
   ```powershell
   mariadb --version
@@ -162,18 +157,23 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,3306
 
 ## Próxima atualização deste documento
 
-Na Sprint 4, registrar o estado real do Docker Engine e a estratégia escolhida para
-MariaDB.
+Na Sprint 5, registrar o estado dos processos Java, portas 2106/7777 e pools JDBC.
 
 ## Conclusão da Sprint 0
 
 O ambiente foi inventariado sem executar código externo. Não houve incompatibilidade
 crítica no sistema operacional, Git, PowerShell ou .NET. Na Sprint 0, as ausências de
-JDK e banco eram esperadas. O JDK foi resolvido na Sprint 3; o banco permanece para a
-Sprint 4. O Docker Engine parado não bloqueou o diagnóstico.
+JDK e banco eram esperadas. O JDK foi resolvido na Sprint 3 e o banco na Sprint 4. O
+Docker Engine parado não bloqueou o diagnóstico.
 
 ## Conclusão da Sprint 3
 
 JDK 25 e Ant foram instalados e validados. A source compilou três vezes, sem warning
 do compilador, e gerou o pacote esperado fora do submódulo. Consulte
 [`docs/setup/FIRST_BUILD_REPORT.md`](setup/FIRST_BUILD_REPORT.md).
+
+## Conclusão da Sprint 4
+
+MariaDB 11.4.3 foi instalado como serviço Windows, restrito a localhost. O schema
+`l2jmobiusinterlude` possui 100 tabelas, o usuário `l2server` está restrito ao schema,
+e backup, stop/start e persistência após restart foram validados.

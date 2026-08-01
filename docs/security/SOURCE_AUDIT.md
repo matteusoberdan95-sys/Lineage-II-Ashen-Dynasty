@@ -35,11 +35,13 @@ O clone estava limpo após a auditoria. Nenhum arquivo da source foi executado.
 ## Escopo ainda não avaliado
 
 - comportamento dinâmico, pois nenhum código foi executado;
-- build e testes, pois JDK 25 e Ant não estão instalados;
+- comportamento funcional dos serviços; o build limpo foi validado na Sprint 3 e o
+  módulo não possui testes automatizados;
 - análise bytecode a bytecode dos JARs;
 - auditoria funcional de todos os comandos GM;
 - vulnerabilidades lógicas que não sejam detectáveis por busca estática inicial;
-- compatibilidade prática com MariaDB.
+- compatibilidade runtime dos pools JDBC com MariaDB; os 100 SQLs foram importados
+  com sucesso no MariaDB 11.4.3 durante a Sprint 4.
 
 ## Source recomendada para auditoria local
 
@@ -116,7 +118,8 @@ substitutos.
 - **Candidata:** L2JMobius
 - **Evidência:** a instalação oficial usa o MySQL incluído no XAMPP.
 - **Impacto:** adicionaria componentes desnecessários e ampliaria a superfície local.
-- **Ação:** não instalar XAMPP. Validar MariaDB isolado na Sprint 4.
+- **Ação:** resolvida. XAMPP não foi instalado; MariaDB 11.4.3 foi instalado
+  isoladamente e restrito a localhost.
 
 ### AUD-007 — Branch mutável
 
@@ -175,6 +178,8 @@ substitutos.
 - **Impacto:** viola o princípio do menor privilégio e a regra do projeto.
 - **Ação:** não iniciar servidor ou instalador com esses valores. Criar usuário
   `l2server` restrito ao schema real, mantendo senha fora do Git.
+- **Estado:** usuário restrito e credencial protegida foram criados na Sprint 4. Os
+  templates runtime de Login/Game Server ainda pertencem à Sprint 5.
 
 ### AUD-013 — Instalador e SQL possuem operações destrutivas
 
@@ -185,6 +190,8 @@ substitutos.
 - **Ação:** não executar o instalador upstream. Na Sprint 4, importar somente em schema
   vazio, após backup e confirmação explícita. Scripts destrutivos serão tratados como
   bootstrap, nunca como migrations incrementais.
+- **Estado:** mitigado por importador próprio que recusa schema não vazio e valida as
+  100 tabelas. O Database Installer não foi executado.
 
 ### AUD-014 — Consulta externa automática de IP
 
@@ -205,6 +212,8 @@ substitutos.
   causar exclusões indevidas; falha silenciosa pode produzir falsa confiança.
 - **Ação:** manter `BackupDatabase = False`. Criar script PowerShell próprio e seguro
   em sprint posterior, validando caminho e resultado.
+- **Estado:** backup upstream permanece desabilitado. Um script próprio criou e
+  validou dump compactado na Sprint 4.
 
 ### AUD-016 — Compilação e execução dinâmica do datapack
 

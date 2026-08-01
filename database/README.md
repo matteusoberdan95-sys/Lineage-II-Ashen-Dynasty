@@ -1,8 +1,8 @@
 # Banco de dados
 
-Esta área receberá somente scripts e documentação controlados pelo Ashen Dynasty.
+Esta área contém scripts e documentação de banco controlados pelo Ashen Dynasty.
 
-Estrutura prevista para a Sprint 4:
+Estrutura:
 
 ```text
 database/
@@ -13,10 +13,19 @@ database/
 └── backups/  # sempre ignorado pelo Git
 ```
 
-A source escolhida usa um único schema conceitual, `l2jmobiusinterlude`. O nome será
-validado antes de qualquer criação. A aplicação usará um usuário local dedicado, nunca
-`root`.
+A source escolhida usa um único schema, `l2jmobiusinterlude`. Ele foi importado no
+MariaDB 11.4.3 com 100 tabelas. A aplicação usa o usuário local
+`l2server@127.0.0.1`, nunca `root`.
 
-Os scripts SQL upstream não foram copiados nem executados. Antes da importação serão
-revisados quanto a operações destrutivas, grants, usuários, triggers, procedures,
-events, cargas externas e caminhos absolutos.
+Os SQLs upstream não foram copiados ou modificados; o importador os lê diretamente do
+submódulo fixado. A auditoria está em
+[`docs/security/DATABASE_AUDIT.md`](../docs/security/DATABASE_AUDIT.md).
+
+Comandos principais:
+
+```powershell
+.\database\scripts\verify-local-database.ps1
+.\infrastructure\scripts\backup-database.ps1
+```
+
+`database/backups/` e `secrets/` são locais e ignorados pelo Git.
