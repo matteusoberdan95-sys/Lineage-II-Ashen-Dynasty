@@ -48,11 +48,15 @@ raiz aumentaria o risco de divergência e mistura, portanto isso foi rejeitado.
 
 ### Runtime local
 
-`server/runtime/` receberá apenas artefatos gerados, configurações locais, logs,
-HexID e arquivos necessários à execução. Todo o diretório é ignorado pelo Git.
+`server/runtime/` contém artefatos gerados, configurações locais, logs, HexID e
+arquivos necessários à execução. Todo o diretório é ignorado pelo Git.
 
 O runtime nunca será usado como source of truth. Ele poderá ser apagado e recriado a
 partir do commit fixado, build e templates versionados.
+
+O build local aplica, em cópia descartável, o patch que faz a porta 7777 respeitar
+`GameserverHostname`. A source upstream permanece limpa. Patches desse tipo seguem a
+ADR-003 e não autorizam mudanças de gameplay.
 
 ### Banco
 
@@ -128,4 +132,5 @@ comandos GM diretamente.
 
 - `docs/adr/ADR-001-SERVER-SOURCE.md`
 - `docs/adr/ADR-002-REPOSITORY-STRUCTURE.md`
+- `docs/adr/ADR-003-LOCAL-SECURITY-PATCHES.md`
 - `docs/security/SOURCE_AUDIT.md`

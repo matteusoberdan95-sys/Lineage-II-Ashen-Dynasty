@@ -23,15 +23,24 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - Scripts de importação, verificação, backup e controle do serviço MariaDB.
 - Usuário local `l2server` com credencial protegida por DPAPI.
 - Documentação de setup e auditoria do banco.
+- Build local reproduzível com patch mínimo de bind para o Game Server.
+- Preparação de runtime, registro de HexID, start, stop, status e verificação dos
+  servidores Java.
+- Configuração e relatório da primeira execução local.
+- ADR-003 para patches de segurança fora do submódulo.
 
 ### Segurança
 
-- Execução bloqueada enquanto bind de rede, usuário de banco e SQL destrutivo não
-  estiverem isolados.
+- Login, Game e MariaDB restritos a listeners `127.0.0.1`.
 - Cliente proprietário, credenciais, runtime, logs, builds e backups excluídos do Git.
 - Artefatos do Ant redirecionados para `server/runtime/build`, fora do submódulo.
 - MariaDB restrito a `127.0.0.1:3306`.
 - Importação recusa schemas não vazios e evita o instalador destrutivo upstream.
+- HexID público upstream removido e substituído por registro local aleatório.
+- Criação automática de contas, novos registros, GUI, backup upstream e scripts
+  custom desabilitados.
+- Descoberta externa de IP impedida por `ipconfig.xml`; nenhuma conexão Java externa
+  foi observada.
 
 ## Política
 

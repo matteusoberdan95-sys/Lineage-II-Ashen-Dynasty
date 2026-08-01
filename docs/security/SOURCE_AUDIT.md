@@ -2,7 +2,8 @@
 
 ## Estado
 
-**Auditoria estática inicial concluída — execução bloqueada até tratar achados altos.**
+**Auditoria estática inicial concluída — achados operacionais bloqueantes mitigados
+na Sprint 5.**
 
 Foi auditado o checkout esparso oficial do módulo Interlude no commit:
 
@@ -13,7 +14,8 @@ Commit: e4d1d8336ed28fc0916e7caad3ca752d06169eac
 Módulo: L2J_Mobius_CT_0_Interlude
 ```
 
-O clone estava limpo após a auditoria. Nenhum arquivo da source foi executado.
+O clone estava limpo após a auditoria inicial. A execução controlada ocorreu somente
+na Sprint 5, depois das mitigações documentadas, e o submódulo continuou limpo.
 
 ## Escopo avaliado
 
@@ -34,9 +36,9 @@ O clone estava limpo após a auditoria. Nenhum arquivo da source foi executado.
 
 ## Escopo ainda não avaliado
 
-- comportamento dinâmico, pois nenhum código foi executado;
-- comportamento funcional dos serviços; o build limpo foi validado na Sprint 3 e o
-  módulo não possui testes automatizados;
+- comportamento funcional com cliente e jogadores;
+- cobertura ampla de protocolos; Login e Game foram executados localmente na Sprint
+  5, mas o módulo não possui testes automatizados;
 - análise bytecode a bytecode dos JARs;
 - auditoria funcional de todos os comandos GM;
 - vulnerabilidades lógicas que não sejam detectáveis por busca estática inicial;
@@ -168,8 +170,9 @@ substitutos.
   `0.0.0.0`.
 - **Impacto:** ao iniciar sem configuração local, as portas 2106 e 7777 podem ficar
   acessíveis por outras interfaces da máquina.
-- **Ação:** não iniciar os servidores com os arquivos upstream. Criar configuração de
-  runtime com bind explícito em `127.0.0.1` antes da primeira execução.
+- **Ação:** resolvida na Sprint 5. Login usa configuração local. O Game ignorava
+  `GameserverHostname` no código e recebeu patch mínimo em cópia descartável, conforme
+  ADR-003. Os três listeners Java foram confirmados em `127.0.0.1`.
 
 ### AUD-012 — Usuário root e senha vazia na configuração JDBC
 
@@ -179,7 +182,7 @@ substitutos.
 - **Ação:** não iniciar servidor ou instalador com esses valores. Criar usuário
   `l2server` restrito ao schema real, mantendo senha fora do Git.
 - **Estado:** usuário restrito e credencial protegida foram criados na Sprint 4. Os
-  templates runtime de Login/Game Server ainda pertencem à Sprint 5.
+  arquivos runtime de Login/Game usam essa credencial desde a Sprint 5.
 
 ### AUD-013 — Instalador e SQL possuem operações destrutivas
 
@@ -202,6 +205,8 @@ substitutos.
   descobrir IP público, comportamento incompatível com a baseline local.
 - **Ação:** antes da execução, fornecer `ipconfig.xml` local derivado do template,
   limitado a `127.0.0.1`. Não depender da configuração automática.
+- **Estado:** resolvido na Sprint 5; o log confirmou configuração manual e nenhuma
+  conexão Java externa foi observada.
 
 ### AUD-015 — Backup executa processo e remove arquivos antigos
 
@@ -244,6 +249,7 @@ substitutos.
   o serviço está acessível.
 - **Ação:** permitido apenas em localhost durante playtest controlado; desabilitar
   antes de qualquer teste externo.
+- **Estado:** desabilitado desde a primeira execução.
 
 ### AUD-019 — Criptografia de pacotes desabilitada
 
@@ -251,8 +257,7 @@ substitutos.
 - **Evidência:** `PacketEncryption = False`.
 - **Impacto:** tráfego do jogo pode ser observado com maior facilidade na máquina ou
   rede em que circular.
-- **Ação:** manter registrado para teste posterior; não é bloqueio enquanto todo o
-  tráfego estiver restrito ao loopback.
+- **Ação:** `PacketEncryption = True` no runtime local desde a Sprint 5.
 
 ### AUD-020 — JDK e build confirmados
 
@@ -285,6 +290,24 @@ substitutos.
 - **Impacto:** nenhum indício estático de persistência no Windows ou backdoor por
   esses mecanismos.
 - **Ação:** repetir a varredura em todo novo commit.
+
+### AUD-023 — HexID público distribuído
+
+- **Severidade:** alto
+- **Evidência:** a distribuição inclui `game/config/hexid.txt` correspondente ao seed
+  ID 2 da tabela `gameservers`.
+- **Impacto:** esse identificador não é segredo e não deve autenticar um servidor.
+- **Ação:** resolvida na Sprint 5. Arquivo e seed são removidos do ambiente local; o
+  primeiro startup gera HexID aleatório para o ID 1 e novos registros são bloqueados.
+
+### AUD-024 — Configuração de bind do Game era inoperante
+
+- **Severidade:** alto
+- **Evidência:** `GameServer.java` usava `new InetSocketAddress(PORT_GAME)`, mesmo
+  carregando `GAMESERVER_HOSTNAME`.
+- **Impacto:** a porta 7777 ficava em wildcard mesmo com configuração local correta.
+- **Ação:** resolvida pelo patch mínimo da ADR-003. Bytecode e listener real foram
+  validados; o submódulo permanece limpo.
 
 ## Termos usados na varredura
 
@@ -348,6 +371,6 @@ Os quatro source JARs não entram no classpath de distribuição produzido pelo
 - Executáveis ou bibliotecas nativas: nenhum.
 - Dependências runtime: hashes coincidentes com Maven Central.
 
-A source é adequada para continuar como candidata, mas **Login Server, Game Server e
-instalador de banco permanecem proibidos de executar** até os achados altos
-operacionais serem isolados por configuração local e estratégia segura de banco.
+A source continua adequada para a baseline local. Login e Game Server foram executados
+somente após mitigar banco, bind, descoberta externa, HexID público e criação
+automática de contas. O Database Installer upstream continua proibido.

@@ -105,5 +105,6 @@ server/source/l2jmobius-upstream/L2J_Mobius_CT_0_Interlude
 ## Relações
 
 - ADR-001 define a source adotada.
-- Uma ADR futura definirá como customizações Java serão mantidas.
-- A política de runtime e configuração será detalhada antes da primeira execução.
+- ADR-003 define patches mínimos de segurança aplicados fora do submódulo.
+- Uma decisão futura ainda definirá a estratégia para customizações de gameplay.
+- A política de runtime e configuração está em `LOCAL_SERVER_SETUP.md`.

@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado após o primeiro build na
-Sprint 3. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado após a primeira execução na
+Sprint 5. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -9,6 +9,9 @@ O computador atende aos requisitos de sistema e build. Liberica Full JDK 25.0.4+
 Apache Ant 1.10.17 foram instalados e validados na Sprint 3. MariaDB 11.4.3 foi
 instalado e validado na Sprint 4. O Docker CLI e o Docker Compose estão instalados,
 mas o Docker Engine não é necessário para a opção de banco adotada.
+
+Login Server e Game Server foram compilados, configurados e executados na Sprint 5.
+Os processos Java e o banco usam somente loopback.
 
 As instruções condicionais de instalação e validação estão em
 [`docs/setup/PREREQUISITES.md`](setup/PREREQUISITES.md).
@@ -60,20 +63,18 @@ As consultas foram feitas somente para listeners TCP.
 
 | Porta | Uso planejado | Estado |
 |---|---|---|
-| 2106 | Login Server | Livre |
-| 7777 | Game Server | Livre |
+| 2106 | Login Server | Em uso somente por `127.0.0.1` |
+| 9014 | Login ↔ Game | Em uso somente por `127.0.0.1` |
+| 7777 | Game Server | Em uso somente por `127.0.0.1` |
 | 3306 | MariaDB | Em uso somente por `127.0.0.1` |
-
-Uma porta livre agora não garante disponibilidade durante a futura execução. A
-validação deverá ser repetida antes de iniciar os serviços.
 
 ## Incompatibilidades e bloqueios
 
 1. L2JMobius Interlude foi aceito na ADR-001 e está fixado no commit auditado.
 2. JDK 25 e Ant 1.10.17 estão instalados; três clean builds foram aprovados.
 3. MariaDB local, schema e usuário restrito foram preparados.
-4. Bind de Login/Game Server, configuração JDBC e registro do Game Server ainda
-   precisam ser isolados antes da primeira execução.
+4. Bind, JDBC, descoberta de IP e registro foram isolados na Sprint 5.
+5. O próximo bloqueio é preparar e validar um cliente legítimo fora do Git.
 
 ## Estado das ferramentas por etapa
 
@@ -152,12 +153,12 @@ mvn --version
 gradle --version
 ant -version
 Get-CimInstance Win32_OperatingSystem
-Get-NetTCPConnection -State Listen -LocalPort 2106,7777,3306
+Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 ```
 
 ## Próxima atualização deste documento
 
-Na Sprint 5, registrar o estado dos processos Java, portas 2106/7777 e pools JDBC.
+Na sprint de cliente, registrar compatibilidade de protocolo e fluxo de login.
 
 ## Conclusão da Sprint 0
 
@@ -177,3 +178,10 @@ do compilador, e gerou o pacote esperado fora do submódulo. Consulte
 MariaDB 11.4.3 foi instalado como serviço Windows, restrito a localhost. O schema
 `l2jmobiusinterlude` possui 100 tabelas, o usuário `l2server` está restrito ao schema,
 e backup, stop/start e persistência após restart foram validados.
+
+## Conclusão da Sprint 5
+
+O build local aplicou um patch mínimo para o bind 7777 sem alterar o submódulo.
+Login, Game e canal interno abriram somente em loopback. Os pools JDBC conectaram com
+`l2server`; skills, itens, NPCs e spawns carregaram; o ID 1 foi registrado e novos
+cadastros foram bloqueados. Não houve conexão Java externa nem erro crítico.

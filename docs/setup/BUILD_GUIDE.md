@@ -134,6 +134,26 @@ db_installer/DatabaseInstaller.jar
 
 O diretório `server/runtime/` é ignorado pelo Git.
 
+## Build para execução local
+
+O build upstream não deve ser executado diretamente: a implementação ignora
+`GameserverHostname` ao abrir a porta 7777. Para runtime local:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File .\infrastructure\scripts\build-local-server.ps1
+```
+
+Esse script copia o módulo para `server/runtime`, aplica o patch de segurança
+versionado, compila e gera:
+
+```text
+server/runtime/local-build/L2J_Mobius_CT_0_Interlude.zip
+```
+
+O patch muda somente a sobrecarga de `InetSocketAddress` usada pelo listener do Game.
+O submódulo continua limpo. Consulte a ADR-003 e o guia de servidor local.
+
 ## Limpeza
 
 Impacto: o comando abaixo remove recursivamente **somente**

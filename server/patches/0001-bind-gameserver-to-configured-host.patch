@@ -1,0 +1,6 @@
+diff --git a/java/org/l2jmobius/gameserver/GameServer.java b/java/org/l2jmobius/gameserver/GameServer.java
+--- a/java/org/l2jmobius/gameserver/GameServer.java
++++ b/java/org/l2jmobius/gameserver/GameServer.java
+@@ -442 +442 @@
+-		new ConnectionManager<>(new InetSocketAddress(ServerConfig.PORT_GAME), GameClient::new, new GamePacketHandler());
++		new ConnectionManager<>(new InetSocketAddress(ServerConfig.GAMESERVER_HOSTNAME, ServerConfig.PORT_GAME), GameClient::new, new GamePacketHandler());

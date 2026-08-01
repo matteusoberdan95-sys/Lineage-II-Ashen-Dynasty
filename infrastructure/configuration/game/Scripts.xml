@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../data/xsd/Scripts.xsd">
+  <exclude file="package-info.java" />
+  <exclude file="handlers" />
+  <exclude file="custom" />
+</list>

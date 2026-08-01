@@ -16,14 +16,16 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 a 4 estão concluídas localmente. L2JMobius
+As Sprints 0 a 5 estão concluídas localmente. L2JMobius
 `L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
 `e4d1d8336ed28fc0916e7caad3ca752d06169eac`, após auditoria estática inicial.
 
 O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
-.NET futuros conforme a ADR-002. A source compilou três vezes com Liberica JDK 25 e
-Ant 1.10.17, sem customizações. MariaDB 11.4.3 está restrito a localhost, com 100
-tabelas importadas e usuário dedicado. Nenhum servidor Java ou cliente foi executado.
+.NET futuros conforme a ADR-002. A source permanece limpa; um patch local reproduzível
+corrige exclusivamente o bind 7777 conforme a ADR-003. MariaDB 11.4.3, Login Server e
+Game Server estão em execução somente por localhost. O banco possui 100 tabelas, o
+Game está registrado como ID 1 e nenhuma conexão Java externa foi observada. Nenhum
+cliente foi executado.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -62,7 +64,7 @@ A pasta atual é a raiz do repositório. Não existe uma pasta adicional
 ├── server/
 │   ├── source/l2jmobius-upstream/  # submódulo fixado
 │   └── runtime/                    # local e ignorado
-├── database/                       # banco local em sprint futura
+├── database/                       # bootstrap e verificação do banco local
 ├── client-patch/                   # documentação; assets proibidos
 ├── web/                            # ASP.NET Core futuro
 ├── launcher/                       # C#/.NET futuro
@@ -96,13 +98,14 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 - [auditoria da source](docs/security/SOURCE_AUDIT.md);
 - [ADR-001](docs/adr/ADR-001-SERVER-SOURCE.md);
 - [ADR-002](docs/adr/ADR-002-REPOSITORY-STRUCTURE.md);
+- [ADR-003](docs/adr/ADR-003-LOCAL-SECURITY-PATCHES.md);
 - [notas de licença](LICENSE-NOTES.md).
 
 ## Próximo bloqueio
 
-A Sprint 5 deverá gerar runtime e configurações locais para Login Server e Game
-Server. Bind de rede, credencial JDBC, HexID e registro do Game Server precisam ser
-isolados antes da primeira execução.
+A próxima sprint deverá preparar um cliente Interlude legítimo, apontá-lo somente
+para `127.0.0.1` e validar login, criação controlada de conta/personagem e
+persistência. O cliente e seus assets permanecerão fora do Git.
 
 ## Segurança e propriedade intelectual
 
@@ -121,7 +124,10 @@ templates sem valores secretos para documentação.
 - [guia de build](docs/setup/BUILD_GUIDE.md);
 - [relatório do primeiro build](docs/setup/FIRST_BUILD_REPORT.md);
 - [configuração do banco](docs/setup/DATABASE_SETUP.md);
+- [configuração dos servidores locais](docs/setup/LOCAL_SERVER_SETUP.md);
+- [relatório da primeira execução](docs/setup/FIRST_RUN_REPORT.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
+- [solução de problemas](docs/TROUBLESHOOTING.md);
 - [changelog](CHANGELOG.md).
 
 ## Fluxo incremental
