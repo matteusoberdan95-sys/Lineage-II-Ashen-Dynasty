@@ -1,0 +1,4 @@
+[submodule "server/source/l2jmobius-upstream"]
+	path = server/source/l2jmobius-upstream
+	url = https://gitlab.com/MobiusDevelopment/L2J_Mobius.git
+	shallow = true

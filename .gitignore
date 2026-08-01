@@ -1,0 +1,73 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+*.credentials
+secrets/
+credentials/
+
+# Local server configuration
+**/config/local/
+**/*.local.ini
+**/*.local.properties
+**/hexid.txt
+
+# Java and .NET build outputs
+**/build/
+**/target/
+**/out/
+**/bin/
+**/obj/
+**/.gradle/
+*.class
+*.jar
+
+# Runtime, logs and crash files
+server/runtime/
+**/log/
+**/logs/
+*.log
+hs_err_pid*
+replay_pid*
+
+# Database dumps and backups
+database/backups/
+**/dumps/
+*.dump
+*.bak
+*.sql.gz
+*.sql.zip
+
+# Proprietary client files
+client/
+client-full/
+client-patch/system/*
+!client-patch/system/.gitkeep
+*.exe
+*.dll
+*.dat
+*.utx
+*.ukx
+*.usx
+*.uax
+
+# IDEs and editors
+.idea/
+.vscode/
+.vs/
+.cursor/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Operating-system and temporary files
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.temp
+*.swp
+*~
