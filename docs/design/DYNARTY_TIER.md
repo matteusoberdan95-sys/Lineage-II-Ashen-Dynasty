@@ -7,23 +7,23 @@ Resumo da [ADR-010](../adr/ADR-010-DYNARTY-TIER.md).
 | Item | Valor |
 |---|---|
 | Design | aceito (ADR-010) |
-| No datapack | **não** |
-| Tier jogável custom atual | T5 Ashen DK / Phoenix |
-| Enchant +30 | **só Dynarty**, ainda não no runtime |
+| No datapack | **sim** (overlays Sprint 22) |
+| Tier jogável custom atual | T6 Ashen Dynarty |
+| Enchant +30 | scrolls `9570`/`9571` só em IDs Dynarty |
 
 ## Escada
 
 ```text
-T4 Draconic → T5 DK/Phoenix (implementado) → T6 Dynarty (+30, design) 
+T4 Draconic → T5 DK/Phoenix → T6 Dynarty (+30, implementado)
 ```
 
 ## Tempo alvo
 
-Muitos meses após set DK/Phoenix completo.
+Muitos meses após set DK/Phoenix completo (economia de farm; IDs já no servidor).
 
-## IDs reservados
+## IDs
 
-`9700–9799` (itens) · NPCs sugeridos `93300` / `93301` · sets `109–111`.  
-Tokens/scrolls futuros: preferir `9570–9599` (não colidir com peças).
+`9700–9799` · scrolls `9570`/`9571` · NPCs `93300`/`93301` · sets `109–111`.
 
-Mapa detalhado na sprint de implementação.
+Mapa: [`DYNARTY_ITEM_IDS.md`](DYNARTY_ITEM_IDS.md).  
+Relatório: [`../setup/DYNARTY_IMPLEMENTATION_REPORT.md`](../setup/DYNARTY_IMPLEMENTATION_REPORT.md).

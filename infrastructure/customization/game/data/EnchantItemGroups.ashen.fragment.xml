@@ -1,0 +1,57 @@
+	<!-- BEGIN ASHEN DYNASTY ENCHANT GROUPS -->
+	<!-- Raising chance>0 to 29 also raises OverEnchantProtection ceiling to 30 globally;
+	     retail enchant remains capped by EnchantItemData maxEnchant=16 on retail scrolls. -->
+	<enchantRateGroup name="DYNARTY_ARMOR_GROUP">
+		<current enchant="0-2" chance="100" />
+		<current enchant="3-15" chance="66" />
+		<current enchant="16-20" chance="40" />
+		<current enchant="21-25" chance="25" />
+		<current enchant="26-29" chance="15" />
+		<current enchant="30-65535" chance="0" />
+	</enchantRateGroup>
+	<enchantRateGroup name="DYNARTY_FULL_ARMOR_GROUP">
+		<current enchant="0-3" chance="100" />
+		<current enchant="4-15" chance="66" />
+		<current enchant="16-20" chance="40" />
+		<current enchant="21-25" chance="25" />
+		<current enchant="26-29" chance="15" />
+		<current enchant="30-65535" chance="0" />
+	</enchantRateGroup>
+	<enchantRateGroup name="DYNARTY_FIGHTER_WEAPON_GROUP">
+		<current enchant="0-2" chance="100" />
+		<current enchant="3-15" chance="66" />
+		<current enchant="16-20" chance="40" />
+		<current enchant="21-25" chance="25" />
+		<current enchant="26-29" chance="15" />
+		<current enchant="30-65535" chance="0" />
+	</enchantRateGroup>
+	<enchantRateGroup name="DYNARTY_MAGE_WEAPON_GROUP">
+		<current enchant="0-2" chance="100" />
+		<current enchant="3-15" chance="66" />
+		<current enchant="16-20" chance="40" />
+		<current enchant="21-25" chance="25" />
+		<current enchant="26-29" chance="15" />
+		<current enchant="30-65535" chance="0" />
+	</enchantRateGroup>
+	<enchantScrollGroup id="1">
+		<enchantRate group="DYNARTY_ARMOR_GROUP">
+			<item slot="lhand" />
+			<item slot="head" />
+			<item slot="chest" />
+			<item slot="legs" />
+			<item slot="feet" />
+			<item slot="gloves" />
+		</enchantRate>
+		<enchantRate group="DYNARTY_FULL_ARMOR_GROUP">
+			<item slot="fullarmor" />
+		</enchantRate>
+		<enchantRate group="DYNARTY_FIGHTER_WEAPON_GROUP">
+			<item slot="rhand" magicWeapon="false" />
+			<item slot="lrhand" magicWeapon="false" />
+		</enchantRate>
+		<enchantRate group="DYNARTY_MAGE_WEAPON_GROUP">
+			<item slot="rhand" magicWeapon="true" />
+			<item slot="lrhand" magicWeapon="true" />
+		</enchantRate>
+	</enchantScrollGroup>
+	<!-- END ASHEN DYNASTY ENCHANT GROUPS -->

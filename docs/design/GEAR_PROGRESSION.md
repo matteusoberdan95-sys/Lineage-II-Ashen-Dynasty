@@ -13,7 +13,7 @@ T2 Alto retail         S Interlude
 T3 Entrada endgame     Ashen TT             ← implementado (overlays)
 T4 Posterior           Draconic custom      ← implementado (overlays)
 T5 Avançado            DK + armas Fênix     ← implementado (overlays)
-T6 Máximo              Dynarty (+30)        ← design ADR-010
+T6 Máximo              Dynarty (+30)        ← implementado (overlays)
 ```
 
 ## O que o jogador faz agora
@@ -23,9 +23,9 @@ T6 Máximo              Dynarty (+30)        ← design ADR-010
 3. Farma raids Ashen TT ou crafta com fragmentos — ver
    [`TT_TIER.md`](TT_TIER.md) e [`ASHEN_CRAFT_IDS.md`](ASHEN_CRAFT_IDS.md).
 4. Ponte Q900 e farms Draconic — ver [`DRACONIC_TIER.md`](DRACONIC_TIER.md).
-5. Ponte Q901 e farms DK/Phoenix — ver [`DK_PHOENIX_TIER.md`](DK_PHOENIX_TIER.md)
-   e [`../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).
-6. Dynarty ainda só no papel — [`DYNARTY_TIER.md`](DYNARTY_TIER.md).
+5. Ponte Q901 e farms DK/Phoenix — ver [`DK_PHOENIX_TIER.md`](DK_PHOENIX_TIER.md).
+6. Farma Dynarty (Lord / Blade) e enchant +30 só com scrolls `9570`/`9571` —
+   [`DYNARTY_TIER.md`](DYNARTY_TIER.md) e [`DYNARTY_ITEM_IDS.md`](DYNARTY_ITEM_IDS.md).
 
 ## Exemplos retail úteis no playtest GM
 
@@ -38,5 +38,5 @@ T6 Máximo              Dynarty (+30)        ← design ADR-010
 
 ## Fora de escopo até implementação / ADR própria
 
-- Implementação Dynarty / enchant +30 (design ADR-010)  
+- Craft/quest Dynarty  
 - loja de set / doação de gear

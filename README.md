@@ -109,8 +109,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-Implementação Dynarty (+30 limitado a T6), client-patch ou QoL/observabilidade —
-ainda sem rede externa, salvo autorização.
+Craft/quest Dynarty, client-patch ou QoL/observabilidade — ainda sem rede
+externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
 
@@ -154,6 +154,8 @@ sem valores secretos na documentação.
 - [IDs Ashen DK/Phoenix](docs/design/DK_PHOENIX_ITEM_IDS.md);
 - [implementação DK/Phoenix](docs/setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md);
 - [tier Dynarty](docs/design/DYNARTY_TIER.md);
+- [IDs Ashen Dynarty](docs/design/DYNARTY_ITEM_IDS.md);
+- [implementação Dynarty](docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

@@ -154,6 +154,7 @@ try {
     & (Join-Path $PSScriptRoot 'apply-local-tt-content.ps1')
     & (Join-Path $PSScriptRoot 'apply-local-draconic-content.ps1')
     & (Join-Path $PSScriptRoot 'apply-local-dk-phoenix-content.ps1')
+    & (Join-Path $PSScriptRoot 'apply-local-dynarty-content.ps1')
     & (Join-Path $PSScriptRoot 'apply-local-ashen-craft.ps1')
     & (Join-Path $PSScriptRoot 'apply-local-ashen-quest.ps1')
 
@@ -167,6 +168,7 @@ try {
         ashenTtContent = 'ADR-007 items/sets/raids overlays'
         ashenDraconicContent = 'ADR-008 items/sets/raids overlays'
         ashenDkPhoenixContent = 'ADR-009 items/sets/raids overlays'
+        ashenDynartyContent = 'ADR-010 items/sets/raids + Dynarty-only +30 enchant'
         ashenCraftContent = 'Sprint 15/19 fragment recipes + scrolls 9500-9568'
         ashenQuestContent = 'Sprint 16/20 Q900 Scale + Q901 Ember of Ascent'
         preparedAt = (Get-Date).ToString('o')

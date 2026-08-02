@@ -145,6 +145,8 @@ comandos GM diretamente.
 - `docs/adr/ADR-009-DK-PHOENIX-TIER.md`
 - `docs/adr/ADR-010-DYNARTY-TIER.md`
 - `docs/design/DYNARTY_TIER.md`
+- `docs/design/DYNARTY_ITEM_IDS.md`
+- `docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md`
 - `docs/design/DK_PHOENIX_TIER.md`
 - `docs/design/DK_PHOENIX_ITEM_IDS.md`
 - `docs/setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md`

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<!-- Ashen Dynasty Dynarty items — ADR-010 / Sprint 22 (~15% above DK) -->
+	<item id="9700" type="Armor" name="Ashen Dynarty Helmet">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="550" />
+		<set name="price" val="12000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">141</stat>
+		</stats>
+	</item>
+	<item id="9701" type="Armor" name="Ashen Dynarty Breastplate">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t88_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="7620" />
+		<set name="price" val="34000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">350</stat>
+		</stats>
+	</item>
+	<item id="9702" type="Armor" name="Ashen Dynarty Gaiters">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t88_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="3260" />
+		<set name="price" val="21000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">217</stat>
+		</stats>
+	</item>
+	<item id="9703" type="Armor" name="Ashen Dynarty Gauntlets">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t88_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="540" />
+		<set name="price" val="8500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">94</stat>
+		</stats>
+	</item>
+	<item id="9704" type="Armor" name="Ashen Dynarty Boots">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t88_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1110" />
+		<set name="price" val="8500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">94</stat>
+		</stats>
+	</item>
+	<item id="9705" type="Armor" name="Ashen Dynarty Shield">
+		<set name="icon" val="icon.shield_imperial_crusader_shield_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="300" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1170" />
+		<set name="price" val="9000000" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="rEvas">-8</stat>
+			<stat type="rShld">20</stat>
+			<stat type="sDef">495</stat>
+		</stats>
+	</item>
+	<item id="9730" type="Armor" name="Ashen Dynarty Leather Helmet">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="550" />
+		<set name="price" val="12000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">141</stat>
+		</stats>
+	</item>
+	<item id="9731" type="Armor" name="Ashen Dynarty Leather Armor">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t89_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="4950" />
+		<set name="price" val="38000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">424</stat>
+		</stats>
+	</item>
+	<item id="9732" type="Armor" name="Ashen Dynarty Leather Gloves">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t89_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="540" />
+		<set name="price" val="8500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">94</stat>
+		</stats>
+	</item>
+	<item id="9733" type="Armor" name="Ashen Dynarty Leather Boots">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t89_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1110" />
+		<set name="price" val="8500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">94</stat>
+		</stats>
+	</item>
+	<item id="9760" type="Armor" name="Ashen Dynarty Circlet">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="550" />
+		<set name="price" val="12000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">141</stat>
+		</stats>
+	</item>
+	<item id="9761" type="Armor" name="Ashen Dynarty Robe">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t90_ul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="onepiece" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="2300" />
+		<set name="price" val="38000000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">283</stat>
+			<stat type="maxMp">1474</stat>
+		</stats>
+	</item>
+	<item id="9762" type="Armor" name="Ashen Dynarty Gloves">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t90_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="540" />
+		<set name="price" val="8500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">94</stat>
+		</stats>
+	</item>
+	<item id="9763" type="Armor" name="Ashen Dynarty Shoes">
+		<!-- Ashen Dynarty (ADR-010). Client may show generic name/icon until client-patch. -->
+		<set name="icon" val="icon.armor_t90_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1200" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1110" />
+		<set name="price" val="8500000" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<conditions msgId="1518">
+			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+		</conditions>
+		<stats>
+			<stat type="pDef">94</stat>
+		</stats>
+	</item>
+	<item id="9790" type="Weapon" name="Ashen Dynarty Blade">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_forgotten_blade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1300" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<stats>
+			<stat type="pAtk">478</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9791" type="Weapon" name="Ashen Dynarty Divider">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_heavens_divider_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1380" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<stats>
+			<stat type="pAtk">582</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9792" type="Weapon" name="Ashen Dynarty Dual Swords">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="2080" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<stats>
+			<stat type="pAtk">582</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9793" type="Weapon" name="Ashen Dynarty Dagger">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_angel_slayer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="950" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<stats>
+			<stat type="pAtk">420</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">12</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9794" type="Weapon" name="Ashen Dynarty Bow">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_shining_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1650" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="mp_consume" val="12" />
+		<set name="reuse_delay" val="820" />
+		<stats>
+			<stat type="pAtk">989</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">12</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+	<item id="9795" type="Weapon" name="Ashen Dynarty Hammer">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_basalt_battlehammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1570" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<stats>
+			<stat type="pAtk">478</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">4</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9796" type="Weapon" name="Ashen Dynarty Spear">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_saint_spear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1800" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<stats>
+			<stat type="pAtk">478</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">80</stat>
+		</stats>
+		<skills>
+			<skill id="3599" level="1" />
+		</skills>
+	</item>
+	<item id="9797" type="Weapon" name="Ashen Dynarty Fist">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_demon_splinter_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1350" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<stats>
+			<stat type="pAtk">582</stat>
+			<stat type="mAtk">225</stat>
+			<stat type="critRate">4</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9798" type="Weapon" name="Ashen Dynarty Staff">
+		<!-- Ashen Dynarty weapon (ADR-010). -->
+		<set name="icon" val="icon.weapon_imperial_staff_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4000" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="910" />
+		<set name="price" val="120000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">467</stat>
+			<stat type="mAtk">328</stat>
+			<stat type="critRate">4</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9799" type="EtcItem" name="Ashen Dynarty Fragment">
+		<!-- Token for future Dynarty craft (ADR-010). -->
+		<set name="icon" val="icon.etc_stone_gray_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="0" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

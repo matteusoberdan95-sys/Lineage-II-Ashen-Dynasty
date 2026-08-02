@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<!-- Ashen Dynarty enchant scrolls — ADR-010 / Sprint 22 -->
+	<item id="9570" type="EtcItem" name="Scroll: Enchant Ashen Dynarty Weapon">
+		<!-- Dynarty-only weapon scroll; max +30 (ADR-010). -->
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCRL_ENCHANT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="0" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<skills>
+			<skill id="2021" level="1" />
+		</skills>
+	</item>
+	<item id="9571" type="EtcItem" name="Scroll: Enchant Ashen Dynarty Armor">
+		<!-- Dynarty-only armor scroll; max +30 (ADR-010). -->
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCRL_ENCHANT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="0" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<skills>
+			<skill id="2022" level="1" />
+		</skills>
+	</item>
+</list>

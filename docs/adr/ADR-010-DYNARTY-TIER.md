@@ -1,6 +1,6 @@
 # ADR-010 — Tier T6 (Dynarty + enchant +30)
 
-- **Status:** Aceita (design)
+- **Status:** Aceita (implementada na Sprint 22)
 - **Data:** 2026-08-01
 - **Decisores:** proprietário do projeto e arquitetura técnica
 
@@ -11,8 +11,8 @@ ponte Q900/Q901 já estão no runtime. O degrau final da ADR-006 é o **T6
 máximo**: set **Ashen Dynarty** e a única faixa autorizada a usar enchant
 **até +30**.
 
-Esta ADR **não implementa** itens, nem altera o teto de enchant no servidor.
-Só fixa o envelope de design e as restrições econômicas.
+Esta ADR fixa o envelope; a implementação em overlays (itens + scrolls
+Dynarty-only) está na Sprint 22.
 
 ## Decisão
 
@@ -87,13 +87,14 @@ Sets sugeridos: `109–111` (após DK `106–108`).
 Faixa `9570–9599` permanece reserva para scrolls/tokens de craft/enchant
 futuros (não usar para peças Dynarty).
 
-### Implementação futura (fora desta ADR)
+### Implementação (Sprint 22)
 
 1. Overlays de item/set/NPC/spawn em `infrastructure/customization/`.
-2. Stats ~15% acima do DK live + planilha de enchant +16…+30.
-3. Overlay/config de enchant limitado a IDs Dynarty.
-4. Craft + quest ponte + relatório econômico.
-5. Client-patch se necessário para ícones/nomes.
+2. Stats ~15% acima do DK.
+3. Scrolls `9570`/`9571` + merge `EnchantItemData`/`EnchantItemGroups` (max 30
+   só em IDs Dynarty; retail S continua em 16).
+4. Craft/quest Dynarty e client-patch ainda pendentes.
+5. Relatório: `docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md`.
 
 ## Alternativas rejeitadas
 
@@ -105,9 +106,7 @@ futuros (não usar para peças Dynarty).
 
 ## Consequências
 
-- Teto de conteúdo custom **implementado** permanece **DK/Phoenix (T5)** até
-  sprint de Dynarty.
-- Playtest T3–T5 (raids, craft, Q900/Q901) segue válido; esta ADR não altera
-  runtime.
-- Qualquer mudança de `EnchantMax` / scrolls exige autorização explícita na
-  sprint de implementação T6.
+- Teto de conteúdo custom implementado sobe para **Dynarty (T6)**.
+- Playtest T3–T5 permanece válido; T6 adiciona raids, itens e scrolls +30.
+- `OverEnchantProtection` global passa a 30 (limitação do loader Mobius); o
+  caminho de enchant de retail continua limitado pelos scrolls S em 16.

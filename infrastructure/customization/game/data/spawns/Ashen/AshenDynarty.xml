@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/spawns.xsd">
+	<!-- Dynarty raids near Death Pass apex. Respawn 72h / 36h. -->
+	<spawn name="AshenDynarty">
+		<npc id="93300" x="65000" y="133000" z="-3720" heading="0" respawnDelay="259200" />
+		<npc id="93301" x="66000" y="131500" z="-3720" heading="0" respawnDelay="129600" />
+	</spawn>
+</list>

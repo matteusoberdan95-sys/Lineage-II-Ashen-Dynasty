@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 21 (T6
-Dynarty em design). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 22 (T6
+Dynarty + enchant +30). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar implementação Dynarty/+30, client-patch ou QoL/observabilidade.
+Registrar craft/quest Dynarty, client-patch ou QoL/observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -286,5 +286,11 @@ Relatório: [`docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](setup/ASHEN_QUES
 ## Conclusão da Sprint 21
 
 ADR-010 aceita: Ashen Dynarty (T6) especificado (IDs 9700–9799, NPCs
-93300/93301 sugeridos, enchant +30 exclusivo de Dynarty). Sem XML nesta sprint.
-Consulte [`docs/design/DYNARTY_TIER.md`](design/DYNARTY_TIER.md).
+93300/93301, enchant +30 exclusivo de Dynarty). Consulte
+[`docs/design/DYNARTY_TIER.md`](design/DYNARTY_TIER.md).
+
+## Conclusão da Sprint 22
+
+Ashen Dynarty aplicado (itens 9700–9799, sets 109–111, raids 93300/93301) +
+scrolls 9570/9571 e merge enchant +30 Dynarty-only. Relatório:
+[`docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md`](setup/DYNARTY_IMPLEMENTATION_REPORT.md).
