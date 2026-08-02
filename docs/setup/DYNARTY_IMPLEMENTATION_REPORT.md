@@ -42,5 +42,6 @@ Enchantar só com 9570/9571 nas peças Dynarty.
 ## Limites
 
 - Sem client-patch de nomes/ícones.
-- Craft/quest Dynarty ainda não criados.
+- Craft/quest Dynarty: Sprint 23 (`ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`,
+  `ASHEN_QUEST_IMPLEMENTATION_REPORT.md`).
 - Sem venda de +30.

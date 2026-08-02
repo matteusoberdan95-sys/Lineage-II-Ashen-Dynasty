@@ -28,7 +28,7 @@ XML de item custom, alterar drops, enchant +30 nem abrir rede externa.
 | T3 | Entrada endgame | **Ashen TT** | +1–2 meses após T2 (4–8 sem. em T3) | ADR-007 + overlays Sprint 13 |
 | T4 | Posterior | **Draconic custom** | meses | ADR-008 + overlays Sprint 14 |
 | T5 | Avançado | **DK + armas Fênix** | meses | ADR-009 + overlays Sprint 18 |
-| T6 | Máximo | **Dynarty** completo, enchant até `+30` | muitos meses | ADR-010 + overlays Sprint 22 |
+| T6 | Máximo | **Dynarty** completo, enchant até `+30` | muitos meses | ADR-010 + overlays Sprint 22 + craft/Q902 Sprint 23 |
 
 \*Tempo alvo para jogador dedicado em XP/SP 500x e drop ~1x, sem doação de gear.
 Valores são ordem de grandeza para desenho, não SLA.

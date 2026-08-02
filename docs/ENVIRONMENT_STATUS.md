@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 22 (T6
-Dynarty + enchant +30). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 23
+(craft/quest Dynarty). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar craft/quest Dynarty, client-patch ou QoL/observabilidade.
+Registrar client-patch, QoL ou observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -294,3 +294,11 @@ ADR-010 aceita: Ashen Dynarty (T6) especificado (IDs 9700–9799, NPCs
 Ashen Dynarty aplicado (itens 9700–9799, sets 109–111, raids 93300/93301) +
 scrolls 9570/9571 e merge enchant +30 Dynarty-only. Relatório:
 [`docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md`](setup/DYNARTY_IMPLEMENTATION_REPORT.md).
+
+## Conclusão da Sprint 23
+
+Craft Dynarty (+23 recipes, scrolls 9572–9594, listIds 941–963) + quest Q902
+Ashen Crown of Dynasty (Chronicler 93002): exige Q901 + level 80; troca 25
+fragmentos DK por 12 fragmentos Dynarty + recipe peitoral Dynarty.
+Relatórios: [`docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`](setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md),
+[`docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).

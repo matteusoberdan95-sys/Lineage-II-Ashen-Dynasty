@@ -1,7 +1,8 @@
-# Ashen craft — mapa de IDs (Sprint 15 + 19)
+# Ashen craft — mapa de IDs (Sprint 15 + 19 + 23)
 
 Recipes `common` craftLevel 1 / 100%.
-Fragmentos: TT `9399`, Draconic `9499`, DK `9699` (+ Crystal S `1462`).
+Fragmentos: TT `9399`, Draconic `9499`, DK `9699`, Dynarty `9799` (+ Crystal S `1462`).
+Scrolls de craft pulam `9569–9571` (gap + scrolls de enchant Dynarty).
 
 | ListId | Scroll | Produz | Nome |
 |---|---|---|---|
@@ -74,3 +75,26 @@ Fragmentos: TT `9399`, Draconic `9499`, DK `9699` (+ Crystal S `1462`).
 | 938 | 9566 | 9696 | Ashen Phoenix Spear |
 | 939 | 9567 | 9697 | Ashen Phoenix Fist |
 | 940 | 9568 | 9698 | Ashen Phoenix Staff |
+| 941 | 9572 | 9700 | Ashen Dynarty Helmet |
+| 942 | 9573 | 9701 | Ashen Dynarty Breastplate |
+| 943 | 9574 | 9702 | Ashen Dynarty Gaiters |
+| 944 | 9575 | 9703 | Ashen Dynarty Gauntlets |
+| 945 | 9576 | 9704 | Ashen Dynarty Boots |
+| 946 | 9577 | 9705 | Ashen Dynarty Shield |
+| 947 | 9578 | 9730 | Ashen Dynarty Leather Helmet |
+| 948 | 9579 | 9731 | Ashen Dynarty Leather Armor |
+| 949 | 9580 | 9732 | Ashen Dynarty Leather Gloves |
+| 950 | 9581 | 9733 | Ashen Dynarty Leather Boots |
+| 951 | 9582 | 9760 | Ashen Dynarty Circlet |
+| 952 | 9583 | 9761 | Ashen Dynarty Robe |
+| 953 | 9584 | 9762 | Ashen Dynarty Gloves |
+| 954 | 9585 | 9763 | Ashen Dynarty Shoes |
+| 955 | 9586 | 9790 | Ashen Dynarty Blade |
+| 956 | 9587 | 9791 | Ashen Dynarty Divider |
+| 957 | 9588 | 9792 | Ashen Dynarty Dual Swords |
+| 958 | 9589 | 9793 | Ashen Dynarty Dagger |
+| 959 | 9590 | 9794 | Ashen Dynarty Bow |
+| 960 | 9591 | 9795 | Ashen Dynarty Hammer |
+| 961 | 9592 | 9796 | Ashen Dynarty Spear |
+| 962 | 9593 | 9797 | Ashen Dynarty Fist |
+| 963 | 9594 | 9798 | Ashen Dynarty Staff |

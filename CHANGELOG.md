@@ -60,6 +60,10 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - ADR-010: design do tier Ashen Dynarty (T6), IDs 9700–9799 (Sprint 21).
 - Implementação Ashen Dynarty + scrolls 9570/9571 e merge enchant +30
   Dynarty-only (Sprint 22).
+- Craft Ashen Dynarty com fragmentos (`9799`/`9699`): scrolls 9572–9594
+  (pula 9569–9571), recipes listIds 941–963, drops nos raids T6 (Sprint 23).
+- Quest Q902 Ashen Crown of Dynasty: ponte DK→Dynarty (exige Q901), fragmentos
+  Dynarty + recipe peitoral Dynarty (Sprint 23).
 
 ### Segurança
 

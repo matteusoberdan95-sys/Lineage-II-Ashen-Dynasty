@@ -169,8 +169,8 @@ try {
         ashenDraconicContent = 'ADR-008 items/sets/raids overlays'
         ashenDkPhoenixContent = 'ADR-009 items/sets/raids overlays'
         ashenDynartyContent = 'ADR-010 items/sets/raids + Dynarty-only +30 enchant'
-        ashenCraftContent = 'Sprint 15/19 fragment recipes + scrolls 9500-9568'
-        ashenQuestContent = 'Sprint 16/20 Q900 Scale + Q901 Ember of Ascent'
+        ashenCraftContent = 'Sprint 15/19/23 fragment recipes + scrolls 9500-9594 (skip 9569-9571)'
+        ashenQuestContent = 'Sprint 16/20/23 Q900 Scale + Q901 Ember + Q902 Crown'
         preparedAt = (Get-Date).ToString('o')
     }
     $runtimeMetadata | ConvertTo-Json | Set-Content `

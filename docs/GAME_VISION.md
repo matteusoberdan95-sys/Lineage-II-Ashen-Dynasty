@@ -40,10 +40,10 @@ Esta visão não autoriza implementar ainda:
 - itens ou skills customizados além do autorizado por ADR.
 
 Já autorizados e entregues em sprints: rates ADR-005; overlays TT→Dynarty;
-craft por fragmentos; quests ponte Q900/Q901; enchant +30 Dynarty-only.
+craft por fragmentos; quests ponte Q900/Q901/Q902; enchant +30 Dynarty-only.
 
 ## Próximo passo
 
-1. atual: T6 implementado (overlays Sprint 22);
+1. atual: loop T6 completo (overlays + craft + Q902, Sprint 23);
 2. playtest T3–T6 continua válido;
-3. próxima: craft/quest Dynarty, client-patch ou QoL.
+3. próxima: client-patch, QoL ou observabilidade.

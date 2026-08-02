@@ -1,4 +1,4 @@
-# Generator for Ashen TT/Draconic/DK craft recipes (Sprint 15 + 19). Fragment sink.
+# Generator for Ashen TT/Draconic/DK/Dynarty craft recipes (Sprint 15/19/23).
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -15,7 +15,7 @@ def write(rel: str, text: str) -> None:
 
 
 # (product_id, name, tier, kind)
-# tier: 'tt' | 'draconic' | 'dk'; kind: 'minor' | 'major' | 'weapon' | 'shield'
+# tier: 'tt' | 'draconic' | 'dk' | 'dynarty'; kind: 'minor' | 'major' | 'weapon' | 'shield'
 PRODUCTS = [
     (9300, 'Ashen TT Helmet', 'tt', 'minor'),
     (9301, 'Ashen TT Breastplate', 'tt', 'major'),
@@ -87,6 +87,30 @@ PRODUCTS = [
     (9696, 'Ashen Phoenix Spear', 'dk', 'weapon'),
     (9697, 'Ashen Phoenix Fist', 'dk', 'weapon'),
     (9698, 'Ashen Phoenix Staff', 'dk', 'weapon'),
+    # Sprint 23 — Dynarty (scroll IDs skip 9569-9571: gap + enchant scrolls)
+    (9700, 'Ashen Dynarty Helmet', 'dynarty', 'minor'),
+    (9701, 'Ashen Dynarty Breastplate', 'dynarty', 'major'),
+    (9702, 'Ashen Dynarty Gaiters', 'dynarty', 'major'),
+    (9703, 'Ashen Dynarty Gauntlets', 'dynarty', 'minor'),
+    (9704, 'Ashen Dynarty Boots', 'dynarty', 'minor'),
+    (9705, 'Ashen Dynarty Shield', 'dynarty', 'shield'),
+    (9730, 'Ashen Dynarty Leather Helmet', 'dynarty', 'minor'),
+    (9731, 'Ashen Dynarty Leather Armor', 'dynarty', 'major'),
+    (9732, 'Ashen Dynarty Leather Gloves', 'dynarty', 'minor'),
+    (9733, 'Ashen Dynarty Leather Boots', 'dynarty', 'minor'),
+    (9760, 'Ashen Dynarty Circlet', 'dynarty', 'minor'),
+    (9761, 'Ashen Dynarty Robe', 'dynarty', 'major'),
+    (9762, 'Ashen Dynarty Gloves', 'dynarty', 'minor'),
+    (9763, 'Ashen Dynarty Shoes', 'dynarty', 'minor'),
+    (9790, 'Ashen Dynarty Blade', 'dynarty', 'weapon'),
+    (9791, 'Ashen Dynarty Divider', 'dynarty', 'weapon'),
+    (9792, 'Ashen Dynarty Dual Swords', 'dynarty', 'weapon'),
+    (9793, 'Ashen Dynarty Dagger', 'dynarty', 'weapon'),
+    (9794, 'Ashen Dynarty Bow', 'dynarty', 'weapon'),
+    (9795, 'Ashen Dynarty Hammer', 'dynarty', 'weapon'),
+    (9796, 'Ashen Dynarty Spear', 'dynarty', 'weapon'),
+    (9797, 'Ashen Dynarty Fist', 'dynarty', 'weapon'),
+    (9798, 'Ashen Dynarty Staff', 'dynarty', 'weapon'),
 ]
 
 COSTS = {
@@ -102,24 +126,39 @@ COSTS = {
     ('dk', 'major'): {'9699': 25, '9499': 12, 'crystal': 80, 'mp': 200},
     ('dk', 'shield'): {'9699': 15, '9499': 8, 'crystal': 45, 'mp': 140},
     ('dk', 'weapon'): {'9699': 35, '9499': 18, 'crystal': 100, 'mp': 240},
+    ('dynarty', 'minor'): {'9799': 15, '9699': 8, 'crystal': 50, 'mp': 140},
+    ('dynarty', 'major'): {'9799': 30, '9699': 15, 'crystal': 100, 'mp': 240},
+    ('dynarty', 'shield'): {'9799': 18, '9699': 10, 'crystal': 55, 'mp': 160},
+    ('dynarty', 'weapon'): {'9799': 40, '9699': 20, 'crystal': 120, 'mp': 280},
 }
 
-FRAGMENT_ORDER = ('9699', '9499', '9399')
+FRAGMENT_ORDER = ('9799', '9699', '9499', '9399')
 FIRST_LIST_ID = 872
 FIRST_SCROLL_ID = 9500
+# Enchant scrolls 9570/9571 live in 09570-09579.xml — skip 9569-9571 for craft scrolls.
+SCROLL_SKIP_FROM = 9569
+SCROLL_SKIP_COUNT = 3
+
+
+def scroll_id_for_index(index: int) -> int:
+    scroll_id = FIRST_SCROLL_ID + index
+    if scroll_id >= SCROLL_SKIP_FROM:
+        scroll_id += SCROLL_SKIP_COUNT
+    return scroll_id
+
 
 scroll_items = []
 recipe_items = []
 
 for index, (product_id, name, tier, kind) in enumerate(PRODUCTS):
     list_id = FIRST_LIST_ID + index
-    scroll_id = FIRST_SCROLL_ID + index
+    scroll_id = scroll_id_for_index(index)
     cost = COSTS[(tier, kind)]
     slug = name.lower().replace(' ', '_').replace("'", '')
 
     scroll_items.append(
         f'''\t<item id="{scroll_id}" type="EtcItem" name="Recipe: {name}">
-\t\t<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+\t\t<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 \t\t<set name="icon" val="icon.etc_recipe_black_i00" />
 \t\t<set name="default_action" val="RECIPE" />
 \t\t<set name="etcitem_type" val="RECIPE" />
@@ -148,15 +187,15 @@ for index, (product_id, name, tier, kind) in enumerate(PRODUCTS):
     )
 
 last_list = FIRST_LIST_ID + len(PRODUCTS) - 1
-last_scroll = FIRST_SCROLL_ID + len(PRODUCTS) - 1
-if last_scroll >= 9600:
-    raise SystemExit(f'Scroll IDs collide with T5 items: last scroll {last_scroll}')
+last_scroll = scroll_id_for_index(len(PRODUCTS) - 1)
+if last_scroll >= 9600 or last_scroll in (9570, 9571):
+    raise SystemExit(f'Scroll IDs collide with reserved range: last scroll {last_scroll}')
 
 write(
     'game/data/stats/items/09500-09599.xml',
     f'''<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-\t<!-- Ashen Dynasty craft recipe scrolls — Sprint 15/19 (IDs 9500-{last_scroll}) -->
+\t<!-- Ashen Dynasty craft recipe scrolls — Sprint 15/19/23 (IDs 9500-{last_scroll}, skip 9569-9571) -->
 {chr(10).join(scroll_items)}
 </list>
 ''',
@@ -165,7 +204,7 @@ write(
 write(
     'game/data/Recipes.ashen.fragment.xml',
     f'''\t<!-- BEGIN ASHEN DYNASTY RECIPES -->
-\t<!-- Sprint 15/19: fragment sink TT (9399), Draconic (9499), DK (9699). Regenerate via _generate_ashen_craft_overlays.py -->
+\t<!-- Sprint 15/19/23: fragment sink TT/Draconic/DK/Dynarty. Regenerate via _generate_ashen_craft_overlays.py -->
 {chr(10).join(recipe_items)}
 \t<!-- END ASHEN DYNASTY RECIPES -->
 ''',
@@ -173,17 +212,18 @@ write(
 
 rows = ['| ListId | Scroll | Produz | Nome |', '|---|---|---|---|']
 for index, (product_id, name, _, _) in enumerate(PRODUCTS):
-    rows.append(f'| {FIRST_LIST_ID + index} | {FIRST_SCROLL_ID + index} | {product_id} | {name} |')
+    rows.append(f'| {FIRST_LIST_ID + index} | {scroll_id_for_index(index)} | {product_id} | {name} |')
 docs_path = DOCS / 'ASHEN_CRAFT_IDS.md'
 docs_path.parent.mkdir(parents=True, exist_ok=True)
 docs_path.write_text(
-    '# Ashen craft — mapa de IDs (Sprint 15 + 19)\n\n'
+    '# Ashen craft — mapa de IDs (Sprint 15 + 19 + 23)\n\n'
     'Recipes `common` craftLevel 1 / 100%.\n'
-    'Fragmentos: TT `9399`, Draconic `9499`, DK `9699` (+ Crystal S `1462`).\n\n'
+    'Fragmentos: TT `9399`, Draconic `9499`, DK `9699`, Dynarty `9799` (+ Crystal S `1462`).\n'
+    'Scrolls de craft pulam `9569–9571` (gap + scrolls de enchant Dynarty).\n\n'
     + '\n'.join(rows)
     + '\n',
     encoding='utf-8',
     newline='\n',
 )
 print('wrote', docs_path.relative_to(REPO))
-print(f'done: {len(PRODUCTS)} recipes (list {FIRST_LIST_ID}-{last_list}, scrolls {FIRST_SCROLL_ID}-{last_scroll})')
+print(f'done: {len(PRODUCTS)} recipes (list {FIRST_LIST_ID}-{last_list}, scrolls {FIRST_SCROLL_ID}-{last_scroll}, skip 9569-9571)')

@@ -1,6 +1,6 @@
 # ADR-010 — Tier T6 (Dynarty + enchant +30)
 
-- **Status:** Aceita (implementada na Sprint 22)
+- **Status:** Aceita (implementada na Sprint 22; craft/Q902 na Sprint 23)
 - **Data:** 2026-08-01
 - **Decisores:** proprietário do projeto e arquitetura técnica
 
@@ -71,8 +71,8 @@ ADR-006: retenção longa; não é sprint de conteúdo imediata).
 
 ### IDs reservados
 
-Faixa de itens **9700–9799** (após T5 `9600–9699`; scrolls de craft atuais
-terminam em `9568`):
+Faixa de itens **9700–9799** (após T5 `9600–9699`; scrolls de craft
+`9500–9568` e `9572–9594`, com gap `9569–9571` para enchant):
 
 | Subfaixa | Uso |
 |---|---|
@@ -84,17 +84,19 @@ terminam em `9568`):
 NPCs sugeridos: `93300` (raid armor), `93301` (warden de armas).  
 Sets sugeridos: `109–111` (após DK `106–108`).
 
-Faixa `9570–9599` permanece reserva para scrolls/tokens de craft/enchant
-futuros (não usar para peças Dynarty).
+Faixa `9570`/`9571` = enchant Dynarty; craft Dynarty usa `9572–9594`
+(não usar esses IDs para peças).
 
-### Implementação (Sprint 22)
+### Implementação (Sprint 22 + 23)
 
 1. Overlays de item/set/NPC/spawn em `infrastructure/customization/`.
 2. Stats ~15% acima do DK.
 3. Scrolls `9570`/`9571` + merge `EnchantItemData`/`EnchantItemGroups` (max 30
    só em IDs Dynarty; retail S continua em 16).
-4. Craft/quest Dynarty e client-patch ainda pendentes.
-5. Relatório: `docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md`.
+4. Craft Dynarty (`9799`/`9699`, scrolls 9572–9594) + quest ponte Q902
+   (Sprint 23); client-patch ainda pendente.
+5. Relatórios: `docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md`,
+   `ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`, `ASHEN_QUEST_IMPLEMENTATION_REPORT.md`.
 
 ## Alternativas rejeitadas
 

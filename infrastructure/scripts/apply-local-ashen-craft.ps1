@@ -54,8 +54,8 @@ try {
     $merged = $withoutClose + $fragment + '</list>' + "`n"
     [IO.File]::WriteAllText($recipesPath, $merged, $encoding)
 
-    Write-Host 'Ashen craft overlays applied (Sprint 15).'
-    Write-Host 'Recipe scrolls 9500+, Recipes.xml merged with fragment sink entries.'
+    Write-Host 'Ashen craft overlays applied (Sprint 15/19/23).'
+    Write-Host 'Recipe scrolls 9500-9594 (skip 9569-9571); Recipes.xml merged with fragment sink entries.'
 }
 catch {
     throw "Ashen craft apply failed: $($_.Exception.Message)"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-	<!-- Ashen Dynasty craft recipe scrolls — Sprint 15/19 (IDs 9500-9568) -->
+	<!-- Ashen Dynasty craft recipe scrolls — Sprint 15/19/23 (IDs 9500-9594, skip 9569-9571) -->
 	<item id="9500" type="EtcItem" name="Recipe: Ashen TT Helmet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -15,7 +15,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9501" type="EtcItem" name="Recipe: Ashen TT Breastplate">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -28,7 +28,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9502" type="EtcItem" name="Recipe: Ashen TT Gaiters">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -41,7 +41,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9503" type="EtcItem" name="Recipe: Ashen TT Gauntlets">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -54,7 +54,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9504" type="EtcItem" name="Recipe: Ashen TT Boots">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -67,7 +67,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9505" type="EtcItem" name="Recipe: Ashen TT Shield">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -80,7 +80,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9506" type="EtcItem" name="Recipe: Ashen TT Leather Helmet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -93,7 +93,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9507" type="EtcItem" name="Recipe: Ashen TT Leather Armor">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -106,7 +106,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9508" type="EtcItem" name="Recipe: Ashen TT Leather Gloves">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -119,7 +119,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9509" type="EtcItem" name="Recipe: Ashen TT Leather Boots">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -132,7 +132,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9510" type="EtcItem" name="Recipe: Ashen TT Circlet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -145,7 +145,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9511" type="EtcItem" name="Recipe: Ashen TT Robe">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -158,7 +158,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9512" type="EtcItem" name="Recipe: Ashen TT Gloves">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -171,7 +171,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9513" type="EtcItem" name="Recipe: Ashen TT Shoes">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -184,7 +184,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9514" type="EtcItem" name="Recipe: Ashen TT Blade">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -197,7 +197,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9515" type="EtcItem" name="Recipe: Ashen TT Divider">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -210,7 +210,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9516" type="EtcItem" name="Recipe: Ashen TT Dual Swords">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -223,7 +223,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9517" type="EtcItem" name="Recipe: Ashen TT Dagger">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -236,7 +236,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9518" type="EtcItem" name="Recipe: Ashen TT Bow">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -249,7 +249,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9519" type="EtcItem" name="Recipe: Ashen TT Hammer">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -262,7 +262,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9520" type="EtcItem" name="Recipe: Ashen TT Spear">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -275,7 +275,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9521" type="EtcItem" name="Recipe: Ashen TT Fist">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -288,7 +288,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9522" type="EtcItem" name="Recipe: Ashen TT Staff">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -301,7 +301,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9523" type="EtcItem" name="Recipe: Ashen Draconic Helmet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -314,7 +314,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9524" type="EtcItem" name="Recipe: Ashen Draconic Breastplate">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -327,7 +327,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9525" type="EtcItem" name="Recipe: Ashen Draconic Gaiters">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -340,7 +340,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9526" type="EtcItem" name="Recipe: Ashen Draconic Gauntlets">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -353,7 +353,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9527" type="EtcItem" name="Recipe: Ashen Draconic Boots">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -366,7 +366,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9528" type="EtcItem" name="Recipe: Ashen Draconic Shield">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -379,7 +379,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9529" type="EtcItem" name="Recipe: Ashen Draconic Leather Helmet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -392,7 +392,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9530" type="EtcItem" name="Recipe: Ashen Draconic Leather Armor">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -405,7 +405,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9531" type="EtcItem" name="Recipe: Ashen Draconic Leather Gloves">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -418,7 +418,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9532" type="EtcItem" name="Recipe: Ashen Draconic Leather Boots">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -431,7 +431,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9533" type="EtcItem" name="Recipe: Ashen Draconic Circlet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -444,7 +444,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9534" type="EtcItem" name="Recipe: Ashen Draconic Robe">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -457,7 +457,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9535" type="EtcItem" name="Recipe: Ashen Draconic Gloves">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -470,7 +470,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9536" type="EtcItem" name="Recipe: Ashen Draconic Shoes">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -483,7 +483,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9537" type="EtcItem" name="Recipe: Ashen Draconic Blade">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -496,7 +496,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9538" type="EtcItem" name="Recipe: Ashen Draconic Divider">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -509,7 +509,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9539" type="EtcItem" name="Recipe: Ashen Draconic Dual Swords">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -522,7 +522,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9540" type="EtcItem" name="Recipe: Ashen Draconic Dagger">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -535,7 +535,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9541" type="EtcItem" name="Recipe: Ashen Draconic Bow">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -548,7 +548,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9542" type="EtcItem" name="Recipe: Ashen Draconic Hammer">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -561,7 +561,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9543" type="EtcItem" name="Recipe: Ashen Draconic Spear">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -574,7 +574,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9544" type="EtcItem" name="Recipe: Ashen Draconic Fist">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -587,7 +587,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9545" type="EtcItem" name="Recipe: Ashen Draconic Staff">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -600,7 +600,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9546" type="EtcItem" name="Recipe: Ashen DK Helmet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -613,7 +613,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9547" type="EtcItem" name="Recipe: Ashen DK Breastplate">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -626,7 +626,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9548" type="EtcItem" name="Recipe: Ashen DK Gaiters">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -639,7 +639,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9549" type="EtcItem" name="Recipe: Ashen DK Gauntlets">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -652,7 +652,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9550" type="EtcItem" name="Recipe: Ashen DK Boots">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -665,7 +665,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9551" type="EtcItem" name="Recipe: Ashen DK Shield">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -678,7 +678,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9552" type="EtcItem" name="Recipe: Ashen DK Leather Helmet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -691,7 +691,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9553" type="EtcItem" name="Recipe: Ashen DK Leather Armor">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -704,7 +704,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9554" type="EtcItem" name="Recipe: Ashen DK Leather Gloves">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -717,7 +717,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9555" type="EtcItem" name="Recipe: Ashen DK Leather Boots">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -730,7 +730,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9556" type="EtcItem" name="Recipe: Ashen DK Circlet">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -743,7 +743,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9557" type="EtcItem" name="Recipe: Ashen DK Robe">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -756,7 +756,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9558" type="EtcItem" name="Recipe: Ashen DK Gloves">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -769,7 +769,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9559" type="EtcItem" name="Recipe: Ashen DK Shoes">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -782,7 +782,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9560" type="EtcItem" name="Recipe: Ashen Phoenix Blade">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -795,7 +795,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9561" type="EtcItem" name="Recipe: Ashen Phoenix Divider">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -808,7 +808,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9562" type="EtcItem" name="Recipe: Ashen Phoenix Dual Swords">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -821,7 +821,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9563" type="EtcItem" name="Recipe: Ashen Phoenix Dagger">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -834,7 +834,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9564" type="EtcItem" name="Recipe: Ashen Phoenix Bow">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -847,7 +847,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9565" type="EtcItem" name="Recipe: Ashen Phoenix Hammer">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -860,7 +860,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9566" type="EtcItem" name="Recipe: Ashen Phoenix Spear">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -873,7 +873,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9567" type="EtcItem" name="Recipe: Ashen Phoenix Fist">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -886,7 +886,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="9568" type="EtcItem" name="Recipe: Ashen Phoenix Staff">
-		<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -895,6 +895,305 @@
 		<set name="weight" val="30" />
 		<set name="price" val="0" />
 		<set name="recipe_id" val="940" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9572" type="EtcItem" name="Recipe: Ashen Dynarty Helmet">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="941" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9573" type="EtcItem" name="Recipe: Ashen Dynarty Breastplate">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="942" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9574" type="EtcItem" name="Recipe: Ashen Dynarty Gaiters">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="943" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9575" type="EtcItem" name="Recipe: Ashen Dynarty Gauntlets">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="944" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9576" type="EtcItem" name="Recipe: Ashen Dynarty Boots">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="945" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9577" type="EtcItem" name="Recipe: Ashen Dynarty Shield">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="946" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9578" type="EtcItem" name="Recipe: Ashen Dynarty Leather Helmet">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="947" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9579" type="EtcItem" name="Recipe: Ashen Dynarty Leather Armor">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="948" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9580" type="EtcItem" name="Recipe: Ashen Dynarty Leather Gloves">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="949" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9581" type="EtcItem" name="Recipe: Ashen Dynarty Leather Boots">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="950" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9582" type="EtcItem" name="Recipe: Ashen Dynarty Circlet">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="951" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9583" type="EtcItem" name="Recipe: Ashen Dynarty Robe">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="952" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9584" type="EtcItem" name="Recipe: Ashen Dynarty Gloves">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="953" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9585" type="EtcItem" name="Recipe: Ashen Dynarty Shoes">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="954" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9586" type="EtcItem" name="Recipe: Ashen Dynarty Blade">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="955" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9587" type="EtcItem" name="Recipe: Ashen Dynarty Divider">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="956" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9588" type="EtcItem" name="Recipe: Ashen Dynarty Dual Swords">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="957" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9589" type="EtcItem" name="Recipe: Ashen Dynarty Dagger">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="958" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9590" type="EtcItem" name="Recipe: Ashen Dynarty Bow">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="959" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9591" type="EtcItem" name="Recipe: Ashen Dynarty Hammer">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="960" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9592" type="EtcItem" name="Recipe: Ashen Dynarty Spear">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="961" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9593" type="EtcItem" name="Recipe: Ashen Dynarty Fist">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="962" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9594" type="EtcItem" name="Recipe: Ashen Dynarty Staff">
+		<!-- Ashen craft (Sprint 15/19/23). Common recipe; fragment sink. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="963" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="Recipes" />
 	</item>

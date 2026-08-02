@@ -24,8 +24,9 @@ T6 Máximo              Dynarty (+30)        ← implementado (overlays)
    [`TT_TIER.md`](TT_TIER.md) e [`ASHEN_CRAFT_IDS.md`](ASHEN_CRAFT_IDS.md).
 4. Ponte Q900 e farms Draconic — ver [`DRACONIC_TIER.md`](DRACONIC_TIER.md).
 5. Ponte Q901 e farms DK/Phoenix — ver [`DK_PHOENIX_TIER.md`](DK_PHOENIX_TIER.md).
-6. Farma Dynarty (Lord / Blade) e enchant +30 só com scrolls `9570`/`9571` —
-   [`DYNARTY_TIER.md`](DYNARTY_TIER.md) e [`DYNARTY_ITEM_IDS.md`](DYNARTY_ITEM_IDS.md).
+6. Ponte Q902 e farms Dynarty (Lord / Blade); craft com `9799`/`9699`; enchant
+   +30 só com scrolls `9570`/`9571` — [`DYNARTY_TIER.md`](DYNARTY_TIER.md) e
+   [`DYNARTY_ITEM_IDS.md`](DYNARTY_ITEM_IDS.md).
 
 ## Exemplos retail úteis no playtest GM
 

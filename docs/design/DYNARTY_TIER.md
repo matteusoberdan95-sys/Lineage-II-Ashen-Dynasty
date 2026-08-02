@@ -7,9 +7,10 @@ Resumo da [ADR-010](../adr/ADR-010-DYNARTY-TIER.md).
 | Item | Valor |
 |---|---|
 | Design | aceito (ADR-010) |
-| No datapack | **sim** (overlays Sprint 22) |
+| No datapack | **sim** (overlays Sprint 22 + craft/Q902 Sprint 23) |
 | Tier jogável custom atual | T6 Ashen Dynarty |
 | Enchant +30 | scrolls `9570`/`9571` só em IDs Dynarty |
+| Craft / quest | scrolls `9572–9594` · Q902 Crown |
 
 ## Escada
 

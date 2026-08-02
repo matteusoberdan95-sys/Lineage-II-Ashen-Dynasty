@@ -1,7 +1,7 @@
-# Relatório — quests Ashen de transição (Sprint 16 + 20)
+# Relatório — quests Ashen de transição (Sprint 16 + 20 + 23)
 
 **Status:** implementadas em overlays (`data/scripts/quests/`, fora de `custom/`);
-load validado (`ScriptManager` **344** quests — +1 vs 343 da Sprint 16).
+load esperado `ScriptManager` **345** quests (+1 vs 344 da Sprint 20).
 
 ## Entregue
 
@@ -9,6 +9,7 @@ load validado (`ScriptManager` **344** quests — +1 vs 343 da Sprint 16).
 |---|---|
 | Quest Q900 | `.../scripts/quests/Q00900_AshenScaleOfTransition/` |
 | Quest Q901 | `.../scripts/quests/Q00901_AshenEmberOfAscent/` |
+| Quest Q902 | `.../scripts/quests/Q00902_AshenCrownOfDynasty/` |
 | NPC 93002 | `.../stats/npcs/93000-93099.xml` (Ashen Chronicler) |
 | Spawn | `.../spawns/Ashen/AshenQuest.xml` |
 | Apply / verify | `apply-local-ashen-quest.ps1`, `verify-local-ashen-quest.ps1` |
@@ -27,7 +28,13 @@ load validado (`ScriptManager` **344** quests — +1 vs 343 da Sprint 16).
 2. Entregar **20×** fragmento Draconic (`9499`).
 3. Recompensa: **12×** fragmento DK (`9699`) + recipe peitoral DK (`9547`).
 
-Ambas são únicas e **não** entregam set completo (ADR-007/008/009).
+### Q902 — Ashen Crown of Dynasty (DK → Dynarty)
+
+1. Chronicler, level ≥ 80 **e** Q901 concluída.
+2. Entregar **25×** fragmento DK (`9699`).
+3. Recompensa: **12×** fragmento Dynarty (`9799`) + recipe peitoral Dynarty (`9573`).
+
+Todas são únicas e **não** entregam set completo (ADR-007/008/009/010).
 
 ## Loader
 
@@ -43,11 +50,11 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -File .\infrastructure\scripts\verify-local-ashen-quest.ps1
 ```
 
-GM (Q901, após marcar Q900 concluída no personagem de teste):
+GM (Q902, após marcar Q901 concluída no personagem de teste):
 
 ```text
 //teleport 71000 129200 -3720
-//create_item 9499 20
+//create_item 9699 25
 ```
 
 ## Limites

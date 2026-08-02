@@ -369,6 +369,23 @@ write(
 					<item id="9762" min="1" max="1" chance="25" />
 					<item id="9763" min="1" max="1" chance="25" />
 				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 23) — armor Dynarty -->
+				<group chance="15">
+					<item id="9572" min="1" max="1" chance="8" />
+					<item id="9573" min="1" max="1" chance="8" />
+					<item id="9574" min="1" max="1" chance="7" />
+					<item id="9575" min="1" max="1" chance="7" />
+					<item id="9576" min="1" max="1" chance="7" />
+					<item id="9577" min="1" max="1" chance="7" />
+					<item id="9578" min="1" max="1" chance="7" />
+					<item id="9579" min="1" max="1" chance="7" />
+					<item id="9580" min="1" max="1" chance="7" />
+					<item id="9581" min="1" max="1" chance="7" />
+					<item id="9582" min="1" max="1" chance="7" />
+					<item id="9583" min="1" max="1" chance="7" />
+					<item id="9584" min="1" max="1" chance="7" />
+					<item id="9585" min="1" max="1" chance="7" />
+				</group>
 			</drop>
 		</dropLists>
 		<collision>
@@ -418,6 +435,18 @@ write(
 					<item id="9796" min="1" max="1" chance="11" />
 					<item id="9797" min="1" max="1" chance="11" />
 					<item id="9798" min="1" max="1" chance="11" />
+				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 23) — armas Dynarty -->
+				<group chance="15">
+					<item id="9586" min="1" max="1" chance="12" />
+					<item id="9587" min="1" max="1" chance="11" />
+					<item id="9588" min="1" max="1" chance="11" />
+					<item id="9589" min="1" max="1" chance="11" />
+					<item id="9590" min="1" max="1" chance="11" />
+					<item id="9591" min="1" max="1" chance="11" />
+					<item id="9592" min="1" max="1" chance="11" />
+					<item id="9593" min="1" max="1" chance="11" />
+					<item id="9594" min="1" max="1" chance="11" />
 				</group>
 			</drop>
 		</dropLists>

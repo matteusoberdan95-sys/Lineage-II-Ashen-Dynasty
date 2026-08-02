@@ -17,7 +17,8 @@ try {
 
     $questNames = @(
         'Q00900_AshenScaleOfTransition',
-        'Q00901_AshenEmberOfAscent'
+        'Q00901_AshenEmberOfAscent',
+        'Q00902_AshenCrownOfDynasty'
     )
 
     foreach ($questName in $questNames) {
@@ -53,8 +54,8 @@ try {
     }
     Copy-Item -LiteralPath $npcSource -Destination $npcDestination -Force
 
-    Write-Host 'Ashen quest overlays applied (Sprint 16/20).'
-    Write-Host 'Q900 Scale + Q901 Ember, NPC 93002, Death Pass spawn.'
+    Write-Host 'Ashen quest overlays applied (Sprint 16/20/23).'
+    Write-Host 'Q900 Scale + Q901 Ember + Q902 Crown, NPC 93002, Death Pass spawn.'
 }
 catch {
     throw "Ashen quest apply failed: $($_.Exception.Message)"
