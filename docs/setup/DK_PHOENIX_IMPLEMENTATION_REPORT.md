@@ -1,7 +1,7 @@
 # Relatório — implementação Ashen DK / Phoenix (Sprint 18)
 
-**Status:** implementado em overlays locais; load a validar no Game Server
-(`ItemData` highest id esperado `9699`, sets `106–108`).
+**Status:** implementado em overlays locais; load validado no Game Server
+(`ItemData` highest id `9699`, `ArmorSetData` 60 sets, `NpcData` 6526 NPCs).
 
 ## Entregue
 
