@@ -10,18 +10,27 @@ try {
     $context = Get-L2RuntimeContext
     $dataRoot = Join-Path $context.DistributionRoot 'game\data'
 
-    $questJava = Join-Path $dataRoot 'scripts\quests\Q00900_AshenScaleOfTransition\Q00900_AshenScaleOfTransition.java'
+    $quest900 = Join-Path $dataRoot 'scripts\quests\Q00900_AshenScaleOfTransition\Q00900_AshenScaleOfTransition.java'
+    $quest901 = Join-Path $dataRoot 'scripts\quests\Q00901_AshenEmberOfAscent\Q00901_AshenEmberOfAscent.java'
     $spawnPath = Join-Path $dataRoot 'spawns\Ashen\AshenQuest.xml'
     $npcPath = Join-Path $dataRoot 'stats\npcs\93000-93099.xml'
-    foreach ($path in @($questJava, $spawnPath, $npcPath)) {
+    foreach ($path in @($quest900, $quest901, $spawnPath, $npcPath)) {
         if (-not (Test-Path -LiteralPath $path -PathType Leaf)) {
             throw "Required Ashen quest runtime file missing: $path"
         }
     }
 
-    $java = [IO.File]::ReadAllText($questJava)
-    if ($java -notmatch 'super\(900,' -or $java -notmatch 'public static void main') {
+    $java900 = [IO.File]::ReadAllText($quest900)
+    if ($java900 -notmatch 'super\(900,' -or $java900 -notmatch 'public static void main') {
         throw 'Quest 900 class must declare quest id 900 and a main() loader.'
+    }
+
+    $java901 = [IO.File]::ReadAllText($quest901)
+    if ($java901 -notmatch 'super\(901,' -or $java901 -notmatch 'public static void main') {
+        throw 'Quest 901 class must declare quest id 901 and a main() loader.'
+    }
+    if ($java901 -notmatch 'Q00900_AshenScaleOfTransition') {
+        throw 'Quest 901 must require completion of Q900.'
     }
 
     $npc = [IO.File]::ReadAllText($npcPath)
@@ -53,7 +62,7 @@ try {
     }
 
     Write-Host 'Ashen quest verification passed.'
-    Write-Host 'Q900 scripts/NPC/spawn present; custom scripts still excluded; submodule clean.'
+    Write-Host 'Q900/Q901 scripts/NPC/spawn present; custom scripts still excluded; submodule clean.'
 }
 catch {
     throw "Ashen quest verification failed: $($_.Exception.Message)"

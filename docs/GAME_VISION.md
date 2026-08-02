@@ -48,4 +48,4 @@ overlays; craft por fragmentos; quest ponte Q900.
 
 1. atual: T5 implementado (overlays Sprint 18);
 2. playtest T3–T5 (raids, craft, Q900) continua válido;
-3. próxima: quest T5, design T6, client-patch ou QoL.
+3. próxima: design T6, client-patch ou QoL.

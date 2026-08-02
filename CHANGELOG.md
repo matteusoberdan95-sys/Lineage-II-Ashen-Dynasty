@@ -55,6 +55,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   scripts apply/verify (Sprint 18).
 - Craft Ashen DK/Phoenix com fragmentos (`9699`/`9499`): scrolls 9546–9568,
   recipes listIds 918–940, drops nos raids T5 (Sprint 19).
+- Quest Q901 Ashen Ember of Ascent: ponte Draconic→DK (exige Q900), fragmentos
+  DK + recipe peitoral DK (Sprint 20).
 
 ### Segurança
 

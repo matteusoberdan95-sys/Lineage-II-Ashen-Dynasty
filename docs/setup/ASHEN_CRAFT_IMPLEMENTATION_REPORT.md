@@ -60,5 +60,5 @@ Usar o scroll (aprende recipe) e craftar via Create Item / recipe book.
 ## Limites
 
 - Sem client-patch: nome do scroll pode aparecer genérico.
-- Quest de transição pós-Draconic → DK ainda não criada.
+- Quest de transição pós-Draconic → DK: ver Sprint 20 (`ASHEN_QUEST_IMPLEMENTATION_REPORT.md`).
 - Não há recipe para fragmentos (só consumo).

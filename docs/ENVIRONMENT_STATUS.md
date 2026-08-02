@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 19 (craft
-T5 DK/Phoenix). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 20 (quest
+ponte Draconic→DK). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar quest T5, design T6, client-patch ou QoL/observabilidade.
+Registrar design T6, client-patch ou QoL/observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -276,3 +276,9 @@ raids 93200/93201, spawns). Relatório:
 Craft T5: +23 recipes DK/Phoenix (scrolls 9546–9568, listIds 918–940), sink
 `9699`+`9499`, drops de recipe nos raids Dark Warden / Phoenix Ember. Relatório:
 [`docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`](setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md).
+
+## Conclusão da Sprint 20
+
+Quest Q901 Ashen Ember of Ascent (Chronicler 93002): exige Q900 + level 78;
+troca 20 fragmentos Draconic por 12 fragmentos DK + recipe peitoral DK.
+Relatório: [`docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).

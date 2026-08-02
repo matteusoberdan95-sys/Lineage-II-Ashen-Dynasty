@@ -25,8 +25,9 @@ T6 Máximo              Dynarty (+30)        ← muitos meses
 4. Ponte Q900 (Chronicler) e farms Draconic — ver
    [`DRACONIC_TIER.md`](DRACONIC_TIER.md) e
    [`../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).
-5. Farma raids DK/Phoenix (Dark Warden / Phoenix Ember) — ver
-   [`DK_PHOENIX_TIER.md`](DK_PHOENIX_TIER.md) e [`DK_PHOENIX_ITEM_IDS.md`](DK_PHOENIX_ITEM_IDS.md).
+5. Ponte Q901 (Ember of Ascent) e farms DK/Phoenix — ver
+   [`DK_PHOENIX_TIER.md`](DK_PHOENIX_TIER.md) e
+   [`../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).
 
 ## Exemplos retail úteis no playtest GM
 
@@ -40,5 +41,4 @@ T6 Máximo              Dynarty (+30)        ← muitos meses
 ## Fora de escopo até implementação / ADR própria
 
 - Dynarty, enchant +30  
-- Quest T5 (craft T5: Sprint 19)  
 - loja de set / doação de gear

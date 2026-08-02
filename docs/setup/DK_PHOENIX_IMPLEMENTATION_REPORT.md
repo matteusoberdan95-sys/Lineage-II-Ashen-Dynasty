@@ -46,4 +46,4 @@ No GM:
 
 - Sem client-patch: nomes/ícones podem aparecer genéricos no Interlude.
 - Craft com fragmentos DK (`9699`) + Draconic: ver Sprint 19 (`ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`).
-- Quest de transição pós-Draconic ainda não criada (raid é a fonte principal).
+- Quest de transição Draconic→DK: ver Sprint 20 (`ASHEN_QUEST_IMPLEMENTATION_REPORT.md`).
