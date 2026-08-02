@@ -37,6 +37,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - Scripts para aplicar e verificar a customização de produto no runtime.
 - Scripts para conta/personagem Master local (`ashen_admin` / `ASHENADM`) com
   privilégios GM de dono, credencial DPAPI e verificação isolada do playtest.
+- ADR-005: rates locais XP/SP 500x com drop/spoil retail-like e Adena amount 10x.
+- Roteiro de regressão, checklist GM Interlude e validação manual da Sprint 10.
 
 ### Segurança
 

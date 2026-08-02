@@ -16,19 +16,16 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 a 9 estão concluídas localmente. L2JMobius
-`L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
-`e4d1d8336ed28fc0916e7caad3ca752d06169eac`, após auditoria estática inicial.
+As Sprints 0 a 10 estão concluídas localmente (validação manual da Sprint 10
+pendente do proprietário). L2JMobius `L2J_Mobius_CT_0_Interlude` foi aceito na
+ADR-001 e fixado no commit `e4d1d8336ed28fc0916e7caad3ca752d06169eac`.
 
 O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
 .NET futuros conforme a ADR-002. A source permanece limpa; um patch local reproduzível
 corrige exclusivamente o bind 7777 conforme a ADR-003. A ADR-004 define overlays de
-produto fora do submódulo; a primeira customização renomeia o servidor ID 1 para
-`Ashen Dynasty` e habilita a notícia de entrada. MariaDB 11.4.3, Login Server e
-Game Server rodam somente em localhost. O cliente limpo autenticou o personagem
-`NEIDE157`, que avançou ao nível 2 no playtest controlado, com logout limpo e
-persistência coerente. Nenhuma conexão Java externa foi observada. O cliente
-permanece fora do Git.
+produto; a ADR-005 aplica XP/SP 500x com drop retail-like. MariaDB 11.4.3, Login e
+Game rodam só em localhost. Conta GM Master e roteiro de regressão estão
+documentados. O cliente permanece fora do Git.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -103,13 +100,13 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 - [ADR-002](docs/adr/ADR-002-REPOSITORY-STRUCTURE.md);
 - [ADR-003](docs/adr/ADR-003-LOCAL-SECURITY-PATCHES.md);
 - [ADR-004](docs/adr/ADR-004-PRODUCT-CUSTOMIZATION.md);
+- [ADR-005](docs/adr/ADR-005-LOCAL-RATES.md);
 - [notas de licença](LICENSE-NOTES.md).
 
 ## Próximo bloqueio
 
-A próxima sprint poderá formalizar um roteiro de regressão local (relogin, morte/
-retorno, NPC/quest básica) ou a próxima customização sob ADR dedicada, ainda sem
-abrir o servidor para rede externa e sem rates/itens custom.
+Após a validação manual da Sprint 10: desenho do próximo tier de gameplay sob ADR
+(ainda sem Dynarty/rede externa), ou portal/ferramentas .NET quando autorizado.
 
 ## Segurança e propriedade intelectual
 
@@ -136,6 +133,9 @@ sem valores secretos na documentação.
 - [playtest controlado](docs/setup/PLAYTEST_CONTROLLED_REPORT.md);
 - [primeira customização de produto](docs/setup/PRODUCT_CUSTOMIZATION_REPORT.md);
 - [conta admin local](docs/setup/LOCAL_ADMIN_SETUP.md);
+- [roteiro de regressão](docs/setup/REGRESSION_ROTEIRO.md);
+- [checklist GM playtest](docs/setup/GM_PLAYTEST_CHECKLIST.md);
+- [validação manual Sprint 10](docs/setup/SPRINT10_MANUAL_VALIDATION.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

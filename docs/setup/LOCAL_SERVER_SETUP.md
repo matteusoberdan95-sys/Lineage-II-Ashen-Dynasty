@@ -45,7 +45,15 @@ Ele recusa registros desconhecidos. O runtime:
 - desabilita GUI, criação automática de contas, backup upstream e conteúdo custom;
 - habilita criptografia de pacotes;
 - permite novos Game Servers apenas durante o primeiro registro;
-- aplica overlays de identidade da ADR-004 (`Ashen Dynasty` + notícia de entrada).
+- aplica overlays de identidade da ADR-004 (`Ashen Dynasty` + notícia de entrada);
+- aplica rates da ADR-005 (XP/SP 500x, drop retail-like).
+
+Para reaplicar rates (Game Server parado):
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File .\infrastructure\scripts\apply-local-rates.ps1
+```
 
 Para reaplicar somente a customização de produto em um runtime já preparado:
 

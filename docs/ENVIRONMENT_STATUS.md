@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado após a primeira
-customização de produto na Sprint 9. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 10 (rates +
+regressão; validação manual pendente). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,8 +159,8 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Na próxima sprint, registrar roteiro de regressão local ou a próxima customização
-sob ADR dedicada (ainda sem rates/itens/rede externa).
+Registrar o resultado da validação manual da Sprint 10 e a próxima ADR de gameplay
+(ainda sem Dynarty/rede externa).
 
 ## Conclusão da Sprint 0
 
@@ -216,3 +216,10 @@ não foram alterados. Consulte
 Conta Master local `ashen_admin` / personagem `ASHENADM` (`accessLevel=100`) criada
 para ferramentas GM de dono. Playtest `ashen_test` / `NEIDE157` permanece sem GM.
 Consulte [`docs/setup/LOCAL_ADMIN_SETUP.md`](setup/LOCAL_ADMIN_SETUP.md).
+
+## Conclusão da Sprint 10
+
+ADR-005 aplicada: XP/SP 500x, drop retail-like, Adena amount 10x. Roteiro de
+regressão e checklist GM documentados. Validação automática via
+`verify-local-regression.ps1`; validação manual pelo proprietário em
+[`docs/setup/SPRINT10_MANUAL_VALIDATION.md`](setup/SPRINT10_MANUAL_VALIDATION.md).

@@ -34,7 +34,7 @@ segura e persistente.
 
 ## Fora do escopo atual
 
-Esta visão não autoriza implementar:
+Esta visão não autoriza implementar ainda:
 
 - TT;
 - Draconic custom;
@@ -43,12 +43,12 @@ Esta visão não autoriza implementar:
 - Dynarty;
 - enchant `+30`;
 - TVT customizado;
-- rates alterados;
 - loja, pagamentos ou doações;
 - itens ou skills customizados.
 
-Esses sistemas pertencem a fases futuras e exigirão desenho, balanceamento, testes,
-auditoria econômica e ADR própria. A primeira baseline permanecerá Interlude limpa.
+Rates locais de XP/SP foram autorizados pela ADR-005 (500x level / drop retail-like).
+Os demais sistemas acima exigem desenho, balanceamento, testes, auditoria econômica
+e ADR própria.
 
 ## Prioridade atual
 
