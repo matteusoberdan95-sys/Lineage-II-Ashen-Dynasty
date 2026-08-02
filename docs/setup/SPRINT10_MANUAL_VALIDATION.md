@@ -1,16 +1,16 @@
 # Sprint 10 — validação manual do proprietário
 
 **Data:** 2026-08-01  
-**Estado automático:** a preencher após `verify-local-regression.ps1`  
+**Estado automático:** passou (`verify-local-regression.ps1`)  
 **Estado manual:** pendente da sua validação
 
-Marque com `[x]` o que validar no cliente. Eu já executo a parte automática;
+Marque com `[x]` o que validar no cliente. A parte automática já foi executada;
 você confirma a experiência in-game.
 
 ## Automático (agente)
 
-- [ ] `verify-local-regression.ps1` passou
-- [ ] Rates ADR-005 aplicados e Game reiniciado
+- [x] `verify-local-regression.ps1` passou
+- [x] Rates ADR-005 aplicados e Game reiniciado
 - [ ] Commit/push da Sprint 10
 
 ## Manual — regressão playtest (`NEIDE157`)
