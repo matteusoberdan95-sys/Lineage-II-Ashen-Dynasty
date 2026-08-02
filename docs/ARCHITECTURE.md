@@ -144,6 +144,8 @@ comandos GM diretamente.
 - `docs/adr/ADR-008-DRACONIC-TIER.md`
 - `docs/adr/ADR-009-DK-PHOENIX-TIER.md`
 - `docs/design/DK_PHOENIX_TIER.md`
+- `docs/design/DK_PHOENIX_ITEM_IDS.md`
+- `docs/setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md`
 - `docs/design/GEAR_PROGRESSION.md`
 - `docs/design/TT_TIER.md`
 - `docs/design/DRACONIC_TIER.md`

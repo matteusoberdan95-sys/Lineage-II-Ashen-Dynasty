@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/spawns.xsd">
+	<!-- DK/Phoenix raids near Death Pass endgame camps. Respawn 48h / 24h. -->
+	<spawn name="AshenDkPhoenix">
+		<npc id="93200" x="66500" y="132200" z="-3720" heading="0" respawnDelay="172800" />
+		<npc id="93201" x="67500" y="130800" z="-3720" heading="0" respawnDelay="86400" />
+	</spawn>
+</list>

@@ -7,22 +7,22 @@ Resumo da [ADR-009](../adr/ADR-009-DK-PHOENIX-TIER.md).
 | Item | Valor |
 |---|---|
 | Design | aceito (ADR-009) |
-| No datapack | **não** |
-| Tier jogável custom atual | T4 Ashen Draconic |
+| No datapack | **sim** (overlays Sprint 18) |
+| Tier jogável custom atual | T5 Ashen DK / Phoenix |
 
 ## Escada
 
 ```text
-T3 Ashen TT → T4 Draconic (implementado) → T5 DK/Phoenix (design) → T6 Dynarty
+T3 Ashen TT → T4 Draconic → T5 DK/Phoenix (implementado) → T6 Dynarty
 ```
 
 ## Tempo alvo
 
-8–16 semanas após set Draconic completo.
+8–16 semanas após set Draconic completo (economia de farm; IDs já no servidor).
 
-## IDs reservados
+## IDs
 
-`9600–9699` (itens) · NPCs sugeridos `93200` / `93201` · sets `106–108`.  
-Faixa `9550–9599` reservada para tokens/recipes futuros (não usar para peças T5).
+`9600–9699` (itens) · NPCs `93200` / `93201` · sets `106–108`.
 
-Mapa detalhado na sprint de implementação.
+Mapa: [`DK_PHOENIX_ITEM_IDS.md`](DK_PHOENIX_ITEM_IDS.md).  
+Relatório: [`../setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md`](../setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md).

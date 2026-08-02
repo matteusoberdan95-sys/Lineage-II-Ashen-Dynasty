@@ -108,8 +108,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-Implementação T5 (DK/Phoenix), client-patch ou QoL/observabilidade — ainda sem
-Dynarty/rede externa, salvo autorização.
+Craft/quest T5, design T6 (Dynarty), client-patch ou QoL/observabilidade —
+ainda sem Dynarty/rede externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
 
@@ -150,6 +150,8 @@ sem valores secretos na documentação.
 - [IDs craft Ashen](docs/design/ASHEN_CRAFT_IDS.md);
 - [quest Ashen Scale](docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md);
 - [tier DK/Phoenix](docs/design/DK_PHOENIX_TIER.md);
+- [IDs Ashen DK/Phoenix](docs/design/DK_PHOENIX_ITEM_IDS.md);
+- [implementação DK/Phoenix](docs/setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

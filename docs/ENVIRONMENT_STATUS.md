@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 17 (T5
-DK/Phoenix em design). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 18 (T5
+DK/Phoenix implementado). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar implementação T5, client-patch ou QoL/observabilidade.
+Registrar craft/quest T5, design T6, client-patch ou QoL/observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -262,5 +262,11 @@ por 12 fragmentos Draconic + recipe do peitoral. Scripts sob `quests/` com
 ## Conclusão da Sprint 17
 
 ADR-009 aceita: Ashen DK / Phoenix (T5) especificado (armor DK, armas Fênix,
-IDs 9600–9699, NPCs 93200/93201 sugeridos). Sem XML nesta sprint. Consulte
+IDs 9600–9699, NPCs 93200/93201). Consulte
 [`docs/design/DK_PHOENIX_TIER.md`](design/DK_PHOENIX_TIER.md).
+
+## Conclusão da Sprint 18
+
+Ashen DK / Phoenix (T5) aplicado via overlays (itens 9600–9699, sets 106–108,
+raids 93200/93201, spawns). Relatório:
+[`docs/setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md`](setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md).

@@ -1,6 +1,6 @@
 # ADR-009 — Tier T5 (DK + armas Fênix)
 
-- **Status:** Aceita (design)
+- **Status:** Aceita (implementada na Sprint 18)
 - **Data:** 2026-08-01
 - **Decisores:** proprietário do projeto e arquitetura técnica
 
@@ -10,7 +10,7 @@ TT (T3), Draconic (T4), craft por fragmentos e a quest ponte Q900 já estão no
 runtime. O próximo degrau da ADR-006 é o **T5 avançado**: armor estilo DK +
 armas Fênix — acima do Draconic, abaixo de Dynarty (T6).
 
-Esta ADR **não implementa** itens; só fixa o envelope de design.
+Esta ADR fixa o envelope de design; a implementação em overlays está na Sprint 18.
 
 ## Decisão
 
@@ -69,12 +69,12 @@ reserva **9550–9599** para tokens/recipes futuros):
 NPCs sugeridos: `93200` (raid armor), `93201` (warden / phoenix de armas).  
 Sets sugeridos: `106–108` (após Draconic `103–105`).
 
-### Implementação futura (fora desta ADR)
+### Implementação (Sprint 18)
 
 1. Overlays em `infrastructure/customization/` (não no submódulo).
-2. Stats balanceados contra Draconic live (~15% acima).
-3. Spawns/raids + recipes de craft + relatório de economia.
-4. Client-patch documentado em `client-patch/` se necessário para ícones/nomes.
+2. Stats ~15% acima do Draconic.
+3. Spawns/raids + relatório `docs/setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md`.
+4. Craft com fragmentos DK e client-patch ainda pendentes.
 
 ## Alternativas rejeitadas
 
@@ -86,5 +86,5 @@ Sets sugeridos: `106–108` (após Draconic `103–105`).
 ## Consequências
 
 - T6 (Dynarty / +30) continua só na visão até ADR própria.
-- Teto de conteúdo custom **implementado** permanece **Draconic (T4)** até sprint de T5.
-- Playtest T3–T4 (raids, craft, Q900) segue válido; T5 não altera economia atual.
+- Teto de conteúdo custom implementado sobe para **DK/Phoenix (T5)**; Draconic permanece o degrau anterior.
+- Playtest T3–T4 (raids, craft, Q900) segue válido; T5 adiciona raids/itens próprios.

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/armorSets.xsd">
+	<!-- Element order must match armorSets.xsd: chest before head. -->
+	<set id="106">
+		<chest id="9601" />
+		<legs id="9602" />
+		<head id="9600" />
+		<gloves id="9603" />
+		<feet id="9604" />
+		<shield id="9605" />
+		<skill id="3006" level="1" />
+		<str val="5" />
+		<con val="3" />
+	</set>
+	<set id="107">
+		<chest id="9631" />
+		<head id="9630" />
+		<gloves id="9632" />
+		<feet id="9633" />
+		<skill id="3006" level="1" />
+		<str val="3" />
+		<dex val="5" />
+	</set>
+	<set id="108">
+		<chest id="9661" />
+		<head id="9660" />
+		<gloves id="9662" />
+		<feet id="9663" />
+		<skill id="3006" level="1" />
+		<int val="5" />
+		<wit val="3" />
+	</set>
+</list>
