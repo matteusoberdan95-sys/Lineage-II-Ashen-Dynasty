@@ -212,3 +212,7 @@ ADR-004 aceita. Overlays versionados renomeiam o servidor ID 1 para `Ashen Dynas
 e habilitam a notícia de entrada local. Submódulo permanece limpo; rates e gameplay
 não foram alterados. Consulte
 [`docs/setup/PRODUCT_CUSTOMIZATION_REPORT.md`](setup/PRODUCT_CUSTOMIZATION_REPORT.md).
+
+Conta Master local `ashen_admin` / personagem `ASHENADM` (`accessLevel=100`) criada
+para ferramentas GM de dono. Playtest `ashen_test` / `NEIDE157` permanece sem GM.
+Consulte [`docs/setup/LOCAL_ADMIN_SETUP.md`](setup/LOCAL_ADMIN_SETUP.md).

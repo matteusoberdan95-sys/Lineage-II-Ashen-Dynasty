@@ -35,6 +35,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - ADR-004 para customizações de produto via overlays fora do submódulo.
 - Overlay de identidade: servidor ID 1 `Ashen Dynasty` e notícia de entrada local.
 - Scripts para aplicar e verificar a customização de produto no runtime.
+- Scripts para conta/personagem Master local (`ashen_admin` / `ASHENADM`) com
+  privilégios GM de dono, credencial DPAPI e verificação isolada do playtest.
 
 ### Segurança
 

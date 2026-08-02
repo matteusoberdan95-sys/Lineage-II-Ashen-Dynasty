@@ -135,6 +135,7 @@ sem valores secretos na documentação.
 - [checklist mínimo de mundo](docs/setup/WORLD_CHECKLIST_REPORT.md);
 - [playtest controlado](docs/setup/PLAYTEST_CONTROLLED_REPORT.md);
 - [primeira customização de produto](docs/setup/PRODUCT_CUSTOMIZATION_REPORT.md);
+- [conta admin local](docs/setup/LOCAL_ADMIN_SETUP.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

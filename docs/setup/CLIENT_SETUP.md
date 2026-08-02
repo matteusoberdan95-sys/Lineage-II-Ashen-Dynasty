@@ -47,6 +47,23 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
 
 A credencial fica em `secrets/local-test-account.clixml` (DPAPI, ignorado pelo Git).
 
+## Conta admin (Master)
+
+Para painel GM, spawn de itens, teleporte e demais privilégios de dono no ambiente
+local, use a conta Master documentada em
+[`LOCAL_ADMIN_SETUP.md`](LOCAL_ADMIN_SETUP.md):
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command `
+  '& ".\infrastructure\scripts\create-local-admin.ps1" -Confirm:$false'
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File .\infrastructure\scripts\show-local-admin-account.ps1
+```
+
+Padrão: conta `ashen_admin`, personagem `ASHENADM`, `accessLevel=100`. A conta de
+playtest permanece sem GM.
+
 ## Fluxo de playtest
 
 1. Suba MariaDB, Login e Game.
