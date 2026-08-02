@@ -39,6 +39,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   privilégios GM de dono, credencial DPAPI e verificação isolada do playtest.
 - ADR-005: rates locais XP/SP 500x com drop/spoil retail-like e Adena amount 10x.
 - Roteiro de regressão, checklist GM Interlude e validação manual da Sprint 10.
+- ADR-006 e documento de design da escada de gear (retail T0–T2, depois TT →
+  Draconic → DK/Fênix → Dynarty), sem implementação de item custom.
 
 ### Segurança
 

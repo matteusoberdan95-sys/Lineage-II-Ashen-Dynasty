@@ -16,16 +16,16 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 a 10 estão concluídas e validadas localmente. L2JMobius
+As Sprints 0 a 11 estão concluídas localmente. L2JMobius
 `L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
 `e4d1d8336ed28fc0916e7caad3ca752d06169eac`.
 
 O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
 .NET futuros conforme a ADR-002. A source permanece limpa; um patch local reproduzível
 corrige exclusivamente o bind 7777 conforme a ADR-003. A ADR-004 define overlays de
-produto; a ADR-005 aplica XP/SP 500x com drop retail-like. MariaDB 11.4.3, Login e
-Game rodam só em localhost. Conta GM Master e roteiro de regressão estão
-documentados. O cliente permanece fora do Git.
+produto; a ADR-005 aplica XP/SP 500x com drop retail-like; a ADR-006 define a
+escada de gear (teto atual = S-grade retail). MariaDB 11.4.3, Login e Game rodam
+só em localhost. O cliente permanece fora do Git.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -101,12 +101,13 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 - [ADR-003](docs/adr/ADR-003-LOCAL-SECURITY-PATCHES.md);
 - [ADR-004](docs/adr/ADR-004-PRODUCT-CUSTOMIZATION.md);
 - [ADR-005](docs/adr/ADR-005-LOCAL-RATES.md);
+- [ADR-006](docs/adr/ADR-006-GEAR-PROGRESSION.md);
 - [notas de licença](LICENSE-NOTES.md).
 
 ## Próximo bloqueio
 
-Próximo: desenho do próximo tier de gameplay sob ADR (ainda sem Dynarty/rede
-externa), ou portal/ferramentas .NET quando autorizado.
+ADR de conteúdo do tier T3 (TT), QoL de playtest ou observabilidade econômica —
+ainda sem Dynarty/rede externa, salvo autorização explícita.
 
 ## Segurança e propriedade intelectual
 
@@ -136,6 +137,7 @@ sem valores secretos na documentação.
 - [roteiro de regressão](docs/setup/REGRESSION_ROTEIRO.md);
 - [checklist GM playtest](docs/setup/GM_PLAYTEST_CHECKLIST.md);
 - [validação manual Sprint 10](docs/setup/SPRINT10_MANUAL_VALIDATION.md);
+- [progressão de equipamento](docs/design/GEAR_PROGRESSION.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

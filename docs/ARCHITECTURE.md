@@ -139,4 +139,6 @@ comandos GM diretamente.
 - `docs/adr/ADR-003-LOCAL-SECURITY-PATCHES.md`
 - `docs/adr/ADR-004-PRODUCT-CUSTOMIZATION.md`
 - `docs/adr/ADR-005-LOCAL-RATES.md`
+- `docs/adr/ADR-006-GEAR-PROGRESSION.md`
+- `docs/design/GEAR_PROGRESSION.md`
 - `docs/security/SOURCE_AUDIT.md`

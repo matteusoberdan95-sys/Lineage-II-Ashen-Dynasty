@@ -15,13 +15,11 @@ segura e persistente.
 - Economia persistente e observável.
 - Evolução possível sem depender de eventos.
 - TVT opcional como atividade complementar.
-- TT como entrada planejada no endgame.
-- Draconic custom como nível posterior.
-- DK e armas Fênix como tier avançado.
-- Dynarty como equipamento máximo.
-- Enchant máximo planejado em `+30`.
-- Conjunto Dynarty completo como conquista de muitos meses.
+- Escada de gear oficial na ADR-006: retail T0–T2 → TT → Draconic custom →
+  DK/Fênix → Dynarty (`+30`, muitos meses).
 - Retenção baseada em progressão, comunidade e estabilidade.
+
+Consulte [`docs/design/GEAR_PROGRESSION.md`](design/GEAR_PROGRESSION.md).
 
 ## Princípios econômicos
 
@@ -52,11 +50,7 @@ e ADR própria.
 
 ## Prioridade atual
 
-1. segurança local;
-2. build reproduzível;
-3. banco persistente;
-4. Login Server e Game Server estáveis;
-5. cliente compatível;
-6. criação e persistência de conta e personagem;
-7. documentação operacional;
-8. somente depois, game design customizado.
+1. baseline local segura e validada (concluída até Sprint 10);
+2. contrato de progressão de gear (ADR-006 / Sprint 11);
+3. próxima ADR de conteúdo do tier T3 (TT) ou QoL/observabilidade;
+4. somente depois, implementação de itens custom T4–T6.
