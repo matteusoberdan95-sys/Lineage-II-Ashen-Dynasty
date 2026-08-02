@@ -1,7 +1,7 @@
 # Relatório — quest Ashen Scale of Transition (Sprint 16)
 
 **Status:** implementada em overlays (`data/scripts/quests/`, fora de `custom/`);
-load a validar no Game Server.
+load validado (`NpcData` 6524 NPCs, `ScriptManager` **343** quests — +1 vs 342).
 
 ## Entregue
 
