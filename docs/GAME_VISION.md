@@ -34,16 +34,17 @@ Consulte [`docs/design/GEAR_PROGRESSION.md`](design/GEAR_PROGRESSION.md).
 
 Esta visão não autoriza implementar ainda:
 
-- client-patch completo de ícones/nomes custom;
+- client-patch de arte custom nova (texturas/meshes próprios);
 - TVT customizado;
 - loja, pagamentos ou doações;
 - itens ou skills customizados além do autorizado por ADR.
 
 Já autorizados e entregues em sprints: rates ADR-005; overlays TT→Dynarty;
-craft por fragmentos; quests ponte Q900/Q901/Q902; enchant +30 Dynarty-only.
+craft por fragmentos; quests ponte Q900/Q901/Q902; enchant +30 Dynarty-only;
+patch local de nomes/ícones (ADR-011).
 
 ## Próximo passo
 
-1. atual: loop T6 completo (overlays + craft + Q902, Sprint 23);
-2. playtest T3–T6 continua válido;
-3. próxima: client-patch, QoL ou observabilidade.
+1. atual: client-patch local de nomes/ícones (Sprint 24);
+2. playtest T3–T6 com nomes corretos no cliente;
+3. próxima: QoL ou observabilidade.

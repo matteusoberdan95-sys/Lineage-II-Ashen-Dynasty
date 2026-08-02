@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 23
-(craft/quest Dynarty). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 24
+(client-patch local nomes/ícones). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar client-patch, QoL ou observabilidade.
+Registrar QoL, playtest T3–T6 com patch, ou observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -302,3 +302,9 @@ Ashen Crown of Dynasty (Chronicler 93002): exige Q901 + level 80; troca 25
 fragmentos DK por 12 fragmentos Dynarty + recipe peitoral Dynarty.
 Relatórios: [`docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`](setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md),
 [`docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).
+
+## Conclusão da Sprint 24
+
+Client-patch local (ADR-011): nomes/ícones Ashen aplicados em
+`D:\L2-ASHEN-DYNASTY` via manifesto CSV + scripts (sem `.dat` no Git).
+Relatório: [`docs/setup/CLIENT_PATCH_IMPLEMENTATION_REPORT.md`](setup/CLIENT_PATCH_IMPLEMENTATION_REPORT.md).

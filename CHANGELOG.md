@@ -64,6 +64,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   (pula 9569–9571), recipes listIds 941–963, drops nos raids T6 (Sprint 23).
 - Quest Q902 Ashen Crown of Dynasty: ponte DK→Dynarty (exige Q901), fragmentos
   Dynarty + recipe peitoral Dynarty (Sprint 23).
+- ADR-011 + patch local de nomes/ícones Ashen no cliente Interlude (manifesto
+  CSV, apply/verify; `.dat` permanecem fora do Git) (Sprint 24).
 
 ### Segurança
 

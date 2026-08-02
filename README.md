@@ -64,7 +64,7 @@ A pasta atual é a raiz do repositório. Não existe uma pasta adicional
 │   ├── source/l2jmobius-upstream/  # submódulo fixado
 │   └── runtime/                    # local e ignorado
 ├── database/                       # bootstrap e verificação do banco local
-├── client-patch/                   # documentação; assets proibidos
+├── client-patch/                   # documentação; patch local via scripts
 ├── web/                            # ASP.NET Core futuro
 ├── launcher/                       # C#/.NET futuro
 ├── infrastructure/                 # scripts e serviços auxiliares
@@ -109,7 +109,7 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-Client-patch, QoL ou observabilidade — ainda sem rede
+QoL ou observabilidade — ainda sem rede
 externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
@@ -132,6 +132,7 @@ sem valores secretos na documentação.
 - [configuração dos servidores locais](docs/setup/LOCAL_SERVER_SETUP.md);
 - [relatório da primeira execução](docs/setup/FIRST_RUN_REPORT.md);
 - [configuração do cliente local](docs/setup/CLIENT_SETUP.md);
+- [client-patch local nomes/ícones](docs/setup/CLIENT_PATCH_IMPLEMENTATION_REPORT.md);
 - [relatório do primeiro login](docs/setup/FIRST_CLIENT_REPORT.md);
 - [checklist mínimo de mundo](docs/setup/WORLD_CHECKLIST_REPORT.md);
 - [playtest controlado](docs/setup/PLAYTEST_CONTROLLED_REPORT.md);

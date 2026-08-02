@@ -1,0 +1,200 @@
+id,kind,name,description,clone_from,icon
+9300,armor,Ashen TT Helmet,Ashen Dynasty Ashen TT Helmet.,6378,icon.armor_helmet_i00
+9301,armor,Ashen TT Breastplate,Ashen Dynasty Ashen TT Breastplate.,6373,icon.armor_t88_u_i00
+9302,armor,Ashen TT Gaiters,Ashen Dynasty Ashen TT Gaiters.,6374,icon.armor_t88_l_i00
+9303,armor,Ashen TT Gauntlets,Ashen Dynasty Ashen TT Gauntlets.,6375,icon.armor_t88_g_i00
+9304,armor,Ashen TT Boots,Ashen Dynasty Ashen TT Boots.,6376,icon.armor_t88_b_i00
+9330,armor,Ashen TT Leather Helmet,Ashen Dynasty Ashen TT Leather Helmet.,6382,icon.armor_leather_helmet_i00
+9331,armor,Ashen TT Leather Armor,Ashen Dynasty Ashen TT Leather Armor.,6379,icon.armor_t89_ul_i00
+9332,armor,Ashen TT Leather Gloves,Ashen Dynasty Ashen TT Leather Gloves.,6380,icon.armor_t89_g_i00
+9333,armor,Ashen TT Leather Boots,Ashen Dynasty Ashen TT Leather Boots.,6381,icon.armor_t89_b_i00
+9360,armor,Ashen TT Circlet,Ashen Dynasty Ashen TT Circlet.,6386,icon.armor_leather_helmet_i00
+9361,armor,Ashen TT Robe,Ashen Dynasty Ashen TT Robe.,6383,icon.armor_t90_ul_i00
+9362,armor,Ashen TT Gloves,Ashen Dynasty Ashen TT Gloves.,6384,icon.armor_t90_g_i00
+9363,armor,Ashen TT Shoes,Ashen Dynasty Ashen TT Shoes.,6385,icon.armor_t90_b_i00
+9400,armor,Ashen Draconic Helmet,Ashen Dynasty Ashen Draconic Helmet.,6378,icon.armor_helmet_i00
+9401,armor,Ashen Draconic Breastplate,Ashen Dynasty Ashen Draconic Breastplate.,6373,icon.armor_t88_u_i00
+9402,armor,Ashen Draconic Gaiters,Ashen Dynasty Ashen Draconic Gaiters.,6374,icon.armor_t88_l_i00
+9403,armor,Ashen Draconic Gauntlets,Ashen Dynasty Ashen Draconic Gauntlets.,6375,icon.armor_t88_g_i00
+9404,armor,Ashen Draconic Boots,Ashen Dynasty Ashen Draconic Boots.,6376,icon.armor_t88_b_i00
+9430,armor,Ashen Draconic Leather Helmet,Ashen Dynasty Ashen Draconic Leather Helmet.,6382,icon.armor_leather_helmet_i00
+9431,armor,Ashen Draconic Leather Armor,Ashen Dynasty Ashen Draconic Leather Armor.,6379,icon.armor_t89_ul_i00
+9432,armor,Ashen Draconic Leather Gloves,Ashen Dynasty Ashen Draconic Leather Gloves.,6380,icon.armor_t89_g_i00
+9433,armor,Ashen Draconic Leather Boots,Ashen Dynasty Ashen Draconic Leather Boots.,6381,icon.armor_t89_b_i00
+9460,armor,Ashen Draconic Circlet,Ashen Dynasty Ashen Draconic Circlet.,6386,icon.armor_leather_helmet_i00
+9461,armor,Ashen Draconic Robe,Ashen Dynasty Ashen Draconic Robe.,6383,icon.armor_t90_ul_i00
+9462,armor,Ashen Draconic Gloves,Ashen Dynasty Ashen Draconic Gloves.,6384,icon.armor_t90_g_i00
+9463,armor,Ashen Draconic Shoes,Ashen Dynasty Ashen Draconic Shoes.,6385,icon.armor_t90_b_i00
+9600,armor,Ashen DK Helmet,Ashen Dynasty Ashen DK Helmet.,6378,icon.armor_helmet_i00
+9601,armor,Ashen DK Breastplate,Ashen Dynasty Ashen DK Breastplate.,6373,icon.armor_t88_u_i00
+9602,armor,Ashen DK Gaiters,Ashen Dynasty Ashen DK Gaiters.,6374,icon.armor_t88_l_i00
+9603,armor,Ashen DK Gauntlets,Ashen Dynasty Ashen DK Gauntlets.,6375,icon.armor_t88_g_i00
+9604,armor,Ashen DK Boots,Ashen Dynasty Ashen DK Boots.,6376,icon.armor_t88_b_i00
+9630,armor,Ashen DK Leather Helmet,Ashen Dynasty Ashen DK Leather Helmet.,6382,icon.armor_leather_helmet_i00
+9631,armor,Ashen DK Leather Armor,Ashen Dynasty Ashen DK Leather Armor.,6379,icon.armor_t89_ul_i00
+9632,armor,Ashen DK Leather Gloves,Ashen Dynasty Ashen DK Leather Gloves.,6380,icon.armor_t89_g_i00
+9633,armor,Ashen DK Leather Boots,Ashen Dynasty Ashen DK Leather Boots.,6381,icon.armor_t89_b_i00
+9660,armor,Ashen DK Circlet,Ashen Dynasty Ashen DK Circlet.,6386,icon.armor_leather_helmet_i00
+9661,armor,Ashen DK Robe,Ashen Dynasty Ashen DK Robe.,6383,icon.armor_t90_ul_i00
+9662,armor,Ashen DK Gloves,Ashen Dynasty Ashen DK Gloves.,6384,icon.armor_t90_g_i00
+9663,armor,Ashen DK Shoes,Ashen Dynasty Ashen DK Shoes.,6385,icon.armor_t90_b_i00
+9700,armor,Ashen Dynarty Helmet,Ashen Dynasty Ashen Dynarty Helmet.,6378,icon.armor_helmet_i00
+9701,armor,Ashen Dynarty Breastplate,Ashen Dynasty Ashen Dynarty Breastplate.,6373,icon.armor_t88_u_i00
+9702,armor,Ashen Dynarty Gaiters,Ashen Dynasty Ashen Dynarty Gaiters.,6374,icon.armor_t88_l_i00
+9703,armor,Ashen Dynarty Gauntlets,Ashen Dynasty Ashen Dynarty Gauntlets.,6375,icon.armor_t88_g_i00
+9704,armor,Ashen Dynarty Boots,Ashen Dynasty Ashen Dynarty Boots.,6376,icon.armor_t88_b_i00
+9730,armor,Ashen Dynarty Leather Helmet,Ashen Dynasty Ashen Dynarty Leather Helmet.,6382,icon.armor_leather_helmet_i00
+9731,armor,Ashen Dynarty Leather Armor,Ashen Dynasty Ashen Dynarty Leather Armor.,6379,icon.armor_t89_ul_i00
+9732,armor,Ashen Dynarty Leather Gloves,Ashen Dynasty Ashen Dynarty Leather Gloves.,6380,icon.armor_t89_g_i00
+9733,armor,Ashen Dynarty Leather Boots,Ashen Dynasty Ashen Dynarty Leather Boots.,6381,icon.armor_t89_b_i00
+9760,armor,Ashen Dynarty Circlet,Ashen Dynasty Ashen Dynarty Circlet.,6386,icon.armor_leather_helmet_i00
+9761,armor,Ashen Dynarty Robe,Ashen Dynasty Ashen Dynarty Robe.,6383,icon.armor_t90_ul_i00
+9762,armor,Ashen Dynarty Gloves,Ashen Dynasty Ashen Dynarty Gloves.,6384,icon.armor_t90_g_i00
+9763,armor,Ashen Dynarty Shoes,Ashen Dynasty Ashen Dynarty Shoes.,6385,icon.armor_t90_b_i00
+9399,etc,Ashen TT Fragment,Ashen Dynasty Ashen TT Fragment.,1785,icon.etc_stone_gray_i00
+9499,etc,Ashen Draconic Fragment,Ashen Dynasty Ashen Draconic Fragment.,1785,icon.etc_stone_gray_i00
+9500,etc,Recipe: Ashen TT Helmet,Ashen Dynasty Recipe: Ashen TT Helmet.,3953,icon.etc_recipe_black_i00
+9501,etc,Recipe: Ashen TT Breastplate,Ashen Dynasty Recipe: Ashen TT Breastplate.,3953,icon.etc_recipe_black_i00
+9502,etc,Recipe: Ashen TT Gaiters,Ashen Dynasty Recipe: Ashen TT Gaiters.,3953,icon.etc_recipe_black_i00
+9503,etc,Recipe: Ashen TT Gauntlets,Ashen Dynasty Recipe: Ashen TT Gauntlets.,3953,icon.etc_recipe_black_i00
+9504,etc,Recipe: Ashen TT Boots,Ashen Dynasty Recipe: Ashen TT Boots.,3953,icon.etc_recipe_black_i00
+9505,etc,Recipe: Ashen TT Shield,Ashen Dynasty Recipe: Ashen TT Shield.,3953,icon.etc_recipe_black_i00
+9506,etc,Recipe: Ashen TT Leather Helmet,Ashen Dynasty Recipe: Ashen TT Leather Helmet.,3953,icon.etc_recipe_black_i00
+9507,etc,Recipe: Ashen TT Leather Armor,Ashen Dynasty Recipe: Ashen TT Leather Armor.,3953,icon.etc_recipe_black_i00
+9508,etc,Recipe: Ashen TT Leather Gloves,Ashen Dynasty Recipe: Ashen TT Leather Gloves.,3953,icon.etc_recipe_black_i00
+9509,etc,Recipe: Ashen TT Leather Boots,Ashen Dynasty Recipe: Ashen TT Leather Boots.,3953,icon.etc_recipe_black_i00
+9510,etc,Recipe: Ashen TT Circlet,Ashen Dynasty Recipe: Ashen TT Circlet.,3953,icon.etc_recipe_black_i00
+9511,etc,Recipe: Ashen TT Robe,Ashen Dynasty Recipe: Ashen TT Robe.,3953,icon.etc_recipe_black_i00
+9512,etc,Recipe: Ashen TT Gloves,Ashen Dynasty Recipe: Ashen TT Gloves.,3953,icon.etc_recipe_black_i00
+9513,etc,Recipe: Ashen TT Shoes,Ashen Dynasty Recipe: Ashen TT Shoes.,3953,icon.etc_recipe_black_i00
+9514,etc,Recipe: Ashen TT Blade,Ashen Dynasty Recipe: Ashen TT Blade.,3953,icon.etc_recipe_black_i00
+9515,etc,Recipe: Ashen TT Divider,Ashen Dynasty Recipe: Ashen TT Divider.,3953,icon.etc_recipe_black_i00
+9516,etc,Recipe: Ashen TT Dual Swords,Ashen Dynasty Recipe: Ashen TT Dual Swords.,3953,icon.etc_recipe_black_i00
+9517,etc,Recipe: Ashen TT Dagger,Ashen Dynasty Recipe: Ashen TT Dagger.,3953,icon.etc_recipe_black_i00
+9518,etc,Recipe: Ashen TT Bow,Ashen Dynasty Recipe: Ashen TT Bow.,3953,icon.etc_recipe_black_i00
+9519,etc,Recipe: Ashen TT Hammer,Ashen Dynasty Recipe: Ashen TT Hammer.,3953,icon.etc_recipe_black_i00
+9520,etc,Recipe: Ashen TT Spear,Ashen Dynasty Recipe: Ashen TT Spear.,3953,icon.etc_recipe_black_i00
+9521,etc,Recipe: Ashen TT Fist,Ashen Dynasty Recipe: Ashen TT Fist.,3953,icon.etc_recipe_black_i00
+9522,etc,Recipe: Ashen TT Staff,Ashen Dynasty Recipe: Ashen TT Staff.,3953,icon.etc_recipe_black_i00
+9523,etc,Recipe: Ashen Draconic Helmet,Ashen Dynasty Recipe: Ashen Draconic Helmet.,3953,icon.etc_recipe_black_i00
+9524,etc,Recipe: Ashen Draconic Breastplate,Ashen Dynasty Recipe: Ashen Draconic Breastplate.,3953,icon.etc_recipe_black_i00
+9525,etc,Recipe: Ashen Draconic Gaiters,Ashen Dynasty Recipe: Ashen Draconic Gaiters.,3953,icon.etc_recipe_black_i00
+9526,etc,Recipe: Ashen Draconic Gauntlets,Ashen Dynasty Recipe: Ashen Draconic Gauntlets.,3953,icon.etc_recipe_black_i00
+9527,etc,Recipe: Ashen Draconic Boots,Ashen Dynasty Recipe: Ashen Draconic Boots.,3953,icon.etc_recipe_black_i00
+9528,etc,Recipe: Ashen Draconic Shield,Ashen Dynasty Recipe: Ashen Draconic Shield.,3953,icon.etc_recipe_black_i00
+9529,etc,Recipe: Ashen Draconic Leather Helmet,Ashen Dynasty Recipe: Ashen Draconic Leather Helmet.,3953,icon.etc_recipe_black_i00
+9530,etc,Recipe: Ashen Draconic Leather Armor,Ashen Dynasty Recipe: Ashen Draconic Leather Armor.,3953,icon.etc_recipe_black_i00
+9531,etc,Recipe: Ashen Draconic Leather Gloves,Ashen Dynasty Recipe: Ashen Draconic Leather Gloves.,3953,icon.etc_recipe_black_i00
+9532,etc,Recipe: Ashen Draconic Leather Boots,Ashen Dynasty Recipe: Ashen Draconic Leather Boots.,3953,icon.etc_recipe_black_i00
+9533,etc,Recipe: Ashen Draconic Circlet,Ashen Dynasty Recipe: Ashen Draconic Circlet.,3953,icon.etc_recipe_black_i00
+9534,etc,Recipe: Ashen Draconic Robe,Ashen Dynasty Recipe: Ashen Draconic Robe.,3953,icon.etc_recipe_black_i00
+9535,etc,Recipe: Ashen Draconic Gloves,Ashen Dynasty Recipe: Ashen Draconic Gloves.,3953,icon.etc_recipe_black_i00
+9536,etc,Recipe: Ashen Draconic Shoes,Ashen Dynasty Recipe: Ashen Draconic Shoes.,3953,icon.etc_recipe_black_i00
+9537,etc,Recipe: Ashen Draconic Blade,Ashen Dynasty Recipe: Ashen Draconic Blade.,3953,icon.etc_recipe_black_i00
+9538,etc,Recipe: Ashen Draconic Divider,Ashen Dynasty Recipe: Ashen Draconic Divider.,3953,icon.etc_recipe_black_i00
+9539,etc,Recipe: Ashen Draconic Dual Swords,Ashen Dynasty Recipe: Ashen Draconic Dual Swords.,3953,icon.etc_recipe_black_i00
+9540,etc,Recipe: Ashen Draconic Dagger,Ashen Dynasty Recipe: Ashen Draconic Dagger.,3953,icon.etc_recipe_black_i00
+9541,etc,Recipe: Ashen Draconic Bow,Ashen Dynasty Recipe: Ashen Draconic Bow.,3953,icon.etc_recipe_black_i00
+9542,etc,Recipe: Ashen Draconic Hammer,Ashen Dynasty Recipe: Ashen Draconic Hammer.,3953,icon.etc_recipe_black_i00
+9543,etc,Recipe: Ashen Draconic Spear,Ashen Dynasty Recipe: Ashen Draconic Spear.,3953,icon.etc_recipe_black_i00
+9544,etc,Recipe: Ashen Draconic Fist,Ashen Dynasty Recipe: Ashen Draconic Fist.,3953,icon.etc_recipe_black_i00
+9545,etc,Recipe: Ashen Draconic Staff,Ashen Dynasty Recipe: Ashen Draconic Staff.,3953,icon.etc_recipe_black_i00
+9546,etc,Recipe: Ashen DK Helmet,Ashen Dynasty Recipe: Ashen DK Helmet.,3953,icon.etc_recipe_black_i00
+9547,etc,Recipe: Ashen DK Breastplate,Ashen Dynasty Recipe: Ashen DK Breastplate.,3953,icon.etc_recipe_black_i00
+9548,etc,Recipe: Ashen DK Gaiters,Ashen Dynasty Recipe: Ashen DK Gaiters.,3953,icon.etc_recipe_black_i00
+9549,etc,Recipe: Ashen DK Gauntlets,Ashen Dynasty Recipe: Ashen DK Gauntlets.,3953,icon.etc_recipe_black_i00
+9550,etc,Recipe: Ashen DK Boots,Ashen Dynasty Recipe: Ashen DK Boots.,3953,icon.etc_recipe_black_i00
+9551,etc,Recipe: Ashen DK Shield,Ashen Dynasty Recipe: Ashen DK Shield.,3953,icon.etc_recipe_black_i00
+9552,etc,Recipe: Ashen DK Leather Helmet,Ashen Dynasty Recipe: Ashen DK Leather Helmet.,3953,icon.etc_recipe_black_i00
+9553,etc,Recipe: Ashen DK Leather Armor,Ashen Dynasty Recipe: Ashen DK Leather Armor.,3953,icon.etc_recipe_black_i00
+9554,etc,Recipe: Ashen DK Leather Gloves,Ashen Dynasty Recipe: Ashen DK Leather Gloves.,3953,icon.etc_recipe_black_i00
+9555,etc,Recipe: Ashen DK Leather Boots,Ashen Dynasty Recipe: Ashen DK Leather Boots.,3953,icon.etc_recipe_black_i00
+9556,etc,Recipe: Ashen DK Circlet,Ashen Dynasty Recipe: Ashen DK Circlet.,3953,icon.etc_recipe_black_i00
+9557,etc,Recipe: Ashen DK Robe,Ashen Dynasty Recipe: Ashen DK Robe.,3953,icon.etc_recipe_black_i00
+9558,etc,Recipe: Ashen DK Gloves,Ashen Dynasty Recipe: Ashen DK Gloves.,3953,icon.etc_recipe_black_i00
+9559,etc,Recipe: Ashen DK Shoes,Ashen Dynasty Recipe: Ashen DK Shoes.,3953,icon.etc_recipe_black_i00
+9560,etc,Recipe: Ashen Phoenix Blade,Ashen Dynasty Recipe: Ashen Phoenix Blade.,3953,icon.etc_recipe_black_i00
+9561,etc,Recipe: Ashen Phoenix Divider,Ashen Dynasty Recipe: Ashen Phoenix Divider.,3953,icon.etc_recipe_black_i00
+9562,etc,Recipe: Ashen Phoenix Dual Swords,Ashen Dynasty Recipe: Ashen Phoenix Dual Swords.,3953,icon.etc_recipe_black_i00
+9563,etc,Recipe: Ashen Phoenix Dagger,Ashen Dynasty Recipe: Ashen Phoenix Dagger.,3953,icon.etc_recipe_black_i00
+9564,etc,Recipe: Ashen Phoenix Bow,Ashen Dynasty Recipe: Ashen Phoenix Bow.,3953,icon.etc_recipe_black_i00
+9565,etc,Recipe: Ashen Phoenix Hammer,Ashen Dynasty Recipe: Ashen Phoenix Hammer.,3953,icon.etc_recipe_black_i00
+9566,etc,Recipe: Ashen Phoenix Spear,Ashen Dynasty Recipe: Ashen Phoenix Spear.,3953,icon.etc_recipe_black_i00
+9567,etc,Recipe: Ashen Phoenix Fist,Ashen Dynasty Recipe: Ashen Phoenix Fist.,3953,icon.etc_recipe_black_i00
+9568,etc,Recipe: Ashen Phoenix Staff,Ashen Dynasty Recipe: Ashen Phoenix Staff.,3953,icon.etc_recipe_black_i00
+9570,etc,Scroll: Enchant Ashen Dynarty Weapon,Ashen Dynasty Scroll: Enchant Ashen Dynarty Weapon.,6577,icon.etc_scroll_of_enchant_weapon_i05
+9571,etc,Scroll: Enchant Ashen Dynarty Armor,Ashen Dynasty Scroll: Enchant Ashen Dynarty Armor.,6578,icon.etc_scroll_of_enchant_armor_i05
+9572,etc,Recipe: Ashen Dynarty Helmet,Ashen Dynasty Recipe: Ashen Dynarty Helmet.,3953,icon.etc_recipe_black_i00
+9573,etc,Recipe: Ashen Dynarty Breastplate,Ashen Dynasty Recipe: Ashen Dynarty Breastplate.,3953,icon.etc_recipe_black_i00
+9574,etc,Recipe: Ashen Dynarty Gaiters,Ashen Dynasty Recipe: Ashen Dynarty Gaiters.,3953,icon.etc_recipe_black_i00
+9575,etc,Recipe: Ashen Dynarty Gauntlets,Ashen Dynasty Recipe: Ashen Dynarty Gauntlets.,3953,icon.etc_recipe_black_i00
+9576,etc,Recipe: Ashen Dynarty Boots,Ashen Dynasty Recipe: Ashen Dynarty Boots.,3953,icon.etc_recipe_black_i00
+9577,etc,Recipe: Ashen Dynarty Shield,Ashen Dynasty Recipe: Ashen Dynarty Shield.,3953,icon.etc_recipe_black_i00
+9578,etc,Recipe: Ashen Dynarty Leather Helmet,Ashen Dynasty Recipe: Ashen Dynarty Leather Helmet.,3953,icon.etc_recipe_black_i00
+9579,etc,Recipe: Ashen Dynarty Leather Armor,Ashen Dynasty Recipe: Ashen Dynarty Leather Armor.,3953,icon.etc_recipe_black_i00
+9580,etc,Recipe: Ashen Dynarty Leather Gloves,Ashen Dynasty Recipe: Ashen Dynarty Leather Gloves.,3953,icon.etc_recipe_black_i00
+9581,etc,Recipe: Ashen Dynarty Leather Boots,Ashen Dynasty Recipe: Ashen Dynarty Leather Boots.,3953,icon.etc_recipe_black_i00
+9582,etc,Recipe: Ashen Dynarty Circlet,Ashen Dynasty Recipe: Ashen Dynarty Circlet.,3953,icon.etc_recipe_black_i00
+9583,etc,Recipe: Ashen Dynarty Robe,Ashen Dynasty Recipe: Ashen Dynarty Robe.,3953,icon.etc_recipe_black_i00
+9584,etc,Recipe: Ashen Dynarty Gloves,Ashen Dynasty Recipe: Ashen Dynarty Gloves.,3953,icon.etc_recipe_black_i00
+9585,etc,Recipe: Ashen Dynarty Shoes,Ashen Dynasty Recipe: Ashen Dynarty Shoes.,3953,icon.etc_recipe_black_i00
+9586,etc,Recipe: Ashen Dynarty Blade,Ashen Dynasty Recipe: Ashen Dynarty Blade.,3953,icon.etc_recipe_black_i00
+9587,etc,Recipe: Ashen Dynarty Divider,Ashen Dynasty Recipe: Ashen Dynarty Divider.,3953,icon.etc_recipe_black_i00
+9588,etc,Recipe: Ashen Dynarty Dual Swords,Ashen Dynasty Recipe: Ashen Dynarty Dual Swords.,3953,icon.etc_recipe_black_i00
+9589,etc,Recipe: Ashen Dynarty Dagger,Ashen Dynasty Recipe: Ashen Dynarty Dagger.,3953,icon.etc_recipe_black_i00
+9590,etc,Recipe: Ashen Dynarty Bow,Ashen Dynasty Recipe: Ashen Dynarty Bow.,3953,icon.etc_recipe_black_i00
+9591,etc,Recipe: Ashen Dynarty Hammer,Ashen Dynasty Recipe: Ashen Dynarty Hammer.,3953,icon.etc_recipe_black_i00
+9592,etc,Recipe: Ashen Dynarty Spear,Ashen Dynasty Recipe: Ashen Dynarty Spear.,3953,icon.etc_recipe_black_i00
+9593,etc,Recipe: Ashen Dynarty Fist,Ashen Dynasty Recipe: Ashen Dynarty Fist.,3953,icon.etc_recipe_black_i00
+9594,etc,Recipe: Ashen Dynarty Staff,Ashen Dynasty Recipe: Ashen Dynarty Staff.,3953,icon.etc_recipe_black_i00
+9699,etc,Ashen DK Fragment,Ashen Dynasty Ashen DK Fragment.,1785,icon.etc_stone_gray_i00
+9799,etc,Ashen Dynarty Fragment,Ashen Dynasty Ashen Dynarty Fragment.,1785,icon.etc_stone_gray_i00
+93000,npc,Guardian of Ashen TT,Ashen Dynasty,25325,
+93001,npc,Ashen Warden,Ashen Dynasty,25325,
+93002,npc,Ashen Chronicler,Ashen Dynasty,30001,
+93100,npc,Elder of Ashen Scale,Ashen Dynasty,25325,
+93101,npc,Ashen Scale Warden,Ashen Dynasty,25325,
+93200,npc,Ashen Dark Warden,Ashen Dynasty,25325,
+93201,npc,Phoenix Ember,Ashen Dynasty,25325,
+93300,npc,Ashen Dynasty Lord,Ashen Dynasty,25325,
+93301,npc,Ashen Dynasty Blade,Ashen Dynasty,25325,
+9305,weapon,Ashen TT Shield,Ashen Dynasty Ashen TT Shield.,6377,icon.shield_imperial_crusader_shield_i00
+9390,weapon,Ashen TT Blade,Ashen Dynasty Ashen TT Blade.,6364,icon.weapon_forgotten_blade_i00
+9391,weapon,Ashen TT Divider,Ashen Dynasty Ashen TT Divider.,6372,icon.weapon_heavens_divider_i00
+9392,weapon,Ashen TT Dual Swords,Ashen Dynasty Ashen TT Dual Swords.,5706,icon.weapon_dual_sword_i00
+9393,weapon,Ashen TT Dagger,Ashen Dynasty Ashen TT Dagger.,6367,icon.weapon_angel_slayer_i00
+9394,weapon,Ashen TT Bow,Ashen Dynasty Ashen TT Bow.,6368,icon.weapon_shining_bow_i00
+9395,weapon,Ashen TT Hammer,Ashen Dynasty Ashen TT Hammer.,6365,icon.weapon_basalt_battlehammer_i00
+9396,weapon,Ashen TT Spear,Ashen Dynasty Ashen TT Spear.,6370,icon.weapon_saint_spear_i00
+9397,weapon,Ashen TT Fist,Ashen Dynasty Ashen TT Fist.,6371,icon.weapon_demon_splinter_i00
+9398,weapon,Ashen TT Staff,Ashen Dynasty Ashen TT Staff.,6366,icon.weapon_imperial_staff_i00
+9405,weapon,Ashen Draconic Shield,Ashen Dynasty Ashen Draconic Shield.,6377,icon.shield_imperial_crusader_shield_i00
+9490,weapon,Ashen Draconic Blade,Ashen Dynasty Ashen Draconic Blade.,6364,icon.weapon_forgotten_blade_i00
+9491,weapon,Ashen Draconic Divider,Ashen Dynasty Ashen Draconic Divider.,6372,icon.weapon_heavens_divider_i00
+9492,weapon,Ashen Draconic Dual Swords,Ashen Dynasty Ashen Draconic Dual Swords.,5706,icon.weapon_dual_sword_i00
+9493,weapon,Ashen Draconic Dagger,Ashen Dynasty Ashen Draconic Dagger.,6367,icon.weapon_angel_slayer_i00
+9494,weapon,Ashen Draconic Bow,Ashen Dynasty Ashen Draconic Bow.,6368,icon.weapon_shining_bow_i00
+9495,weapon,Ashen Draconic Hammer,Ashen Dynasty Ashen Draconic Hammer.,6365,icon.weapon_basalt_battlehammer_i00
+9496,weapon,Ashen Draconic Spear,Ashen Dynasty Ashen Draconic Spear.,6370,icon.weapon_saint_spear_i00
+9497,weapon,Ashen Draconic Fist,Ashen Dynasty Ashen Draconic Fist.,6371,icon.weapon_demon_splinter_i00
+9498,weapon,Ashen Draconic Staff,Ashen Dynasty Ashen Draconic Staff.,6366,icon.weapon_imperial_staff_i00
+9605,weapon,Ashen DK Shield,Ashen Dynasty Ashen DK Shield.,6377,icon.shield_imperial_crusader_shield_i00
+9690,weapon,Ashen Phoenix Blade,Ashen Dynasty Ashen Phoenix Blade.,6364,icon.weapon_forgotten_blade_i00
+9691,weapon,Ashen Phoenix Divider,Ashen Dynasty Ashen Phoenix Divider.,6372,icon.weapon_heavens_divider_i00
+9692,weapon,Ashen Phoenix Dual Swords,Ashen Dynasty Ashen Phoenix Dual Swords.,5706,icon.weapon_dual_sword_i00
+9693,weapon,Ashen Phoenix Dagger,Ashen Dynasty Ashen Phoenix Dagger.,6367,icon.weapon_angel_slayer_i00
+9694,weapon,Ashen Phoenix Bow,Ashen Dynasty Ashen Phoenix Bow.,6368,icon.weapon_shining_bow_i00
+9695,weapon,Ashen Phoenix Hammer,Ashen Dynasty Ashen Phoenix Hammer.,6365,icon.weapon_basalt_battlehammer_i00
+9696,weapon,Ashen Phoenix Spear,Ashen Dynasty Ashen Phoenix Spear.,6370,icon.weapon_saint_spear_i00
+9697,weapon,Ashen Phoenix Fist,Ashen Dynasty Ashen Phoenix Fist.,6371,icon.weapon_demon_splinter_i00
+9698,weapon,Ashen Phoenix Staff,Ashen Dynasty Ashen Phoenix Staff.,6366,icon.weapon_imperial_staff_i00
+9705,weapon,Ashen Dynarty Shield,Ashen Dynasty Ashen Dynarty Shield.,6377,icon.shield_imperial_crusader_shield_i00
+9790,weapon,Ashen Dynarty Blade,Ashen Dynasty Ashen Dynarty Blade.,6364,icon.weapon_forgotten_blade_i00
+9791,weapon,Ashen Dynarty Divider,Ashen Dynasty Ashen Dynarty Divider.,6372,icon.weapon_heavens_divider_i00
+9792,weapon,Ashen Dynarty Dual Swords,Ashen Dynasty Ashen Dynarty Dual Swords.,5706,icon.weapon_dual_sword_i00
+9793,weapon,Ashen Dynarty Dagger,Ashen Dynasty Ashen Dynarty Dagger.,6367,icon.weapon_angel_slayer_i00
+9794,weapon,Ashen Dynarty Bow,Ashen Dynasty Ashen Dynarty Bow.,6368,icon.weapon_shining_bow_i00
+9795,weapon,Ashen Dynarty Hammer,Ashen Dynasty Ashen Dynarty Hammer.,6365,icon.weapon_basalt_battlehammer_i00
+9796,weapon,Ashen Dynarty Spear,Ashen Dynasty Ashen Dynarty Spear.,6370,icon.weapon_saint_spear_i00
+9797,weapon,Ashen Dynarty Fist,Ashen Dynasty Ashen Dynarty Fist.,6371,icon.weapon_demon_splinter_i00
+9798,weapon,Ashen Dynarty Staff,Ashen Dynasty Ashen Dynarty Staff.,6366,icon.weapon_imperial_staff_i00

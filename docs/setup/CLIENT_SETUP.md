@@ -78,6 +78,17 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
   -File .\infrastructure\scripts\verify-client-persistence.ps1
 ```
 
+## Nomes/ícones Ashen (Sprint 24)
+
+Após o runtime ter os overlays Ashen, aplique o patch local no cliente:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command `
+  '& ".\infrastructure\scripts\apply-local-client-patch.ps1" -Confirm:$false'
+```
+
+Detalhes: [`CLIENT_PATCH_IMPLEMENTATION_REPORT.md`](CLIENT_PATCH_IMPLEMENTATION_REPORT.md).
+
 ## Limites
 
 - Não versionar cliente, `.dat`, DLL ou launcher.

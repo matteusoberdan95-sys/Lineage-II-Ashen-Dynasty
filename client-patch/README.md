@@ -10,13 +10,21 @@ Não adicione aqui:
 - credenciais de conta;
 - downloads obtidos de origem desconhecida.
 
-## Estado atual
+## Estado atual (Sprint 24 / ADR-011)
 
-O proprietário forneceu o cliente limpo em `D:\L2-ASHEN-DYNASTY`. A configuração
-local, o endpoint `127.0.0.1` e o fluxo de conta estão documentados em:
+Há um **patch local de nomes/ícones** Ashen, reproduzível por scripts:
+
+- manifesto versionável:
+  `infrastructure/customization/ashen_client/ashen_client_manifest.csv`
+- apply/verify:
+  `infrastructure/scripts/apply-local-client-patch.ps1`
+  `infrastructure/scripts/verify-local-client-patch.ps1`
+
+O patch é aplicado somente em `D:\L2-ASHEN-DYNASTY` (fora do Git), com backup em
+`.ashen-local/`. Detalhes:
+[`docs/setup/CLIENT_PATCH_IMPLEMENTATION_REPORT.md`](../docs/setup/CLIENT_PATCH_IMPLEMENTATION_REPORT.md).
+
+A configuração de endpoint e contas continua em:
 
 - [`docs/setup/CLIENT_SETUP.md`](../docs/setup/CLIENT_SETUP.md)
 - [`docs/CLIENT_COMPATIBILITY.md`](../docs/CLIENT_COMPATIBILITY.md)
-
-Qualquer patch versionável e redistribuível só será adicionado depois de comprovação
-de licença e necessidade técnica. Até lá, esta pasta permanece documental.

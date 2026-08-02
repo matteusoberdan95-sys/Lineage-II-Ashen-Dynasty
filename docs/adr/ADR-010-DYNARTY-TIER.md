@@ -94,7 +94,7 @@ Faixa `9570`/`9571` = enchant Dynarty; craft Dynarty usa `9572–9594`
 3. Scrolls `9570`/`9571` + merge `EnchantItemData`/`EnchantItemGroups` (max 30
    só em IDs Dynarty; retail S continua em 16).
 4. Craft Dynarty (`9799`/`9699`, scrolls 9572–9594) + quest ponte Q902
-   (Sprint 23); client-patch ainda pendente.
+   (Sprint 23); client-patch local de nomes/ícones na Sprint 24 (ADR-011).
 5. Relatórios: `docs/setup/DYNARTY_IMPLEMENTATION_REPORT.md`,
    `ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`, `ASHEN_QUEST_IMPLEMENTATION_REPORT.md`.
 

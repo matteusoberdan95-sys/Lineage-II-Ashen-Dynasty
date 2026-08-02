@@ -75,5 +75,5 @@ Valores são ordem de grandeza para desenho, não SLA.
 
 ## Próximo trabalho autorizado (fora desta ADR)
 
-1. Craft/quest Dynarty + client-patch.
+1. Craft/quest Dynarty + client-patch local (entregues nas Sprints 23–24).
 2. QoL / observabilidade econômica.

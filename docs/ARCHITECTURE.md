@@ -87,9 +87,9 @@ alterará firewall, roteador ou produção.
 
 ### Cliente
 
-`client-patch/` conterá somente documentação e, futuramente, arquivos cuja
-distribuição seja comprovadamente permitida. O cliente completo, executáveis e assets
-proprietários permanecem fora do repositório.
+`client-patch/` contém documentação do fluxo local. O manifesto redistribuível e
+os scripts de apply ficam em `infrastructure/`; o cliente completo, `.dat`,
+executáveis e assets proprietários permanecem fora do repositório (ADR-011).
 
 ## Arquitetura futura
 
