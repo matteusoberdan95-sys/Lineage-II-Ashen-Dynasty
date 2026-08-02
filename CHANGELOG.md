@@ -50,6 +50,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   merge de recipes em `Recipes.xml`, drops de recipe nos raids (Sprint 15).
 - Quest Q900 Ashen Scale of Transition (NPC 93002): ponte TT→Draconic com
   fragmentos + recipe de peitoral (Sprint 16).
+- ADR-009: design do tier Ashen DK / Phoenix (T5), IDs 9600–9699 reservados,
+  sem XML (Sprint 17).
 
 ### Segurança
 

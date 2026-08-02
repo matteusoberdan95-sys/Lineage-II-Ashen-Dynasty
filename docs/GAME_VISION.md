@@ -34,23 +34,19 @@ Consulte [`docs/design/GEAR_PROGRESSION.md`](design/GEAR_PROGRESSION.md).
 
 Esta visão não autoriza implementar ainda:
 
-- client-patch completo de ícones TT / quest de transição TT;
-- Draconic custom no datapack (design ADR-008);
-- DK;
-- armas Fênix;
+- client-patch completo de ícones/nomes custom;
+- implementação T5 DK/Phoenix no datapack (design ADR-009);
 - Dynarty;
 - enchant `+30`;
 - TVT customizado;
 - loja, pagamentos ou doações;
 - itens ou skills customizados além do autorizado por ADR.
 
-Rates locais de XP/SP foram autorizados pela ADR-005 (500x level / drop retail-like).
-O desenho do TT está na ADR-007. Os demais sistemas acima exigem desenho,
-balanceamento, testes, auditoria econômica e ADR própria.
+Já autorizados e entregues em sprints: rates ADR-005; TT/Draconic overlays;
+craft por fragmentos; quest ponte Q900. O desenho do T5 está na ADR-009.
 
-## Prioridade atual
+## Próximo passo
 
-1. baseline + rates + escada de gear (até Sprint 12);
-2. Ashen TT implementado em overlays (Sprint 13);
-3. design Draconic T4 (ADR-008 / Sprint 13);
-4. próxima: design T5, client-patch ou QoL.
+1. atual: design T5 (ADR-009) publicado;
+2. playtest T3–T4 (raids, craft, Q900) continua válido;
+3. próxima: implementação T5, client-patch ou QoL.

@@ -12,7 +12,7 @@ T1 Mid retail          B → A
 T2 Alto retail         S Interlude
 T3 Entrada endgame     Ashen TT             ← implementado (overlays)
 T4 Posterior           Draconic custom      ← implementado (overlays)
-T5 Avançado            DK + armas Fênix
+T5 Avançado            DK + armas Fênix     ← design ADR-009
 T6 Máximo              Dynarty (+30)        ← muitos meses
 ```
 
@@ -20,10 +20,12 @@ T6 Máximo              Dynarty (+30)        ← muitos meses
 
 1. Sobe de nível com XP 500x.
 2. Farma / crafta sets **retail Interlude** até S-grade (T2).
-3. Farma raids Ashen TT (Guardian / Warden) ou testa via GM — ver
-   [`TT_TIER.md`](TT_TIER.md) e [`TT_ITEM_IDS.md`](TT_ITEM_IDS.md).
-4. Farma raids Draconic (Elder / Scale Warden) — ver
-   [`DRACONIC_TIER.md`](DRACONIC_TIER.md) e [`DRACONIC_ITEM_IDS.md`](DRACONIC_ITEM_IDS.md).
+3. Farma raids Ashen TT ou crafta com fragmentos — ver
+   [`TT_TIER.md`](TT_TIER.md) e [`ASHEN_CRAFT_IDS.md`](ASHEN_CRAFT_IDS.md).
+4. Ponte Q900 (Chronicler) e farms Draconic — ver
+   [`DRACONIC_TIER.md`](DRACONIC_TIER.md) e
+   [`../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](../setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).
+5. T5 DK/Phoenix ainda só no papel — [`DK_PHOENIX_TIER.md`](DK_PHOENIX_TIER.md).
 
 ## Exemplos retail úteis no playtest GM
 
@@ -36,5 +38,6 @@ T6 Máximo              Dynarty (+30)        ← muitos meses
 
 ## Fora de escopo até implementação / ADR própria
 
-- DK, Fênix, Dynarty, enchant +30  
+- Implementação T5 (DK/Phoenix): design ADR-009, XML pendente  
+- Dynarty, enchant +30  
 - loja de set / doação de gear

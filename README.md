@@ -103,11 +103,12 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 - [ADR-006](docs/adr/ADR-006-GEAR-PROGRESSION.md);
 - [ADR-007](docs/adr/ADR-007-TT-TIER.md);
 - [ADR-008](docs/adr/ADR-008-DRACONIC-TIER.md);
+- [ADR-009](docs/adr/ADR-009-DK-PHOENIX-TIER.md);
 - [notas de licença](LICENSE-NOTES.md).
 
 ## Próximo bloqueio
 
-Design T5 (DK/Fênix), client-patch ou QoL/observabilidade — ainda sem
+Implementação T5 (DK/Phoenix), client-patch ou QoL/observabilidade — ainda sem
 Dynarty/rede externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
@@ -148,6 +149,7 @@ sem valores secretos na documentação.
 - [craft Ashen (fragmentos)](docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md);
 - [IDs craft Ashen](docs/design/ASHEN_CRAFT_IDS.md);
 - [quest Ashen Scale](docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md);
+- [tier DK/Phoenix](docs/design/DK_PHOENIX_TIER.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

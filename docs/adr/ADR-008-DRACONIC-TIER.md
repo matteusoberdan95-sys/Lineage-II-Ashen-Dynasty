@@ -78,5 +78,5 @@ NPCs futuros sugeridos: `93100` (raid), `93101` (warden de armas).
 
 ## Consequências
 
-- T5/T6 continuam só na visão até ADRs próprias.
+- T5 tem envelope em ADR-009 (design); T6 continua só na visão até ADR própria.
 - Teto de conteúdo custom implementado sobe para **Draconic (T4)**; TT permanece o degrau anterior.
