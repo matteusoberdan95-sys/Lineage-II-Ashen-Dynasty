@@ -149,4 +149,5 @@ comandos GM diretamente.
 - `docs/setup/DRACONIC_IMPLEMENTATION_REPORT.md`
 - `docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`
 - `docs/design/ASHEN_CRAFT_IDS.md`
+- `docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`
 - `docs/security/SOURCE_AUDIT.md`

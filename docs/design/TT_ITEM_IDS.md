@@ -28,3 +28,4 @@
 | 9399 | Ashen TT Fragment |
 | 93000 | NPC Guardian of Ashen TT |
 | 93001 | NPC Ashen Warden |
+| 93002 | NPC Ashen Chronicler (Q900) |

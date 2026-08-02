@@ -48,6 +48,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   apply/verify (Sprint 14).
 - Craft Ashen TT/Draconic com fragmentos (`9399`/`9499`): scrolls 9500–9545,
   merge de recipes em `Recipes.xml`, drops de recipe nos raids (Sprint 15).
+- Quest Q900 Ashen Scale of Transition (NPC 93002): ponte TT→Draconic com
+  fragmentos + recipe de peitoral (Sprint 16).
 
 ### Segurança
 

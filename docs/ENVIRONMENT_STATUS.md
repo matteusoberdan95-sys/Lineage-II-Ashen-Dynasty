@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 15 (TT +
-Draconic + craft por fragmentos). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 16 (TT +
+Draconic + craft + quest de transição). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar quest de transição, design T5, client-patch ou QoL/observabilidade.
+Registrar design T5, client-patch ou QoL/observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -251,3 +251,10 @@ raids 93100/93101, spawns). Relatório:
 Craft Ashen com sink de fragmentos: 46 recipes (listIds 872–917), scrolls
 9500–9545, merge idempotente em `Recipes.xml`, drops de recipe nos raids.
 Relatório: [`docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`](setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md).
+
+## Conclusão da Sprint 16
+
+Quest Q900 Ashen Scale of Transition (Chronicler 93002): troca 15 fragmentos TT
+por 12 fragmentos Draconic + recipe do peitoral. Scripts sob `quests/` com
+`main()` próprio; `custom/` continua excluído. Relatório:
+[`docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).

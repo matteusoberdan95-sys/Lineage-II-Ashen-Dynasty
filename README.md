@@ -107,8 +107,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-Quest de transição TT–Draconic, design T5 (DK/Fênix), client-patch ou
-QoL/observabilidade — ainda sem Dynarty/rede externa, salvo autorização.
+Design T5 (DK/Fênix), client-patch ou QoL/observabilidade — ainda sem
+Dynarty/rede externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
 
@@ -147,6 +147,7 @@ sem valores secretos na documentação.
 - [implementação Draconic](docs/setup/DRACONIC_IMPLEMENTATION_REPORT.md);
 - [craft Ashen (fragmentos)](docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md);
 - [IDs craft Ashen](docs/design/ASHEN_CRAFT_IDS.md);
+- [quest Ashen Scale](docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

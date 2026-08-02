@@ -46,7 +46,7 @@ No GM:
 
 - Sem client-patch: nomes/ícones podem aparecer genéricos no Interlude.
 - Craft com fragmentos Draconic + TT: ver Sprint 15 (`ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`).
-- Quest de transição ainda não criada (raid é a fonte principal).
+- Quest de transição TT→Draconic: ver Sprint 16 (`ASHEN_QUEST_IMPLEMENTATION_REPORT.md`).
 
 ## Economia
 
