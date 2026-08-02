@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado após o primeiro login na
-Sprint 6. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado após o playtest controlado
+na Sprint 8. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -75,7 +75,7 @@ As consultas foram feitas somente para listeners TCP.
 2. JDK 25 e Ant 1.10.17 estão instalados; três clean builds foram aprovados.
 3. MariaDB local, schema e usuário restrito foram preparados.
 4. Bind, JDBC, descoberta de IP e registro foram isolados na Sprint 5.
-5. Cliente e checklist mínimo de mundo validados nas Sprints 6 e 7.
+5. Cliente, checklist de mundo e playtest controlado validados até a Sprint 8.
 
 ## Estado das ferramentas por etapa
 
@@ -159,7 +159,8 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Na próxima sprint de playtest, registrar cenários repetíveis de mundo local.
+Na próxima sprint, registrar roteiro de regressão local ou a primeira ADR de
+customização Ashen Dynasty.
 
 ## Conclusão da Sprint 0
 
@@ -198,3 +199,9 @@ O cliente limpo em `D:\L2-ASHEN-DYNASTY` autenticou em localhost. A conta contro
 Checklist mínimo de mundo aprovado: personagem `NEIDE157` com 6 itens, posição
 coerente e listeners apenas em loopback. Scripts de snapshot e verificação de
 estado online foram adicionados.
+
+## Conclusão da Sprint 8
+
+Playtest controlado aprovado pelo proprietário. `NEIDE157` avançou para o nível 2,
+mudou de posição, fez logout com `online=0` e manteve 6 itens persistidos. Stack
+local e listeners em loopback permaneceram estáveis.

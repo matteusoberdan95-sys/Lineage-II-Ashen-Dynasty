@@ -31,6 +31,7 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - Configuração do cliente limpo, conta local controlada e relatório do primeiro login.
 - Scripts para `l2.ini` Ver413, criação/exibição de conta e verificação de personagem.
 - Checklist mínimo de mundo, snapshot de personagem e espera de estado online/offline.
+- Relatório do playtest controlado com progresso de nível, logout limpo e persistência.
 
 ### Segurança
 
