@@ -75,7 +75,7 @@ As consultas foram feitas somente para listeners TCP.
 2. JDK 25 e Ant 1.10.17 estão instalados; três clean builds foram aprovados.
 3. MariaDB local, schema e usuário restrito foram preparados.
 4. Bind, JDBC, descoberta de IP e registro foram isolados na Sprint 5.
-5. Cliente limpo validado na Sprint 6; próximo foco é relogin e checklist de mundo.
+5. Cliente e checklist mínimo de mundo validados nas Sprints 6 e 7.
 
 ## Estado das ferramentas por etapa
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Na próxima sprint, registrar relogin, logout e checklist mínimo de mundo local.
+Na próxima sprint de playtest, registrar cenários repetíveis de mundo local.
 
 ## Conclusão da Sprint 0
 
@@ -192,3 +192,9 @@ cadastros foram bloqueados. Não houve conexão Java externa nem erro crítico.
 O cliente limpo em `D:\L2-ASHEN-DYNASTY` autenticou em localhost. A conta controlada
 `ashen_test` criou o personagem `NEIDE157`, persistido no MariaDB com
 `lastIP=127.0.0.1`. `L2.exe` exige elevação UAC. O pack L2Agonia foi rejeitado.
+
+## Conclusão da Sprint 7
+
+Checklist mínimo de mundo aprovado: personagem `NEIDE157` com 6 itens, posição
+coerente e listeners apenas em loopback. Scripts de snapshot e verificação de
+estado online foram adicionados.

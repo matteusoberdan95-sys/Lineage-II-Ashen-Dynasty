@@ -16,7 +16,7 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 a 6 estão concluídas localmente. L2JMobius
+As Sprints 0 a 7 estão concluídas localmente. L2JMobius
 `L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
 `e4d1d8336ed28fc0916e7caad3ca752d06169eac`, após auditoria estática inicial.
 
@@ -24,8 +24,9 @@ O repositório separa source, runtime, banco, infraestrutura, cliente e componen
 .NET futuros conforme a ADR-002. A source permanece limpa; um patch local reproduzível
 corrige exclusivamente o bind 7777 conforme a ADR-003. MariaDB 11.4.3, Login Server e
 Game Server rodam somente em localhost. O cliente limpo em `D:\L2-ASHEN-DYNASTY`
-autenticou, criou o personagem `NEIDE157` e persistiu no banco. Nenhuma conexão Java
-externa foi observada. O cliente permanece fora do Git.
+autenticou, criou o personagem `NEIDE157` e persistiu no banco. O checklist mínimo de
+mundo da Sprint 7 foi aprovado, com inventário e posição coerentes. Nenhuma conexão
+Java externa foi observada. O cliente permanece fora do Git.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -103,8 +104,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-A próxima sprint deverá validar relogin, logout limpo, inventário inicial e um
-checklist mínimo de mundo local, ainda sem customizações de rates ou itens.
+A próxima sprint poderá aprofundar playtest controlado (relogin repetido, morte/
+retorno, NPCs básicos) ainda sem customizações de rates ou itens.
 
 ## Segurança e propriedade intelectual
 
@@ -127,6 +128,7 @@ sem valores secretos na documentação.
 - [relatório da primeira execução](docs/setup/FIRST_RUN_REPORT.md);
 - [configuração do cliente local](docs/setup/CLIENT_SETUP.md);
 - [relatório do primeiro login](docs/setup/FIRST_CLIENT_REPORT.md);
+- [checklist mínimo de mundo](docs/setup/WORLD_CHECKLIST_REPORT.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

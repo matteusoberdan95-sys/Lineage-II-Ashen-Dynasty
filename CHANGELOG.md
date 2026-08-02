@@ -30,6 +30,7 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - ADR-003 para patches de segurança fora do submódulo.
 - Configuração do cliente limpo, conta local controlada e relatório do primeiro login.
 - Scripts para `l2.ini` Ver413, criação/exibição de conta e verificação de personagem.
+- Checklist mínimo de mundo, snapshot de personagem e espera de estado online/offline.
 
 ### Segurança
 
