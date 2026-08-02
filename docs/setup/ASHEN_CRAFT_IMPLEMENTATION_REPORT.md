@@ -1,7 +1,7 @@
 # Relatório — craft Ashen TT/Draconic/DK (Sprint 15 + 19)
 
 **Status:** implementado em overlays; merge de `Recipes.xml` no apply; load
-Sprint 15 validado (917 recipes); Sprint 19 espera **940** recipes (871 + 69).
+validado (`RecipeData: Loaded 940 recipes`, `ItemData` highest id `9699`).
 
 ## Entregue
 
