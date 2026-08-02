@@ -12,8 +12,8 @@ antes de Draconic / DK-Fênix / Dynarty.
 | Item | Valor |
 |---|---|
 | Design | aceito (ADR-007) |
-| No datapack | **não** |
-| Teto jogável hoje | T2 retail S-grade |
+| No datapack runtime | **sim** (overlays Sprint 13) |
+| Client-patch de ícones | pendente |
 
 ## O que compõe “estar de TT”
 
@@ -35,6 +35,12 @@ antes de Draconic / DK-Fênix / Dynarty.
 
 `9300–9399` (não usar até a sprint de implementação).
 
-## Próximo passo técnico
+## Como testar (GM)
 
-Sprint de implementação TT: XML de itens + raid/quest + balanceamento + testes GM.
+```text
+//create_item 9301 1
+//create_item 9390 1
+//spawn 93000
+```
+
+IDs: [`TT_ITEM_IDS.md`](TT_ITEM_IDS.md). Relatório: [`../setup/TT_IMPLEMENTATION_REPORT.md`](../setup/TT_IMPLEMENTATION_REPORT.md).

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="93000" level="80" type="RaidBoss" name="Guardian of Ashen TT" title="Ashen Dynasty">
+		<parameters>
+			<param name="RaidSpawnMusic" value="Rm01_A" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="5200000" sp="1100000" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="420000" hpRegen="130" mp="1600" mpRegen="3" />
+			<attack physical="2600" magical="900" random="50" critical="4" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1000" magical="500" evasion="-18" />
+			<speed>
+				<walk ground="50" />
+				<run ground="190" />
+			</speed>
+			<hitTime>470</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" />
+			<skill id="4494" level="1" />
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<drop>
+				<group chance="100">
+					<item id="57" min="500000" max="900000" chance="100" />
+				</group>
+				<group chance="100">
+					<item id="9399" min="2" max="5" chance="100" />
+				</group>
+				<group chance="35">
+					<item id="9300" min="1" max="1" chance="16" />
+					<item id="9301" min="1" max="1" chance="16" />
+					<item id="9302" min="1" max="1" chance="16" />
+					<item id="9303" min="1" max="1" chance="16" />
+					<item id="9304" min="1" max="1" chance="16" />
+					<item id="9305" min="1" max="1" chance="20" />
+				</group>
+				<group chance="25">
+					<item id="9330" min="1" max="1" chance="25" />
+					<item id="9331" min="1" max="1" chance="25" />
+					<item id="9332" min="1" max="1" chance="25" />
+					<item id="9333" min="1" max="1" chance="25" />
+				</group>
+				<group chance="25">
+					<item id="9360" min="1" max="1" chance="25" />
+					<item id="9361" min="1" max="1" chance="25" />
+					<item id="9362" min="1" max="1" chance="25" />
+					<item id="9363" min="1" max="1" chance="25" />
+				</group>
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="20" />
+			<height normal="40" />
+		</collision>
+	</npc>
+	<npc id="93001" level="78" type="RaidBoss" name="Ashen Warden" title="Ashen Dynasty">
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="3600000" sp="800000" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="300000" hpRegen="120" mp="1500" mpRegen="3" />
+			<attack physical="2400" magical="850" random="40" critical="4" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="920" magical="460" evasion="-18" />
+			<speed>
+				<walk ground="50" />
+				<run ground="190" />
+			</speed>
+			<hitTime>450</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" />
+			<skill id="4494" level="1" />
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<drop>
+				<group chance="100">
+					<item id="57" min="300000" max="600000" chance="100" />
+				</group>
+				<group chance="100">
+					<item id="9399" min="1" max="3" chance="100" />
+				</group>
+				<group chance="40">
+					<item id="9390" min="1" max="1" chance="12" />
+					<item id="9391" min="1" max="1" chance="11" />
+					<item id="9392" min="1" max="1" chance="11" />
+					<item id="9393" min="1" max="1" chance="11" />
+					<item id="9394" min="1" max="1" chance="11" />
+					<item id="9395" min="1" max="1" chance="11" />
+					<item id="9396" min="1" max="1" chance="11" />
+					<item id="9397" min="1" max="1" chance="11" />
+					<item id="9398" min="1" max="1" chance="11" />
+				</group>
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="18" />
+			<height normal="38" />
+		</collision>
+	</npc>
+</list>

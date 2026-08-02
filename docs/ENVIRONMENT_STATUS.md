@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 12 (design do
-Ashen TT / ADR-007). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 13 (TT
+implementado + design Draconic). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar implementação do TT, design do T4 (Draconic), QoL ou observabilidade.
+Registrar implementação Draconic, client-patch TT, QoL ou observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -232,5 +232,10 @@ Nenhum item custom foi implementado. Documento resumido em
 ## Conclusão da Sprint 12
 
 ADR-007 aceita: Ashen TT especificado (Heavy/Light/Robe, armas, raid/quest/craft,
-tempo 4–8 semanas, IDs 9300–9399 reservados). Ainda **não** há XML no datapack.
-Teto jogável permanece T2. Consulte [`docs/design/TT_TIER.md`](design/TT_TIER.md).
+tempo 4–8 semanas, IDs 9300–9399). Consulte [`docs/design/TT_TIER.md`](design/TT_TIER.md).
+
+## Conclusão da Sprint 13
+
+Ashen TT aplicado via overlays (itens/sets/raids/spawns) sem sujar o submódulo.
+ADR-008 aceita para Draconic custom (design only, IDs 9400–9499). Relatório:
+[`docs/setup/TT_IMPLEMENTATION_REPORT.md`](setup/TT_IMPLEMENTATION_REPORT.md).

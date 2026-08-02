@@ -16,17 +16,15 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 a 12 estão concluídas localmente. L2JMobius
+As Sprints 0 a 13 estão concluídas localmente. L2JMobius
 `L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
 `e4d1d8336ed28fc0916e7caad3ca752d06169eac`.
 
 O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
-.NET futuros conforme a ADR-002. A source permanece limpa; um patch local reproduzível
-corrige exclusivamente o bind 7777 conforme a ADR-003. A ADR-004 define overlays de
-produto; a ADR-005 aplica XP/SP 500x com drop retail-like; a ADR-006 define a
-escada de gear; a ADR-007 especifica o tier **Ashen TT** (ainda não no datapack).
-Teto jogável atual = S-grade retail. MariaDB/Login/Game só em localhost. O cliente
-permanece fora do Git.
+.NET futuros conforme a ADR-002. A source permanece limpa; patch ADR-003 no bind
+7777; overlays ADR-004/005; escada ADR-006; **Ashen TT** implementado via overlays
+(ADR-007); **Draconic** desenhado (ADR-008, sem XML ainda). MariaDB/Login/Game só
+em localhost. O cliente permanece fora do Git.
 
 Consulte [o estado do ambiente](docs/ENVIRONMENT_STATUS.md) antes de preparar qualquer
 dependência e [os pré-requisitos](docs/setup/PREREQUISITES.md) antes de instalar
@@ -104,12 +102,13 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 - [ADR-005](docs/adr/ADR-005-LOCAL-RATES.md);
 - [ADR-006](docs/adr/ADR-006-GEAR-PROGRESSION.md);
 - [ADR-007](docs/adr/ADR-007-TT-TIER.md);
+- [ADR-008](docs/adr/ADR-008-DRACONIC-TIER.md);
 - [notas de licença](LICENSE-NOTES.md).
 
 ## Próximo bloqueio
 
-Implementação do Ashen TT (itens/raid/quest), design do T4 (Draconic), QoL de
-playtest ou observabilidade — ainda sem Dynarty/rede externa, salvo autorização.
+Implementação do Draconic (T4), client-patch/quest TT, QoL ou observabilidade —
+ainda sem Dynarty/rede externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
 
@@ -141,6 +140,9 @@ sem valores secretos na documentação.
 - [validação manual Sprint 10](docs/setup/SPRINT10_MANUAL_VALIDATION.md);
 - [progressão de equipamento](docs/design/GEAR_PROGRESSION.md);
 - [tier Ashen TT](docs/design/TT_TIER.md);
+- [IDs Ashen TT](docs/design/TT_ITEM_IDS.md);
+- [implementação TT](docs/setup/TT_IMPLEMENTATION_REPORT.md);
+- [tier Draconic](docs/design/DRACONIC_TIER.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

@@ -34,8 +34,8 @@ Consulte [`docs/design/GEAR_PROGRESSION.md`](design/GEAR_PROGRESSION.md).
 
 Esta visão não autoriza implementar ainda:
 
-- TT no datapack (design aceito na ADR-007; implementação futura);
-- Draconic custom;
+- client-patch completo de ícones TT / quest de transição TT;
+- Draconic custom no datapack (design ADR-008);
 - DK;
 - armas Fênix;
 - Dynarty;
@@ -50,7 +50,7 @@ balanceamento, testes, auditoria econômica e ADR própria.
 
 ## Prioridade atual
 
-1. baseline local segura e validada (concluída até Sprint 10);
-2. contrato de progressão de gear (ADR-006 / Sprint 11);
-3. design do T3 Ashen TT (ADR-007 / Sprint 12);
-4. implementação do TT ou design T4 / QoL — em seguida.
+1. baseline + rates + escada de gear (até Sprint 12);
+2. Ashen TT implementado em overlays (Sprint 13);
+3. design Draconic T4 (ADR-008 / Sprint 13);
+4. próxima: implementação Draconic, client-patch TT, ou QoL.

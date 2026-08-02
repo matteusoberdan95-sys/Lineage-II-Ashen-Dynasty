@@ -96,12 +96,12 @@ na sprint de implementação.
 
 ### Implementação
 
-Autorizada somente em sprint futura que entregue, no mínimo:
+**Entregue na Sprint 13** (overlays locais):
 
-1. overlays de item fora do submódulo (ADR-004);
-2. NPC/raid/quest versionados;
-3. tabela de stats e chance de drop;
-4. teste local GM + relatório econômico curto;
+1. itens/sets/NPCs/spawns em `infrastructure/customization/`;
+2. `apply-local-tt-content.ps1` / `verify-local-tt-content.ps1`;
+3. relatório `docs/setup/TT_IMPLEMENTATION_REPORT.md`;
+4. quest de transição e client-patch ficam para follow-up;
 5. sem rede externa.
 
 ## Alternativas rejeitadas

@@ -141,6 +141,8 @@ comandos GM diretamente.
 - `docs/adr/ADR-005-LOCAL-RATES.md`
 - `docs/adr/ADR-006-GEAR-PROGRESSION.md`
 - `docs/adr/ADR-007-TT-TIER.md`
+- `docs/adr/ADR-008-DRACONIC-TIER.md`
 - `docs/design/GEAR_PROGRESSION.md`
 - `docs/design/TT_TIER.md`
+- `docs/design/DRACONIC_TIER.md`
 - `docs/security/SOURCE_AUDIT.md`

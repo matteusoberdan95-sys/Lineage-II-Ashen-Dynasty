@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/spawns.xsd">
+	<!-- Local endgame entry bosses near Death Pass / Giran wilds. Respawn 24h / 12h. -->
+	<spawn name="AshenTT">
+		<npc id="93000" x="70000" y="130000" z="-3720" heading="0" respawnDelay="86400" />
+		<npc id="93001" x="72000" y="128500" z="-3720" heading="0" respawnDelay="43200" />
+	</spawn>
+</list>

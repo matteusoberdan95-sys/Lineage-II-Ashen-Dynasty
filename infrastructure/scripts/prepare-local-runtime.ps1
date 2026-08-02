@@ -151,6 +151,7 @@ try {
 
     & (Join-Path $PSScriptRoot 'apply-local-product-customization.ps1')
     & (Join-Path $PSScriptRoot 'apply-local-rates.ps1')
+    & (Join-Path $PSScriptRoot 'apply-local-tt-content.ps1')
 
     $artifactHash = (Get-FileHash -LiteralPath $artifactPath -Algorithm SHA256).Hash.ToLowerInvariant()
     $runtimeMetadata = [ordered]@{
@@ -159,6 +160,7 @@ try {
         securityPatch = '0001-bind-gameserver-to-configured-host.patch'
         productCustomization = 'ADR-004 identity overlays'
         localRates = 'ADR-005 xp/sp 500 drop 1 adena 10'
+        ashenTtContent = 'ADR-007 items/sets/raids overlays'
         preparedAt = (Get-Date).ToString('o')
     }
     $runtimeMetadata | ConvertTo-Json | Set-Content `
