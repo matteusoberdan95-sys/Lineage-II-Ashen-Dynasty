@@ -46,7 +46,7 @@ No GM:
 
 - Sem client-patch: nomes/ícones podem aparecer genéricos no Interlude.
 - `CustomItemsLoad` permanece `False` — arquivos estão no datapack principal via overlay.
-- Craft completo com fragmento fica para sprint futura.
+- Craft com fragmento: ver Sprint 15 (`ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`).
 - Quest de transição ainda não criada (raid é a fonte principal).
 
 ## Economia

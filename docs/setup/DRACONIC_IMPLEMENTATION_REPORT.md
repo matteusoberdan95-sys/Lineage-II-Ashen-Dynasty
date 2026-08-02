@@ -45,7 +45,7 @@ No GM:
 ## Limites
 
 - Sem client-patch: nomes/ícones podem aparecer genéricos no Interlude.
-- Craft completo (fragmentos Draconic + TT) fica para sprint futura.
+- Craft com fragmentos Draconic + TT: ver Sprint 15 (`ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`).
 - Quest de transição ainda não criada (raid é a fonte principal).
 
 ## Economia

@@ -147,4 +147,6 @@ comandos GM diretamente.
 - `docs/design/DRACONIC_TIER.md`
 - `docs/design/DRACONIC_ITEM_IDS.md`
 - `docs/setup/DRACONIC_IMPLEMENTATION_REPORT.md`
+- `docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`
+- `docs/design/ASHEN_CRAFT_IDS.md`
 - `docs/security/SOURCE_AUDIT.md`

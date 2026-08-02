@@ -75,6 +75,6 @@ Valores são ordem de grandeza para desenho, não SLA.
 
 ## Próximo trabalho autorizado (fora desta ADR)
 
-1. Client-patch / craft-quest TT–Draconic.
+1. Quest de transição TT–Draconic (craft por fragmentos: Sprint 15).
 2. Design ADR do **T5 (DK/Fênix)**.
-3. Ou QoL de playtest / observabilidade econômica.
+3. Client-patch ou QoL / observabilidade econômica.

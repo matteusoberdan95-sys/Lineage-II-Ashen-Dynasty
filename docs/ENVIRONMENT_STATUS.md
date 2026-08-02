@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 14 (TT +
-Draconic implementados). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 15 (TT +
+Draconic + craft por fragmentos). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar client-patch/quest TT–Draconic, QoL ou observabilidade.
+Registrar quest de transição, design T5, client-patch ou QoL/observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -245,3 +245,9 @@ ADR-008 aceita para Draconic custom (design, IDs 9400–9499). Relatório:
 Ashen Draconic (T4) aplicado via overlays (itens 9400–9499, sets 103–105,
 raids 93100/93101, spawns). Relatório:
 [`docs/setup/DRACONIC_IMPLEMENTATION_REPORT.md`](setup/DRACONIC_IMPLEMENTATION_REPORT.md).
+
+## Conclusão da Sprint 15
+
+Craft Ashen com sink de fragmentos: 46 recipes (listIds 872–917), scrolls
+9500–9545, merge idempotente em `Recipes.xml`, drops de recipe nos raids.
+Relatório: [`docs/setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md`](setup/ASHEN_CRAFT_IMPLEMENTATION_REPORT.md).

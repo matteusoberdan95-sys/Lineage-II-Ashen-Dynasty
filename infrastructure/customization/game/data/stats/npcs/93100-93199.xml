@@ -55,6 +55,23 @@
 					<item id="9462" min="1" max="1" chance="25" />
 					<item id="9463" min="1" max="1" chance="25" />
 				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 15) — armor Draconic -->
+				<group chance="16">
+					<item id="9523" min="1" max="1" chance="8" />
+					<item id="9524" min="1" max="1" chance="8" />
+					<item id="9525" min="1" max="1" chance="7" />
+					<item id="9526" min="1" max="1" chance="7" />
+					<item id="9527" min="1" max="1" chance="7" />
+					<item id="9528" min="1" max="1" chance="7" />
+					<item id="9529" min="1" max="1" chance="7" />
+					<item id="9530" min="1" max="1" chance="7" />
+					<item id="9531" min="1" max="1" chance="7" />
+					<item id="9532" min="1" max="1" chance="7" />
+					<item id="9533" min="1" max="1" chance="7" />
+					<item id="9534" min="1" max="1" chance="7" />
+					<item id="9535" min="1" max="1" chance="7" />
+					<item id="9536" min="1" max="1" chance="7" />
+				</group>
 			</drop>
 		</dropLists>
 		<collision>
@@ -101,6 +118,18 @@
 					<item id="9496" min="1" max="1" chance="11" />
 					<item id="9497" min="1" max="1" chance="11" />
 					<item id="9498" min="1" max="1" chance="11" />
+				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 15) — armas Draconic -->
+				<group chance="16">
+					<item id="9537" min="1" max="1" chance="12" />
+					<item id="9538" min="1" max="1" chance="11" />
+					<item id="9539" min="1" max="1" chance="11" />
+					<item id="9540" min="1" max="1" chance="11" />
+					<item id="9541" min="1" max="1" chance="11" />
+					<item id="9542" min="1" max="1" chance="11" />
+					<item id="9543" min="1" max="1" chance="11" />
+					<item id="9544" min="1" max="1" chance="11" />
+					<item id="9545" min="1" max="1" chance="11" />
 				</group>
 			</drop>
 		</dropLists>

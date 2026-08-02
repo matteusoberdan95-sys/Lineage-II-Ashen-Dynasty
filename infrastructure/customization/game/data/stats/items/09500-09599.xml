@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<!-- Ashen Dynasty craft recipe scrolls — Sprint 15 (IDs 9500+) -->
+	<item id="9500" type="EtcItem" name="Recipe: Ashen TT Helmet">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9501" type="EtcItem" name="Recipe: Ashen TT Breastplate">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="873" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9502" type="EtcItem" name="Recipe: Ashen TT Gaiters">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="874" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9503" type="EtcItem" name="Recipe: Ashen TT Gauntlets">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="875" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9504" type="EtcItem" name="Recipe: Ashen TT Boots">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="876" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9505" type="EtcItem" name="Recipe: Ashen TT Shield">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="877" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9506" type="EtcItem" name="Recipe: Ashen TT Leather Helmet">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="878" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9507" type="EtcItem" name="Recipe: Ashen TT Leather Armor">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="879" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9508" type="EtcItem" name="Recipe: Ashen TT Leather Gloves">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="880" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9509" type="EtcItem" name="Recipe: Ashen TT Leather Boots">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="881" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9510" type="EtcItem" name="Recipe: Ashen TT Circlet">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="882" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9511" type="EtcItem" name="Recipe: Ashen TT Robe">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="883" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9512" type="EtcItem" name="Recipe: Ashen TT Gloves">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="884" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9513" type="EtcItem" name="Recipe: Ashen TT Shoes">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="885" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9514" type="EtcItem" name="Recipe: Ashen TT Blade">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="886" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9515" type="EtcItem" name="Recipe: Ashen TT Divider">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="887" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9516" type="EtcItem" name="Recipe: Ashen TT Dual Swords">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="888" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9517" type="EtcItem" name="Recipe: Ashen TT Dagger">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="889" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9518" type="EtcItem" name="Recipe: Ashen TT Bow">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="890" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9519" type="EtcItem" name="Recipe: Ashen TT Hammer">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="891" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9520" type="EtcItem" name="Recipe: Ashen TT Spear">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="892" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9521" type="EtcItem" name="Recipe: Ashen TT Fist">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="893" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9522" type="EtcItem" name="Recipe: Ashen TT Staff">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="894" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9523" type="EtcItem" name="Recipe: Ashen Draconic Helmet">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="895" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9524" type="EtcItem" name="Recipe: Ashen Draconic Breastplate">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="896" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9525" type="EtcItem" name="Recipe: Ashen Draconic Gaiters">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="897" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9526" type="EtcItem" name="Recipe: Ashen Draconic Gauntlets">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="898" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9527" type="EtcItem" name="Recipe: Ashen Draconic Boots">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="899" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9528" type="EtcItem" name="Recipe: Ashen Draconic Shield">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="900" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9529" type="EtcItem" name="Recipe: Ashen Draconic Leather Helmet">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="901" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9530" type="EtcItem" name="Recipe: Ashen Draconic Leather Armor">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="902" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9531" type="EtcItem" name="Recipe: Ashen Draconic Leather Gloves">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="903" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9532" type="EtcItem" name="Recipe: Ashen Draconic Leather Boots">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="904" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9533" type="EtcItem" name="Recipe: Ashen Draconic Circlet">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="905" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9534" type="EtcItem" name="Recipe: Ashen Draconic Robe">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="906" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9535" type="EtcItem" name="Recipe: Ashen Draconic Gloves">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="907" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9536" type="EtcItem" name="Recipe: Ashen Draconic Shoes">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="908" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9537" type="EtcItem" name="Recipe: Ashen Draconic Blade">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="909" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9538" type="EtcItem" name="Recipe: Ashen Draconic Divider">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="910" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9539" type="EtcItem" name="Recipe: Ashen Draconic Dual Swords">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="911" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9540" type="EtcItem" name="Recipe: Ashen Draconic Dagger">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="912" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9541" type="EtcItem" name="Recipe: Ashen Draconic Bow">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="913" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9542" type="EtcItem" name="Recipe: Ashen Draconic Hammer">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="914" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9543" type="EtcItem" name="Recipe: Ashen Draconic Spear">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="915" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9544" type="EtcItem" name="Recipe: Ashen Draconic Fist">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="916" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9545" type="EtcItem" name="Recipe: Ashen Draconic Staff">
+		<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="price" val="0" />
+		<set name="recipe_id" val="917" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+	</item>
+</list>

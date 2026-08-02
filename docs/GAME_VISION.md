@@ -53,4 +53,4 @@ balanceamento, testes, auditoria econômica e ADR própria.
 1. baseline + rates + escada de gear (até Sprint 12);
 2. Ashen TT implementado em overlays (Sprint 13);
 3. design Draconic T4 (ADR-008 / Sprint 13);
-4. próxima: implementação Draconic, client-patch TT, ou QoL.
+4. próxima: quest de transição, design T5, client-patch ou QoL.

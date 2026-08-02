@@ -46,6 +46,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - ADR-008: design do tier Ashen Draconic (T4), IDs 9400–9499.
 - Implementação Ashen Draconic em overlays (itens, sets, raids, spawns) + scripts
   apply/verify (Sprint 14).
+- Craft Ashen TT/Draconic com fragmentos (`9399`/`9499`): scrolls 9500–9545,
+  merge de recipes em `Recipes.xml`, drops de recipe nos raids (Sprint 15).
 
 ### Segurança
 

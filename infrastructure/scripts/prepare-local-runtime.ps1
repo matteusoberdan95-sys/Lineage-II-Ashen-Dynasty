@@ -153,6 +153,7 @@ try {
     & (Join-Path $PSScriptRoot 'apply-local-rates.ps1')
     & (Join-Path $PSScriptRoot 'apply-local-tt-content.ps1')
     & (Join-Path $PSScriptRoot 'apply-local-draconic-content.ps1')
+    & (Join-Path $PSScriptRoot 'apply-local-ashen-craft.ps1')
 
     $artifactHash = (Get-FileHash -LiteralPath $artifactPath -Algorithm SHA256).Hash.ToLowerInvariant()
     $runtimeMetadata = [ordered]@{
@@ -163,6 +164,7 @@ try {
         localRates = 'ADR-005 xp/sp 500 drop 1 adena 10'
         ashenTtContent = 'ADR-007 items/sets/raids overlays'
         ashenDraconicContent = 'ADR-008 items/sets/raids overlays'
+        ashenCraftContent = 'Sprint 15 fragment recipes + scrolls 9500+'
         preparedAt = (Get-Date).ToString('o')
     }
     $runtimeMetadata | ConvertTo-Json | Set-Content `

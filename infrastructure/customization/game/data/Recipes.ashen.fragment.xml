@@ -1,0 +1,302 @@
+	<!-- BEGIN ASHEN DYNASTY RECIPES -->
+	<!-- Sprint 15: fragment sink for TT (9399) and Draconic (9499 + 9399). Do not edit by hand; regenerate via _generate_ashen_craft_overlays.py -->
+	<item id="872" recipeId="9500" name="mk_ashen_tt_helmet" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9300" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="873" recipeId="9501" name="mk_ashen_tt_breastplate" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="40" />
+		<production id="9301" count="1" />
+		<statUse name="MP" value="120" />
+	</item>
+	<item id="874" recipeId="9502" name="mk_ashen_tt_gaiters" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="40" />
+		<production id="9302" count="1" />
+		<statUse name="MP" value="120" />
+	</item>
+	<item id="875" recipeId="9503" name="mk_ashen_tt_gauntlets" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9303" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="876" recipeId="9504" name="mk_ashen_tt_boots" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9304" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="877" recipeId="9505" name="mk_ashen_tt_shield" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="10" />
+		<ingredient id="1462" count="25" />
+		<production id="9305" count="1" />
+		<statUse name="MP" value="90" />
+	</item>
+	<item id="878" recipeId="9506" name="mk_ashen_tt_leather_helmet" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9330" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="879" recipeId="9507" name="mk_ashen_tt_leather_armor" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="40" />
+		<production id="9331" count="1" />
+		<statUse name="MP" value="120" />
+	</item>
+	<item id="880" recipeId="9508" name="mk_ashen_tt_leather_gloves" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9332" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="881" recipeId="9509" name="mk_ashen_tt_leather_boots" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9333" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="882" recipeId="9510" name="mk_ashen_tt_circlet" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9360" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="883" recipeId="9511" name="mk_ashen_tt_robe" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="40" />
+		<production id="9361" count="1" />
+		<statUse name="MP" value="120" />
+	</item>
+	<item id="884" recipeId="9512" name="mk_ashen_tt_gloves" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9362" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="885" recipeId="9513" name="mk_ashen_tt_shoes" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="8" />
+		<ingredient id="1462" count="20" />
+		<production id="9363" count="1" />
+		<statUse name="MP" value="80" />
+	</item>
+	<item id="886" recipeId="9514" name="mk_ashen_tt_blade" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9390" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="887" recipeId="9515" name="mk_ashen_tt_divider" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9391" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="888" recipeId="9516" name="mk_ashen_tt_dual_swords" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9392" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="889" recipeId="9517" name="mk_ashen_tt_dagger" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9393" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="890" recipeId="9518" name="mk_ashen_tt_bow" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9394" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="891" recipeId="9519" name="mk_ashen_tt_hammer" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9395" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="892" recipeId="9520" name="mk_ashen_tt_spear" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9396" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="893" recipeId="9521" name="mk_ashen_tt_fist" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9397" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="894" recipeId="9522" name="mk_ashen_tt_staff" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9399" count="25" />
+		<ingredient id="1462" count="50" />
+		<production id="9398" count="1" />
+		<statUse name="MP" value="150" />
+	</item>
+	<item id="895" recipeId="9523" name="mk_ashen_draconic_helmet" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9400" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="896" recipeId="9524" name="mk_ashen_draconic_breastplate" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="20" />
+		<ingredient id="9399" count="10" />
+		<ingredient id="1462" count="60" />
+		<production id="9401" count="1" />
+		<statUse name="MP" value="160" />
+	</item>
+	<item id="897" recipeId="9525" name="mk_ashen_draconic_gaiters" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="20" />
+		<ingredient id="9399" count="10" />
+		<ingredient id="1462" count="60" />
+		<production id="9402" count="1" />
+		<statUse name="MP" value="160" />
+	</item>
+	<item id="898" recipeId="9526" name="mk_ashen_draconic_gauntlets" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9403" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="899" recipeId="9527" name="mk_ashen_draconic_boots" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9404" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="900" recipeId="9528" name="mk_ashen_draconic_shield" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="12" />
+		<ingredient id="9399" count="6" />
+		<ingredient id="1462" count="35" />
+		<production id="9405" count="1" />
+		<statUse name="MP" value="110" />
+	</item>
+	<item id="901" recipeId="9529" name="mk_ashen_draconic_leather_helmet" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9430" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="902" recipeId="9530" name="mk_ashen_draconic_leather_armor" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="20" />
+		<ingredient id="9399" count="10" />
+		<ingredient id="1462" count="60" />
+		<production id="9431" count="1" />
+		<statUse name="MP" value="160" />
+	</item>
+	<item id="903" recipeId="9531" name="mk_ashen_draconic_leather_gloves" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9432" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="904" recipeId="9532" name="mk_ashen_draconic_leather_boots" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9433" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="905" recipeId="9533" name="mk_ashen_draconic_circlet" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9460" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="906" recipeId="9534" name="mk_ashen_draconic_robe" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="20" />
+		<ingredient id="9399" count="10" />
+		<ingredient id="1462" count="60" />
+		<production id="9461" count="1" />
+		<statUse name="MP" value="160" />
+	</item>
+	<item id="907" recipeId="9535" name="mk_ashen_draconic_gloves" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9462" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="908" recipeId="9536" name="mk_ashen_draconic_shoes" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="10" />
+		<ingredient id="9399" count="5" />
+		<ingredient id="1462" count="30" />
+		<production id="9463" count="1" />
+		<statUse name="MP" value="100" />
+	</item>
+	<item id="909" recipeId="9537" name="mk_ashen_draconic_blade" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9490" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="910" recipeId="9538" name="mk_ashen_draconic_divider" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9491" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="911" recipeId="9539" name="mk_ashen_draconic_dual_swords" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9492" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="912" recipeId="9540" name="mk_ashen_draconic_dagger" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9493" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="913" recipeId="9541" name="mk_ashen_draconic_bow" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9494" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="914" recipeId="9542" name="mk_ashen_draconic_hammer" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9495" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="915" recipeId="9543" name="mk_ashen_draconic_spear" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9496" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="916" recipeId="9544" name="mk_ashen_draconic_fist" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9497" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<item id="917" recipeId="9545" name="mk_ashen_draconic_staff" craftLevel="1" type="common" successRate="100">
+		<ingredient id="9499" count="30" />
+		<ingredient id="9399" count="15" />
+		<ingredient id="1462" count="80" />
+		<production id="9498" count="1" />
+		<statUse name="MP" value="200" />
+	</item>
+	<!-- END ASHEN DYNASTY RECIPES -->

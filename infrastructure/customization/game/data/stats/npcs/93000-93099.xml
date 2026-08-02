@@ -52,6 +52,23 @@
 					<item id="9362" min="1" max="1" chance="25" />
 					<item id="9363" min="1" max="1" chance="25" />
 				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 15) — armor TT -->
+				<group chance="18">
+					<item id="9500" min="1" max="1" chance="8" />
+					<item id="9501" min="1" max="1" chance="8" />
+					<item id="9502" min="1" max="1" chance="7" />
+					<item id="9503" min="1" max="1" chance="7" />
+					<item id="9504" min="1" max="1" chance="7" />
+					<item id="9505" min="1" max="1" chance="7" />
+					<item id="9506" min="1" max="1" chance="7" />
+					<item id="9507" min="1" max="1" chance="7" />
+					<item id="9508" min="1" max="1" chance="7" />
+					<item id="9509" min="1" max="1" chance="7" />
+					<item id="9510" min="1" max="1" chance="7" />
+					<item id="9511" min="1" max="1" chance="7" />
+					<item id="9512" min="1" max="1" chance="7" />
+					<item id="9513" min="1" max="1" chance="7" />
+				</group>
 			</drop>
 		</dropLists>
 		<collision>
@@ -98,6 +115,18 @@
 					<item id="9396" min="1" max="1" chance="11" />
 					<item id="9397" min="1" max="1" chance="11" />
 					<item id="9398" min="1" max="1" chance="11" />
+				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 15) — armas TT -->
+				<group chance="18">
+					<item id="9514" min="1" max="1" chance="12" />
+					<item id="9515" min="1" max="1" chance="11" />
+					<item id="9516" min="1" max="1" chance="11" />
+					<item id="9517" min="1" max="1" chance="11" />
+					<item id="9518" min="1" max="1" chance="11" />
+					<item id="9519" min="1" max="1" chance="11" />
+					<item id="9520" min="1" max="1" chance="11" />
+					<item id="9521" min="1" max="1" chance="11" />
+					<item id="9522" min="1" max="1" chance="11" />
 				</group>
 			</drop>
 		</dropLists>
