@@ -145,4 +145,6 @@ comandos GM diretamente.
 - `docs/design/GEAR_PROGRESSION.md`
 - `docs/design/TT_TIER.md`
 - `docs/design/DRACONIC_TIER.md`
+- `docs/design/DRACONIC_ITEM_IDS.md`
+- `docs/setup/DRACONIC_IMPLEMENTATION_REPORT.md`
 - `docs/security/SOURCE_AUDIT.md`

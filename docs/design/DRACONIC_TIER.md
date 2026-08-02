@@ -7,19 +7,22 @@ Resumo da [ADR-008](../adr/ADR-008-DRACONIC-TIER.md).
 | Item | Valor |
 |---|---|
 | Design | aceito (ADR-008) |
-| No datapack | **não** |
-| Tier jogável custom atual | T3 Ashen TT |
+| No datapack | **sim** (overlays Sprint 14) |
+| Tier jogável custom atual | T4 Ashen Draconic |
 
 ## Escada
 
 ```text
-T2 S retail → T3 Ashen TT (implementado) → T4 Draconic (design) → T5 DK/Fênix → T6 Dynarty
+T2 S retail → T3 Ashen TT → T4 Draconic (implementado) → T5 DK/Fênix → T6 Dynarty
 ```
 
 ## Tempo alvo
 
-6–12 semanas após set TT completo.
+6–12 semanas após set TT completo (economia de farm; IDs já no servidor).
 
-## IDs reservados
+## IDs
 
-`9400–9499` (itens) · NPCs sugeridos `93100` / `93101`.
+`9400–9499` (itens) · NPCs `93100` / `93101` · sets `103–105`.
+
+Mapa: [`DRACONIC_ITEM_IDS.md`](DRACONIC_ITEM_IDS.md).  
+Relatório: [`../setup/DRACONIC_IMPLEMENTATION_REPORT.md`](../setup/DRACONIC_IMPLEMENTATION_REPORT.md).

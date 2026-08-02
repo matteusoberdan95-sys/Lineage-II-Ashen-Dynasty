@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="93100" level="82" type="RaidBoss" name="Elder of Ashen Scale" title="Ashen Dynasty">
+		<parameters>
+			<param name="RaidSpawnMusic" value="Rm01_A" />
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<acquire exp="6200000" sp="1400000" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="520000" hpRegen="140" mp="1800" mpRegen="3" />
+			<attack physical="2900" magical="1000" random="50" critical="4" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1150" magical="560" evasion="-18" />
+			<speed>
+				<walk ground="50" />
+				<run ground="200" />
+			</speed>
+			<hitTime>470</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" />
+			<skill id="4494" level="1" />
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<drop>
+				<group chance="100">
+					<item id="57" min="700000" max="1200000" chance="100" />
+				</group>
+				<group chance="100">
+					<item id="9499" min="2" max="5" chance="100" />
+				</group>
+				<group chance="40">
+					<item id="9399" min="1" max="2" chance="100" />
+				</group>
+				<group chance="30">
+					<item id="9400" min="1" max="1" chance="16" />
+					<item id="9401" min="1" max="1" chance="16" />
+					<item id="9402" min="1" max="1" chance="16" />
+					<item id="9403" min="1" max="1" chance="16" />
+					<item id="9404" min="1" max="1" chance="16" />
+					<item id="9405" min="1" max="1" chance="20" />
+				</group>
+				<group chance="22">
+					<item id="9430" min="1" max="1" chance="25" />
+					<item id="9431" min="1" max="1" chance="25" />
+					<item id="9432" min="1" max="1" chance="25" />
+					<item id="9433" min="1" max="1" chance="25" />
+				</group>
+				<group chance="22">
+					<item id="9460" min="1" max="1" chance="25" />
+					<item id="9461" min="1" max="1" chance="25" />
+					<item id="9462" min="1" max="1" chance="25" />
+					<item id="9463" min="1" max="1" chance="25" />
+				</group>
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="22" />
+			<height normal="42" />
+		</collision>
+	</npc>
+	<npc id="93101" level="80" type="RaidBoss" name="Ashen Scale Warden" title="Ashen Dynasty">
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<acquire exp="4500000" sp="1000000" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="380000" hpRegen="130" mp="1650" mpRegen="3" />
+			<attack physical="2700" magical="950" random="40" critical="4" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1050" magical="520" evasion="-18" />
+			<speed>
+				<walk ground="50" />
+				<run ground="200" />
+			</speed>
+			<hitTime>450</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" />
+			<skill id="4494" level="1" />
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<drop>
+				<group chance="100">
+					<item id="57" min="400000" max="800000" chance="100" />
+				</group>
+				<group chance="100">
+					<item id="9499" min="1" max="3" chance="100" />
+				</group>
+				<group chance="35">
+					<item id="9490" min="1" max="1" chance="12" />
+					<item id="9491" min="1" max="1" chance="11" />
+					<item id="9492" min="1" max="1" chance="11" />
+					<item id="9493" min="1" max="1" chance="11" />
+					<item id="9494" min="1" max="1" chance="11" />
+					<item id="9495" min="1" max="1" chance="11" />
+					<item id="9496" min="1" max="1" chance="11" />
+					<item id="9497" min="1" max="1" chance="11" />
+					<item id="9498" min="1" max="1" chance="11" />
+				</group>
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="20" />
+			<height normal="40" />
+		</collision>
+	</npc>
+</list>

@@ -1,6 +1,6 @@
 # ADR-008 — Tier T4 (Draconic custom)
 
-- **Status:** Aceita (design)
+- **Status:** Aceita (implementada na Sprint 14)
 - **Data:** 2026-08-01
 - **Decisores:** proprietário do projeto e arquitetura técnica
 
@@ -9,7 +9,7 @@
 O T3 Ashen TT foi implementado em overlays (Sprint 13). O próximo degrau da
 ADR-006 é o **Draconic custom** — acima do TT, abaixo de DK/Fênix e Dynarty.
 
-Esta ADR **não implementa** itens; só fixa o envelope de design.
+Esta ADR fixa o envelope de design; a implementação em overlays está na Sprint 14.
 
 ## Decisão
 
@@ -63,12 +63,12 @@ Faixa **9400–9499**:
 
 NPCs futuros sugeridos: `93100` (raid), `93101` (warden de armas).
 
-### Implementação futura (fora desta ADR)
+### Implementação (Sprint 14)
 
 1. Overlays em `infrastructure/customization/` (não no submódulo).
-2. Stats balanceados contra TT live.
-3. Spawns/raids + relatório de economia.
-4. Client-patch documentado em `client-patch/` se necessário para ícones/nomes.
+2. Stats ~15% acima do TT.
+3. Spawns/raids + relatório `docs/setup/DRACONIC_IMPLEMENTATION_REPORT.md`.
+4. Client-patch ainda pendente se necessário para ícones/nomes.
 
 ## Alternativas rejeitadas
 
@@ -79,4 +79,4 @@ NPCs futuros sugeridos: `93100` (raid), `93101` (warden de armas).
 ## Consequências
 
 - T5/T6 continuam só na visão até ADRs próprias.
-- Teto de conteúdo custom implementado hoje permanece **TT (T3)** até sprint de Draconic.
+- Teto de conteúdo custom implementado sobe para **Draconic (T4)**; TT permanece o degrau anterior.

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/spawns.xsd">
+	<!-- Draconic raids near TT area / Death Pass. Respawn 36h / 18h. -->
+	<spawn name="AshenDraconic">
+		<npc id="93100" x="68000" y="131500" z="-3720" heading="0" respawnDelay="129600" />
+		<npc id="93101" x="69500" y="129800" z="-3720" heading="0" respawnDelay="64800" />
+	</spawn>
+</list>

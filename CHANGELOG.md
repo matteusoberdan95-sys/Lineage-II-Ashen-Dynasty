@@ -43,7 +43,9 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   Draconic → DK/Fênix → Dynarty), sem implementação de item custom.
 - ADR-007: especificação do tier Ashen TT (peças, obtenção, tempo, IDs 9300–9399).
 - Implementação Ashen TT em overlays (itens, sets, raids, spawns) + scripts apply/verify.
-- ADR-008: design do tier Ashen Draconic (T4), IDs 9400–9499 reservados, sem XML.
+- ADR-008: design do tier Ashen Draconic (T4), IDs 9400–9499.
+- Implementação Ashen Draconic em overlays (itens, sets, raids, spawns) + scripts
+  apply/verify (Sprint 14).
 
 ### Segurança
 

@@ -107,8 +107,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-Implementação do Draconic (T4), client-patch/quest TT, QoL ou observabilidade —
-ainda sem Dynarty/rede externa, salvo autorização.
+Client-patch/quest TT–Draconic, QoL ou observabilidade — ainda sem Dynarty/rede
+externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
 
@@ -143,6 +143,8 @@ sem valores secretos na documentação.
 - [IDs Ashen TT](docs/design/TT_ITEM_IDS.md);
 - [implementação TT](docs/setup/TT_IMPLEMENTATION_REPORT.md);
 - [tier Draconic](docs/design/DRACONIC_TIER.md);
+- [IDs Ashen Draconic](docs/design/DRACONIC_ITEM_IDS.md);
+- [implementação Draconic](docs/setup/DRACONIC_IMPLEMENTATION_REPORT.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

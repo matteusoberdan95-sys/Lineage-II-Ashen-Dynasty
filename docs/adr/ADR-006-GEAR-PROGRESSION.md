@@ -26,7 +26,7 @@ XML de item custom, alterar drops, enchant +30 nem abrir rede externa.
 | T1 | Mid retail | B → A (Avadon, Blue Wolf, Doom, Tallum…) | 1–3 semanas | já existe no datapack |
 | T2 | Alto retail | S-grade Interlude (Majestic / Nightmare / armes S) | 3–8 semanas | já existe no datapack |
 | T3 | Entrada endgame | **Ashen TT** | +1–2 meses após T2 (4–8 sem. em T3) | ADR-007 + overlays Sprint 13 |
-| T4 | Posterior | **Draconic custom** | meses | design ADR-008; não implementado |
+| T4 | Posterior | **Draconic custom** | meses | ADR-008 + overlays Sprint 14 |
 | T5 | Avançado | **DK + armas Fênix** | meses | futura ADR de item |
 | T6 | Máximo | **Dynarty** completo, enchant até `+30` | muitos meses | futura ADR de item |
 
@@ -75,6 +75,6 @@ Valores são ordem de grandeza para desenho, não SLA.
 
 ## Próximo trabalho autorizado (fora desta ADR)
 
-1. Implementação do **T4 (Draconic)** sob a ADR-008.
-2. Client-patch / craft-quest TT.
+1. Client-patch / craft-quest TT–Draconic.
+2. Design ADR do **T5 (DK/Fênix)**.
 3. Ou QoL de playtest / observabilidade econômica.
