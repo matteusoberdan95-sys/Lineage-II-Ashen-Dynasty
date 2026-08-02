@@ -32,6 +32,9 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - Scripts para `l2.ini` Ver413, criação/exibição de conta e verificação de personagem.
 - Checklist mínimo de mundo, snapshot de personagem e espera de estado online/offline.
 - Relatório do playtest controlado com progresso de nível, logout limpo e persistência.
+- ADR-004 para customizações de produto via overlays fora do submódulo.
+- Overlay de identidade: servidor ID 1 `Ashen Dynasty` e notícia de entrada local.
+- Scripts para aplicar e verificar a customização de produto no runtime.
 
 ### Segurança
 

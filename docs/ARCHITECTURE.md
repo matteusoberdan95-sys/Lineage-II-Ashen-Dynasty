@@ -58,6 +58,10 @@ O build local aplica, em cópia descartável, o patch que faz a porta 7777 respe
 `GameserverHostname`. A source upstream permanece limpa. Patches desse tipo seguem a
 ADR-003 e não autorizam mudanças de gameplay.
 
+Customizações de produto (nome do servidor, notícia e futuros overlays de datapack)
+ficam em `infrastructure/customization/` e são aplicadas ao runtime conforme a
+ADR-004. Rates, itens e economia continuam bloqueados até ADR específica.
+
 ### Banco
 
 `database/` contém scripts controlados pelo Ashen Dynasty para:
@@ -77,9 +81,9 @@ MariaDB 11.4.3 escuta somente em `127.0.0.1:3306`. O usuário
 
 ### Infraestrutura
 
-`infrastructure/` conterá scripts PowerShell, Docker Compose auxiliar, templates de
-configuração e monitoramento local. Nenhum script alterará firewall, roteador ou
-produção.
+`infrastructure/` contém scripts PowerShell, templates de configuração local,
+overlays de produto e, no futuro, Compose auxiliar e monitoramento. Nenhum script
+alterará firewall, roteador ou produção.
 
 ### Cliente
 
@@ -133,4 +137,5 @@ comandos GM diretamente.
 - `docs/adr/ADR-001-SERVER-SOURCE.md`
 - `docs/adr/ADR-002-REPOSITORY-STRUCTURE.md`
 - `docs/adr/ADR-003-LOCAL-SECURITY-PATCHES.md`
+- `docs/adr/ADR-004-PRODUCT-CUSTOMIZATION.md`
 - `docs/security/SOURCE_AUDIT.md`

@@ -44,7 +44,18 @@ Ele recusa registros desconhecidos. O runtime:
 - cria `ipconfig.xml` estritamente local;
 - desabilita GUI, criação automática de contas, backup upstream e conteúdo custom;
 - habilita criptografia de pacotes;
-- permite novos Game Servers apenas durante o primeiro registro.
+- permite novos Game Servers apenas durante o primeiro registro;
+- aplica overlays de identidade da ADR-004 (`Ashen Dynasty` + notícia de entrada).
+
+Para reaplicar somente a customização de produto em um runtime já preparado:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command `
+  '& ".\infrastructure\scripts\stop-local-stack.ps1" -Confirm:$false'
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File .\infrastructure\scripts\apply-local-product-customization.ps1
+```
 
 ## Primeira inicialização e registro
 

@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado após o playtest controlado
-na Sprint 8. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado após a primeira
+customização de produto na Sprint 9. Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,8 +159,8 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Na próxima sprint, registrar roteiro de regressão local ou a primeira ADR de
-customização Ashen Dynasty.
+Na próxima sprint, registrar roteiro de regressão local ou a próxima customização
+sob ADR dedicada (ainda sem rates/itens/rede externa).
 
 ## Conclusão da Sprint 0
 
@@ -205,3 +205,10 @@ estado online foram adicionados.
 Playtest controlado aprovado pelo proprietário. `NEIDE157` avançou para o nível 2,
 mudou de posição, fez logout com `online=0` e manteve 6 itens persistidos. Stack
 local e listeners em loopback permaneceram estáveis.
+
+## Conclusão da Sprint 9
+
+ADR-004 aceita. Overlays versionados renomeiam o servidor ID 1 para `Ashen Dynasty`
+e habilitam a notícia de entrada local. Submódulo permanece limpo; rates e gameplay
+não foram alterados. Consulte
+[`docs/setup/PRODUCT_CUSTOMIZATION_REPORT.md`](setup/PRODUCT_CUSTOMIZATION_REPORT.md).
