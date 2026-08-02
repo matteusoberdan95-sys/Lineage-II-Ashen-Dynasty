@@ -16,9 +16,9 @@ Lineage 2 Interlude.
 
 ## Estado atual
 
-As Sprints 0 a 10 estão concluídas localmente (validação manual da Sprint 10
-pendente do proprietário). L2JMobius `L2J_Mobius_CT_0_Interlude` foi aceito na
-ADR-001 e fixado no commit `e4d1d8336ed28fc0916e7caad3ca752d06169eac`.
+As Sprints 0 a 10 estão concluídas e validadas localmente. L2JMobius
+`L2J_Mobius_CT_0_Interlude` foi aceito na ADR-001 e fixado no commit
+`e4d1d8336ed28fc0916e7caad3ca752d06169eac`.
 
 O repositório separa source, runtime, banco, infraestrutura, cliente e componentes
 .NET futuros conforme a ADR-002. A source permanece limpa; um patch local reproduzível
@@ -105,8 +105,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-Após a validação manual da Sprint 10: desenho do próximo tier de gameplay sob ADR
-(ainda sem Dynarty/rede externa), ou portal/ferramentas .NET quando autorizado.
+Próximo: desenho do próximo tier de gameplay sob ADR (ainda sem Dynarty/rede
+externa), ou portal/ferramentas .NET quando autorizado.
 
 ## Segurança e propriedade intelectual
 

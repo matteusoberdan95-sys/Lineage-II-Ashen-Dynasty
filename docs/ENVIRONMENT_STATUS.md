@@ -1,7 +1,7 @@
 # Estado do ambiente
 
 Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 10 (rates +
-regressão; validação manual pendente). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+regressão; validação manual aprovada). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,8 +159,8 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar o resultado da validação manual da Sprint 10 e a próxima ADR de gameplay
-(ainda sem Dynarty/rede externa).
+Registrar a próxima ADR de gameplay (ainda sem Dynarty/rede externa) ou o início
+de ferramentas .NET quando autorizado.
 
 ## Conclusão da Sprint 0
 
@@ -220,6 +220,6 @@ Consulte [`docs/setup/LOCAL_ADMIN_SETUP.md`](setup/LOCAL_ADMIN_SETUP.md).
 ## Conclusão da Sprint 10
 
 ADR-005 aplicada: XP/SP 500x, drop retail-like, Adena amount 10x. Roteiro de
-regressão e checklist GM documentados. Validação automática via
-`verify-local-regression.ps1`; validação manual pelo proprietário em
+regressão e checklist GM documentados. Validação automática e manual **aprovadas**
+pelo proprietário. Consulte
 [`docs/setup/SPRINT10_MANUAL_VALIDATION.md`](setup/SPRINT10_MANUAL_VALIDATION.md).

@@ -2,40 +2,40 @@
 
 **Data:** 2026-08-01  
 **Estado automático:** passou (`verify-local-regression.ps1`)  
-**Estado manual:** pendente da sua validação
-
-Marque com `[x]` o que validar no cliente. A parte automática já foi executada;
-você confirma a experiência in-game.
+**Estado manual:** **aprovado pelo proprietário**
 
 ## Automático (agente)
 
 - [x] `verify-local-regression.ps1` passou
 - [x] Rates ADR-005 aplicados e Game reiniciado
-- [ ] Commit/push da Sprint 10
+- [x] Commit/push da Sprint 10
 
 ## Manual — regressão playtest (`NEIDE157`)
 
-- [ ] Lista mostra **Ashen Dynasty**
-- [ ] Notícia de entrada aparece
-- [ ] Relogin ok
-- [ ] XP de mob claramente acelerado (500x)
-- [ ] Drop de equipamento **não** parece 500x
-- [ ] Morte/retorno sem soft-lock
-- [ ] NPC abre diálogo
-- [ ] Logout limpo
+- [x] Lista mostra **Ashen Dynasty**
+- [x] Notícia de entrada aparece
+- [x] Relogin ok
+- [x] XP de mob claramente acelerado (500x)
+- [x] Drop de equipamento **não** parece 500x
+- [x] Morte/retorno sem soft-lock
+- [x] NPC abre diálogo
+- [x] Logout limpo
 
 ## Manual — GM (`ASHENADM`)
 
-- [ ] `//admin` abre
-- [ ] `//create_coin adena 100000` ok
-- [ ] `//create_item 78 1` (Great Sword) ok e equipa
-- [ ] `//create_item 2376 1` (Avadon Breastplate) ok
-- [ ] Teleporte ok
-- [ ] Alt+G ok
+- [x] `//admin` abre
+- [x] `//create_coin adena 100000` ok
+- [x] `//create_item 78 1` (Great Sword) ok e equipa
+- [x] `//create_item 2376 1` (Avadon Breastplate) ok
+- [x] Teleporte ok (`//show_moves` / painel admin)
+- [x] Ferramentas GM ok (Alt+G limitado no cliente Interlude; chat admin suficiente)
+
+## Decisão de rates
+
+Proprietário manteve **500x XP/SP** como adequado à visão (level rápido, gear lento).
+Drop retail-like permanece.
 
 ## Resultado final
 
-- [ ] **Aprovado** pelo proprietário
+- [x] **Aprovado** pelo proprietário
 - [ ] Reprovado — motivo:
-
-_Quando terminar, responda no chat com “aprovado” ou liste o que falhou._
