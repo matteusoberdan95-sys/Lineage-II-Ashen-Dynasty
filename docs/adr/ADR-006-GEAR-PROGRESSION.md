@@ -75,5 +75,5 @@ Valores são ordem de grandeza para desenho, não SLA.
 
 ## Próximo trabalho autorizado (fora desta ADR)
 
-1. Craft/quest T5 + design ADR do **T6 (Dynarty / +30)**.
+1. Quest de transição Draconic→DK + design ADR do **T6 (Dynarty / +30)**.
 2. Client-patch ou QoL / observabilidade econômica.

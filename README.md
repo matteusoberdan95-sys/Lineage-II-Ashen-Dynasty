@@ -108,8 +108,8 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 
 ## Próximo bloqueio
 
-Craft/quest T5, design T6 (Dynarty), client-patch ou QoL/observabilidade —
-ainda sem Dynarty/rede externa, salvo autorização.
+Quest T5, design T6 (Dynarty), client-patch ou QoL/observabilidade — ainda sem
+Dynarty/rede externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
 

@@ -167,7 +167,7 @@ try {
         ashenTtContent = 'ADR-007 items/sets/raids overlays'
         ashenDraconicContent = 'ADR-008 items/sets/raids overlays'
         ashenDkPhoenixContent = 'ADR-009 items/sets/raids overlays'
-        ashenCraftContent = 'Sprint 15 fragment recipes + scrolls 9500+'
+        ashenCraftContent = 'Sprint 15/19 fragment recipes + scrolls 9500-9568'
         ashenQuestContent = 'Sprint 16 Q900 Ashen Scale of Transition'
         preparedAt = (Get-Date).ToString('o')
     }

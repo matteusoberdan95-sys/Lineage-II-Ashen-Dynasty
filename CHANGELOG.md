@@ -53,6 +53,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - ADR-009: design do tier Ashen DK / Phoenix (T5), IDs 9600–9699 (Sprint 17).
 - Implementação Ashen DK / Phoenix em overlays (itens, sets, raids, spawns) +
   scripts apply/verify (Sprint 18).
+- Craft Ashen DK/Phoenix com fragmentos (`9699`/`9499`): scrolls 9546–9568,
+  recipes listIds 918–940, drops nos raids T5 (Sprint 19).
 
 ### Segurança
 

@@ -1,4 +1,4 @@
-# Generator for Ashen TT/Draconic craft recipes (Sprint 15). Fragment sink.
+# Generator for Ashen TT/Draconic/DK craft recipes (Sprint 15 + 19). Fragment sink.
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -14,8 +14,8 @@ def write(rel: str, text: str) -> None:
     print('wrote', path.relative_to(ROOT))
 
 
-# (product_id, name_suffix, tier, kind)
-# tier: 'tt' | 'draconic'; kind: 'minor' | 'major' | 'weapon' | 'shield'
+# (product_id, name, tier, kind)
+# tier: 'tt' | 'draconic' | 'dk'; kind: 'minor' | 'major' | 'weapon' | 'shield'
 PRODUCTS = [
     (9300, 'Ashen TT Helmet', 'tt', 'minor'),
     (9301, 'Ashen TT Breastplate', 'tt', 'major'),
@@ -63,6 +63,30 @@ PRODUCTS = [
     (9496, 'Ashen Draconic Spear', 'draconic', 'weapon'),
     (9497, 'Ashen Draconic Fist', 'draconic', 'weapon'),
     (9498, 'Ashen Draconic Staff', 'draconic', 'weapon'),
+    # Sprint 19 — DK armor / Phoenix weapons
+    (9600, 'Ashen DK Helmet', 'dk', 'minor'),
+    (9601, 'Ashen DK Breastplate', 'dk', 'major'),
+    (9602, 'Ashen DK Gaiters', 'dk', 'major'),
+    (9603, 'Ashen DK Gauntlets', 'dk', 'minor'),
+    (9604, 'Ashen DK Boots', 'dk', 'minor'),
+    (9605, 'Ashen DK Shield', 'dk', 'shield'),
+    (9630, 'Ashen DK Leather Helmet', 'dk', 'minor'),
+    (9631, 'Ashen DK Leather Armor', 'dk', 'major'),
+    (9632, 'Ashen DK Leather Gloves', 'dk', 'minor'),
+    (9633, 'Ashen DK Leather Boots', 'dk', 'minor'),
+    (9660, 'Ashen DK Circlet', 'dk', 'minor'),
+    (9661, 'Ashen DK Robe', 'dk', 'major'),
+    (9662, 'Ashen DK Gloves', 'dk', 'minor'),
+    (9663, 'Ashen DK Shoes', 'dk', 'minor'),
+    (9690, 'Ashen Phoenix Blade', 'dk', 'weapon'),
+    (9691, 'Ashen Phoenix Divider', 'dk', 'weapon'),
+    (9692, 'Ashen Phoenix Dual Swords', 'dk', 'weapon'),
+    (9693, 'Ashen Phoenix Dagger', 'dk', 'weapon'),
+    (9694, 'Ashen Phoenix Bow', 'dk', 'weapon'),
+    (9695, 'Ashen Phoenix Hammer', 'dk', 'weapon'),
+    (9696, 'Ashen Phoenix Spear', 'dk', 'weapon'),
+    (9697, 'Ashen Phoenix Fist', 'dk', 'weapon'),
+    (9698, 'Ashen Phoenix Staff', 'dk', 'weapon'),
 ]
 
 COSTS = {
@@ -74,8 +98,13 @@ COSTS = {
     ('draconic', 'major'): {'9499': 20, '9399': 10, 'crystal': 60, 'mp': 160},
     ('draconic', 'shield'): {'9499': 12, '9399': 6, 'crystal': 35, 'mp': 110},
     ('draconic', 'weapon'): {'9499': 30, '9399': 15, 'crystal': 80, 'mp': 200},
+    ('dk', 'minor'): {'9699': 12, '9499': 6, 'crystal': 40, 'mp': 120},
+    ('dk', 'major'): {'9699': 25, '9499': 12, 'crystal': 80, 'mp': 200},
+    ('dk', 'shield'): {'9699': 15, '9499': 8, 'crystal': 45, 'mp': 140},
+    ('dk', 'weapon'): {'9699': 35, '9499': 18, 'crystal': 100, 'mp': 240},
 }
 
+FRAGMENT_ORDER = ('9699', '9499', '9399')
 FIRST_LIST_ID = 872
 FIRST_SCROLL_ID = 9500
 
@@ -90,7 +119,7 @@ for index, (product_id, name, tier, kind) in enumerate(PRODUCTS):
 
     scroll_items.append(
         f'''\t<item id="{scroll_id}" type="EtcItem" name="Recipe: {name}">
-\t\t<!-- Ashen craft (Sprint 15). Common recipe; fragment sink TT/Draconic. -->
+\t\t<!-- Ashen craft (Sprint 15/19). Common recipe; fragment sink TT/Draconic/DK. -->
 \t\t<set name="icon" val="icon.etc_recipe_black_i00" />
 \t\t<set name="default_action" val="RECIPE" />
 \t\t<set name="etcitem_type" val="RECIPE" />
@@ -105,10 +134,9 @@ for index, (product_id, name, tier, kind) in enumerate(PRODUCTS):
     )
 
     ingredients = []
-    if '9499' in cost:
-        ingredients.append(f'\t\t<ingredient id="9499" count="{cost["9499"]}" />')
-    if '9399' in cost:
-        ingredients.append(f'\t\t<ingredient id="9399" count="{cost["9399"]}" />')
+    for frag in FRAGMENT_ORDER:
+        if frag in cost:
+            ingredients.append(f'\t\t<ingredient id="{frag}" count="{cost[frag]}" />')
     ingredients.append(f'\t\t<ingredient id="{CRYSTAL_S}" count="{cost["crystal"]}" />')
 
     recipe_items.append(
@@ -119,11 +147,16 @@ for index, (product_id, name, tier, kind) in enumerate(PRODUCTS):
 \t</item>'''
     )
 
+last_list = FIRST_LIST_ID + len(PRODUCTS) - 1
+last_scroll = FIRST_SCROLL_ID + len(PRODUCTS) - 1
+if last_scroll >= 9600:
+    raise SystemExit(f'Scroll IDs collide with T5 items: last scroll {last_scroll}')
+
 write(
     'game/data/stats/items/09500-09599.xml',
     f'''<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-\t<!-- Ashen Dynasty craft recipe scrolls — Sprint 15 (IDs 9500+) -->
+\t<!-- Ashen Dynasty craft recipe scrolls — Sprint 15/19 (IDs 9500-{last_scroll}) -->
 {chr(10).join(scroll_items)}
 </list>
 ''',
@@ -132,26 +165,25 @@ write(
 write(
     'game/data/Recipes.ashen.fragment.xml',
     f'''\t<!-- BEGIN ASHEN DYNASTY RECIPES -->
-\t<!-- Sprint 15: fragment sink for TT (9399) and Draconic (9499 + 9399). Do not edit by hand; regenerate via _generate_ashen_craft_overlays.py -->
+\t<!-- Sprint 15/19: fragment sink TT (9399), Draconic (9499), DK (9699). Regenerate via _generate_ashen_craft_overlays.py -->
 {chr(10).join(recipe_items)}
 \t<!-- END ASHEN DYNASTY RECIPES -->
 ''',
 )
 
-# ID map for docs
 rows = ['| ListId | Scroll | Produz | Nome |', '|---|---|---|---|']
 for index, (product_id, name, _, _) in enumerate(PRODUCTS):
     rows.append(f'| {FIRST_LIST_ID + index} | {FIRST_SCROLL_ID + index} | {product_id} | {name} |')
 docs_path = DOCS / 'ASHEN_CRAFT_IDS.md'
 docs_path.parent.mkdir(parents=True, exist_ok=True)
 docs_path.write_text(
-    '# Ashen craft — mapa de IDs (Sprint 15)\n\n'
-    'Recipes `common` craftLevel 1 / 100%. Fragmentos TT `9399` e Draconic `9499`.\n\n'
+    '# Ashen craft — mapa de IDs (Sprint 15 + 19)\n\n'
+    'Recipes `common` craftLevel 1 / 100%.\n'
+    'Fragmentos: TT `9399`, Draconic `9499`, DK `9699` (+ Crystal S `1462`).\n\n'
     + '\n'.join(rows)
     + '\n',
     encoding='utf-8',
     newline='\n',
 )
 print('wrote', docs_path.relative_to(REPO))
-
-print(f'done: {len(PRODUCTS)} recipes (list {FIRST_LIST_ID}-{FIRST_LIST_ID + len(PRODUCTS) - 1}, scrolls {FIRST_SCROLL_ID}-{FIRST_SCROLL_ID + len(PRODUCTS) - 1})')
+print(f'done: {len(PRODUCTS)} recipes (list {FIRST_LIST_ID}-{last_list}, scrolls {FIRST_SCROLL_ID}-{last_scroll})')

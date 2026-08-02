@@ -1,6 +1,7 @@
-# Ashen craft — mapa de IDs (Sprint 15)
+# Ashen craft — mapa de IDs (Sprint 15 + 19)
 
-Recipes `common` craftLevel 1 / 100%. Fragmentos TT `9399` e Draconic `9499`.
+Recipes `common` craftLevel 1 / 100%.
+Fragmentos: TT `9399`, Draconic `9499`, DK `9699` (+ Crystal S `1462`).
 
 | ListId | Scroll | Produz | Nome |
 |---|---|---|---|
@@ -50,3 +51,26 @@ Recipes `common` craftLevel 1 / 100%. Fragmentos TT `9399` e Draconic `9499`.
 | 915 | 9543 | 9496 | Ashen Draconic Spear |
 | 916 | 9544 | 9497 | Ashen Draconic Fist |
 | 917 | 9545 | 9498 | Ashen Draconic Staff |
+| 918 | 9546 | 9600 | Ashen DK Helmet |
+| 919 | 9547 | 9601 | Ashen DK Breastplate |
+| 920 | 9548 | 9602 | Ashen DK Gaiters |
+| 921 | 9549 | 9603 | Ashen DK Gauntlets |
+| 922 | 9550 | 9604 | Ashen DK Boots |
+| 923 | 9551 | 9605 | Ashen DK Shield |
+| 924 | 9552 | 9630 | Ashen DK Leather Helmet |
+| 925 | 9553 | 9631 | Ashen DK Leather Armor |
+| 926 | 9554 | 9632 | Ashen DK Leather Gloves |
+| 927 | 9555 | 9633 | Ashen DK Leather Boots |
+| 928 | 9556 | 9660 | Ashen DK Circlet |
+| 929 | 9557 | 9661 | Ashen DK Robe |
+| 930 | 9558 | 9662 | Ashen DK Gloves |
+| 931 | 9559 | 9663 | Ashen DK Shoes |
+| 932 | 9560 | 9690 | Ashen Phoenix Blade |
+| 933 | 9561 | 9691 | Ashen Phoenix Divider |
+| 934 | 9562 | 9692 | Ashen Phoenix Dual Swords |
+| 935 | 9563 | 9693 | Ashen Phoenix Dagger |
+| 936 | 9564 | 9694 | Ashen Phoenix Bow |
+| 937 | 9565 | 9695 | Ashen Phoenix Hammer |
+| 938 | 9566 | 9696 | Ashen Phoenix Spear |
+| 939 | 9567 | 9697 | Ashen Phoenix Fist |
+| 940 | 9568 | 9698 | Ashen Phoenix Staff |

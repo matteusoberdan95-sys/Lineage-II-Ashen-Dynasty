@@ -40,5 +40,5 @@ T6 Máximo              Dynarty (+30)        ← muitos meses
 ## Fora de escopo até implementação / ADR própria
 
 - Dynarty, enchant +30  
-- Craft/quest T5 completo  
+- Quest T5 (craft T5: Sprint 19)  
 - loja de set / doação de gear

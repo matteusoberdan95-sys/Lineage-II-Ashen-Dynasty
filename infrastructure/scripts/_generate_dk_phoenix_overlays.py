@@ -238,6 +238,23 @@ write(
 					<item id="9662" min="1" max="1" chance="25" />
 					<item id="9663" min="1" max="1" chance="25" />
 				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 19) — armor DK -->
+				<group chance="15">
+					<item id="9546" min="1" max="1" chance="8" />
+					<item id="9547" min="1" max="1" chance="8" />
+					<item id="9548" min="1" max="1" chance="7" />
+					<item id="9549" min="1" max="1" chance="7" />
+					<item id="9550" min="1" max="1" chance="7" />
+					<item id="9551" min="1" max="1" chance="7" />
+					<item id="9552" min="1" max="1" chance="7" />
+					<item id="9553" min="1" max="1" chance="7" />
+					<item id="9554" min="1" max="1" chance="7" />
+					<item id="9555" min="1" max="1" chance="7" />
+					<item id="9556" min="1" max="1" chance="7" />
+					<item id="9557" min="1" max="1" chance="7" />
+					<item id="9558" min="1" max="1" chance="7" />
+					<item id="9559" min="1" max="1" chance="7" />
+				</group>
 			</drop>
 		</dropLists>
 		<collision>
@@ -284,6 +301,18 @@ write(
 					<item id="9696" min="1" max="1" chance="11" />
 					<item id="9697" min="1" max="1" chance="11" />
 					<item id="9698" min="1" max="1" chance="11" />
+				</group>
+				<!-- Ashen craft recipe scrolls (Sprint 19) — armas Phoenix -->
+				<group chance="15">
+					<item id="9560" min="1" max="1" chance="12" />
+					<item id="9561" min="1" max="1" chance="11" />
+					<item id="9562" min="1" max="1" chance="11" />
+					<item id="9563" min="1" max="1" chance="11" />
+					<item id="9564" min="1" max="1" chance="11" />
+					<item id="9565" min="1" max="1" chance="11" />
+					<item id="9566" min="1" max="1" chance="11" />
+					<item id="9567" min="1" max="1" chance="11" />
+					<item id="9568" min="1" max="1" chance="11" />
 				</group>
 			</drop>
 		</dropLists>
