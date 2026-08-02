@@ -3,6 +3,10 @@ param(
     [ValidatePattern('^[A-Za-z0-9_]{4,14}$')]
     [string]$Username = 'ashen_test',
 
+    # Interlude login box is painful for long random passwords; keep 4-16 chars.
+    [ValidatePattern('^[A-Za-z0-9!@#\$%\*_=\?\+\-]{4,16}$')]
+    [string]$Password,
+
     [switch]$RotatePassword
 )
 
@@ -33,8 +37,12 @@ try {
         -Database $script:L2DatabaseName `
         -Sql ("SELECT COUNT(*) FROM accounts WHERE login = '{0}';" -f $Username.Replace("'", "''"))
 
+    if ($Password -and (-not $RotatePassword) -and ([int]$existing -gt 0)) {
+        $RotatePassword = $true
+    }
+
     if (([int]$existing -gt 0) -and (-not $RotatePassword)) {
-        Write-Host "Account '$Username' already exists. Use -RotatePassword to replace the password."
+        Write-Host "Account '$Username' already exists. Use -Password or -RotatePassword to replace the password."
         $dbPassword = $null
         exit 0
     }
@@ -43,11 +51,15 @@ try {
         throw "Credential file exists for a missing account. Remove secrets/local-test-account.clixml or use -RotatePassword."
     }
 
-    $plainTextPassword = -join (
-        (48..57) + (65..90) + (97..122) |
-            Get-Random -Count 16 |
-            ForEach-Object { [char]$_ }
-    )
+    if ($Password) {
+        $plainTextPassword = $Password
+    }
+    else {
+        # Short local-only password: Interlude login rarely supports paste.
+        $plainTextPassword = -join (
+            ((97..122) + (48..57) | Get-Random -Count 8 | ForEach-Object { [char]$_ })
+        )
+    }
     $securePassword = ConvertTo-SecureString -String $plainTextPassword -AsPlainText -Force
     $sha1 = [Security.Cryptography.SHA1]::Create()
     try {

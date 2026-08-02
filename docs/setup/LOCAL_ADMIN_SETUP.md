@@ -30,12 +30,14 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -Command `
   '& ".\infrastructure\scripts\create-local-admin.ps1" -Confirm:$false'
 ```
 
-Para rotacionar a senha:
+Para definir uma senha curta (recomendado: o cliente Interlude quase não aceita colar):
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -Command `
-  '& ".\infrastructure\scripts\create-local-admin.ps1" -RotatePassword -Confirm:$false'
+  '& ".\infrastructure\scripts\create-local-admin.ps1" -Password "ashen1" -Confirm:$false'
 ```
+
+Sem `-Password`, o script gera 8 caracteres aleatórios. Máximo prático no cliente: 16.
 
 ## Exibir senha e verificar
 

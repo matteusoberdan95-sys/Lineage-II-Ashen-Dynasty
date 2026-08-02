@@ -9,6 +9,10 @@ param(
     [ValidateRange(100, 100)]
     [int]$AccessLevel = 100,
 
+    # Interlude login box is painful for long random passwords; keep 4-16 chars.
+    [ValidatePattern('^[A-Za-z0-9!@#\$%\*_=\?\+\-]{4,16}$')]
+    [string]$Password,
+
     [switch]$RotatePassword
 )
 
@@ -28,10 +32,6 @@ function Escape-L2SqlLiteral {
 
 try {
     Assert-L2MariaDbLocal
-
-    if (Get-L2ManagedProcess -Service 'game') {
-        throw 'Game Server must be stopped before creating or rebuilding the local admin character (IdManager).'
-    }
 
     $repositoryRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
     $secretsRoot = Join-Path $repositoryRoot 'secrets'
@@ -72,6 +72,10 @@ try {
         }
     }
 
+    if (-not $characterExists -and (Get-L2ManagedProcess -Service 'game')) {
+        throw 'Game Server must be stopped before creating the local admin character (IdManager).'
+    }
+
     $nameConflict = Invoke-L2MariaDbSql `
         -User $script:L2DatabaseUser `
         -PlainTextPassword $dbPassword `
@@ -81,14 +85,22 @@ try {
         throw "Character name '$CharacterName' is already used by account '$nameConflict'."
     }
 
+    if ($Password -and (-not $RotatePassword) -and ($accountExists -gt 0)) {
+        $RotatePassword = $true
+    }
+
     $needPassword = ($accountExists -eq 0) -or $RotatePassword
     $securePassword = $null
     if ($needPassword) {
-        $plainTextPassword = -join (
-            (48..57) + (65..90) + (97..122) |
-                Get-Random -Count 16 |
-                ForEach-Object { [char]$_ }
-        )
+        if ($Password) {
+            $plainTextPassword = $Password
+        }
+        else {
+            # Short local-only password: Interlude login rarely supports paste.
+            $plainTextPassword = -join (
+                ((97..122) + (48..57) | Get-Random -Count 8 | ForEach-Object { [char]$_ })
+            )
+        }
         $securePassword = ConvertTo-SecureString -String $plainTextPassword -AsPlainText -Force
         $sha1 = [Security.Cryptography.SHA1]::Create()
         try {
