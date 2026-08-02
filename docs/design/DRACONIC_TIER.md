@@ -13,7 +13,7 @@ Resumo da [ADR-008](../adr/ADR-008-DRACONIC-TIER.md).
 ## Escada
 
 ```text
-T2 S retail → T3 Ashen TT → T4 Draconic (implementado) → T5 DK/Phoenix (design) → T6 Dynarty
+T2 S retail → T3 Ashen TT → T4 Draconic → T5 DK/Phoenix → T6 Dynarty (design)
 ```
 
 ## Tempo alvo

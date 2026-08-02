@@ -85,6 +85,6 @@ Sets sugeridos: `106–108` (após Draconic `103–105`).
 
 ## Consequências
 
-- T6 (Dynarty / +30) continua só na visão até ADR própria.
+- T6 tem envelope em ADR-010 (design); implementação ainda pendente.
 - Teto de conteúdo custom implementado sobe para **DK/Phoenix (T5)**; Draconic permanece o degrau anterior.
-- Playtest T3–T4 (raids, craft, Q900) segue válido; T5 adiciona raids/itens próprios.
+- Playtest T3–T5 (raids, craft, Q900/Q901) segue válido; T5 adiciona raids/itens próprios.

@@ -35,17 +35,17 @@ Consulte [`docs/design/GEAR_PROGRESSION.md`](design/GEAR_PROGRESSION.md).
 Esta visão não autoriza implementar ainda:
 
 - client-patch completo de ícones/nomes custom;
-- Dynarty;
-- enchant `+30`;
+- implementação Dynarty / enchant `+30` no datapack (design ADR-010);
 - TVT customizado;
 - loja, pagamentos ou doações;
 - itens ou skills customizados além do autorizado por ADR.
 
-Já autorizados e entregues em sprints: rates ADR-005; TT/Draconic/DK-Phoenix
-overlays; craft por fragmentos; quest ponte Q900.
+Já autorizados e entregues em sprints: rates ADR-005; overlays TT/Draconic/
+DK-Phoenix; craft por fragmentos; quests ponte Q900/Q901. O desenho do T6 está
+na ADR-010.
 
 ## Próximo passo
 
-1. atual: T5 implementado (overlays Sprint 18);
-2. playtest T3–T5 (raids, craft, Q900) continua válido;
-3. próxima: design T6, client-patch ou QoL.
+1. atual: design T6 (ADR-010) publicado;
+2. playtest T3–T5 continua válido;
+3. próxima: implementação Dynarty (+30 limitado), client-patch ou QoL.

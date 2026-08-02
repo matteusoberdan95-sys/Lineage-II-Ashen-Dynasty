@@ -104,12 +104,13 @@ possibilidade de auditoria reproduzível. O build exige JDK 25 e Apache Ant. Con
 - [ADR-007](docs/adr/ADR-007-TT-TIER.md);
 - [ADR-008](docs/adr/ADR-008-DRACONIC-TIER.md);
 - [ADR-009](docs/adr/ADR-009-DK-PHOENIX-TIER.md);
+- [ADR-010](docs/adr/ADR-010-DYNARTY-TIER.md);
 - [notas de licença](LICENSE-NOTES.md).
 
 ## Próximo bloqueio
 
-Design T6 (Dynarty), client-patch ou QoL/observabilidade — ainda sem
-Dynarty/rede externa, salvo autorização.
+Implementação Dynarty (+30 limitado a T6), client-patch ou QoL/observabilidade —
+ainda sem rede externa, salvo autorização.
 
 ## Segurança e propriedade intelectual
 
@@ -152,6 +153,7 @@ sem valores secretos na documentação.
 - [tier DK/Phoenix](docs/design/DK_PHOENIX_TIER.md);
 - [IDs Ashen DK/Phoenix](docs/design/DK_PHOENIX_ITEM_IDS.md);
 - [implementação DK/Phoenix](docs/setup/DK_PHOENIX_IMPLEMENTATION_REPORT.md);
+- [tier Dynarty](docs/design/DYNARTY_TIER.md);
 - [compatibilidade do cliente](docs/CLIENT_COMPATIBILITY.md);
 - [auditoria do banco](docs/security/DATABASE_AUDIT.md);
 - [solução de problemas](docs/TROUBLESHOOTING.md);

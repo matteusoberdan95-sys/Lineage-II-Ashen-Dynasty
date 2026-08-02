@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 20 (quest
-ponte Draconic→DK). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 21 (T6
+Dynarty em design). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar design T6, client-patch ou QoL/observabilidade.
+Registrar implementação Dynarty/+30, client-patch ou QoL/observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -282,3 +282,9 @@ Craft T5: +23 recipes DK/Phoenix (scrolls 9546–9568, listIds 918–940), sink
 Quest Q901 Ashen Ember of Ascent (Chronicler 93002): exige Q900 + level 78;
 troca 20 fragmentos Draconic por 12 fragmentos DK + recipe peitoral DK.
 Relatório: [`docs/setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md`](setup/ASHEN_QUEST_IMPLEMENTATION_REPORT.md).
+
+## Conclusão da Sprint 21
+
+ADR-010 aceita: Ashen Dynarty (T6) especificado (IDs 9700–9799, NPCs
+93300/93301 sugeridos, enchant +30 exclusivo de Dynarty). Sem XML nesta sprint.
+Consulte [`docs/design/DYNARTY_TIER.md`](design/DYNARTY_TIER.md).

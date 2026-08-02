@@ -57,6 +57,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
   recipes listIds 918–940, drops nos raids T5 (Sprint 19).
 - Quest Q901 Ashen Ember of Ascent: ponte Draconic→DK (exige Q900), fragmentos
   DK + recipe peitoral DK (Sprint 20).
+- ADR-010: design do tier Ashen Dynarty (T6), IDs 9700–9799 reservados,
+  enchant +30 só em Dynarty, sem XML (Sprint 21).
 
 ### Segurança
 

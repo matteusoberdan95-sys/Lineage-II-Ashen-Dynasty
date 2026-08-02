@@ -28,7 +28,7 @@ XML de item custom, alterar drops, enchant +30 nem abrir rede externa.
 | T3 | Entrada endgame | **Ashen TT** | +1–2 meses após T2 (4–8 sem. em T3) | ADR-007 + overlays Sprint 13 |
 | T4 | Posterior | **Draconic custom** | meses | ADR-008 + overlays Sprint 14 |
 | T5 | Avançado | **DK + armas Fênix** | meses | ADR-009 + overlays Sprint 18 |
-| T6 | Máximo | **Dynarty** completo, enchant até `+30` | muitos meses | futura ADR de item |
+| T6 | Máximo | **Dynarty** completo, enchant até `+30` | muitos meses | design ADR-010; não implementado |
 
 \*Tempo alvo para jogador dedicado em XP/SP 500x e drop ~1x, sem doação de gear.
 Valores são ordem de grandeza para desenho, não SLA.
@@ -75,5 +75,5 @@ Valores são ordem de grandeza para desenho, não SLA.
 
 ## Próximo trabalho autorizado (fora desta ADR)
 
-1. Design ADR do **T6 (Dynarty / +30)** (quest ponte T5: Sprint 20).
+1. Implementação do **T6 (Dynarty)** sob a ADR-010 (itens + enchant +30 limitado).
 2. Client-patch ou QoL / observabilidade econômica.

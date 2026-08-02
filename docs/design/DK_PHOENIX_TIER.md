@@ -13,7 +13,7 @@ Resumo da [ADR-009](../adr/ADR-009-DK-PHOENIX-TIER.md).
 ## Escada
 
 ```text
-T3 Ashen TT → T4 Draconic → T5 DK/Phoenix (implementado) → T6 Dynarty
+T3 Ashen TT → T4 Draconic → T5 DK/Phoenix (implementado) → T6 Dynarty (design)
 ```
 
 ## Tempo alvo
