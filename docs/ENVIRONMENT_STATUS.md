@@ -1,7 +1,7 @@
 # Estado do ambiente
 
-Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 11 (escada de
-gear / ADR-006). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
+Diagnóstico realizado em 1 de agosto de 2026 e atualizado na Sprint 12 (design do
+Ashen TT / ADR-007). Projeto: **Lineage II: Ashen Dynasty (L2AD)**.
 
 ## Resumo
 
@@ -159,7 +159,7 @@ Get-NetTCPConnection -State Listen -LocalPort 2106,7777,9014,3306
 
 ## Próxima atualização deste documento
 
-Registrar ADR de conteúdo do T3 (TT), QoL de playtest ou observabilidade econômica.
+Registrar implementação do TT, design do T4 (Draconic), QoL ou observabilidade.
 
 ## Conclusão da Sprint 0
 
@@ -228,3 +228,9 @@ pelo proprietário. Consulte
 ADR-006 aceita: escada T0–T6 com teto jogável atual em S-grade retail (T2).
 Nenhum item custom foi implementado. Documento resumido em
 [`docs/design/GEAR_PROGRESSION.md`](design/GEAR_PROGRESSION.md).
+
+## Conclusão da Sprint 12
+
+ADR-007 aceita: Ashen TT especificado (Heavy/Light/Robe, armas, raid/quest/craft,
+tempo 4–8 semanas, IDs 9300–9399 reservados). Ainda **não** há XML no datapack.
+Teto jogável permanece T2. Consulte [`docs/design/TT_TIER.md`](design/TT_TIER.md).

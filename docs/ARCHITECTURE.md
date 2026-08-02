@@ -140,5 +140,7 @@ comandos GM diretamente.
 - `docs/adr/ADR-004-PRODUCT-CUSTOMIZATION.md`
 - `docs/adr/ADR-005-LOCAL-RATES.md`
 - `docs/adr/ADR-006-GEAR-PROGRESSION.md`
+- `docs/adr/ADR-007-TT-TIER.md`
 - `docs/design/GEAR_PROGRESSION.md`
+- `docs/design/TT_TIER.md`
 - `docs/security/SOURCE_AUDIT.md`

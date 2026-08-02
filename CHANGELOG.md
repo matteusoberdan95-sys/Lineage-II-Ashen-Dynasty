@@ -41,6 +41,8 @@ versionamento futuro seguirá [Semantic Versioning](https://semver.org/lang/pt-B
 - Roteiro de regressão, checklist GM Interlude e validação manual da Sprint 10.
 - ADR-006 e documento de design da escada de gear (retail T0–T2, depois TT →
   Draconic → DK/Fênix → Dynarty), sem implementação de item custom.
+- ADR-007: especificação do tier Ashen TT (peças, obtenção, tempo, IDs 9300–9399
+  reservados), ainda sem XML/raid no datapack.
 
 ### Segurança
 

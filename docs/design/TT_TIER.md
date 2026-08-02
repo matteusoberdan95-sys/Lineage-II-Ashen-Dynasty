@@ -1,0 +1,40 @@
+# Tier T3 — Ashen TT
+
+Resumo da [ADR-007](../adr/ADR-007-TT-TIER.md).
+
+## Em uma frase
+
+**TT** é o primeiro set custom depois do S-grade Interlude: entrada do endgame,
+antes de Draconic / DK-Fênix / Dynarty.
+
+## Estado
+
+| Item | Valor |
+|---|---|
+| Design | aceito (ADR-007) |
+| No datapack | **não** |
+| Teto jogável hoje | T2 retail S-grade |
+
+## O que compõe “estar de TT”
+
+- Armor completa (5 peças) da linha Heavy **ou** Light **ou** Robe
+- + 1 arma TT da família da classe
+
+## De onde vem (quando existir)
+
+1. Raid principal → armor  
+2. Mini-boss → armas  
+3. Quest de transição / craft com token → apoio, não set inteiro  
+4. **Nunca** loja/doação como fonte principal  
+
+## Tempo alvo
+
+4–8 semanas de play dedicado após estar estável em S-grade.
+
+## IDs reservados
+
+`9300–9399` (não usar até a sprint de implementação).
+
+## Próximo passo técnico
+
+Sprint de implementação TT: XML de itens + raid/quest + balanceamento + testes GM.

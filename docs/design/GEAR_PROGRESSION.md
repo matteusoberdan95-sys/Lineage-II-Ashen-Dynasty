@@ -10,7 +10,7 @@ Contrato resumido da [ADR-006](../adr/ADR-006-GEAR-PROGRESSION.md).
 T0 Fundação retail     NG → D → C
 T1 Mid retail          B → A
 T2 Alto retail         S Interlude          ← teto atual jogável
-T3 Entrada endgame     TT                   ← próxima ADR de conteúdo
+T3 Entrada endgame     Ashen TT             ← design ADR-007; não no datapack
 T4 Posterior           Draconic custom
 T5 Avançado            DK + armas Fênix
 T6 Máximo              Dynarty (+30)        ← muitos meses
@@ -20,7 +20,8 @@ T6 Máximo              Dynarty (+30)        ← muitos meses
 
 1. Sobe de nível com XP 500x.
 2. Farma / crafta sets **retail Interlude** até S-grade (T2).
-3. Não espera Dynarty/Draconic no datapack — ainda não existem.
+3. TT/Draconic/Dynarty ainda **não** existem no datapack — ver
+   [`TT_TIER.md`](TT_TIER.md).
 
 ## Exemplos retail úteis no playtest GM
 
@@ -31,6 +32,8 @@ T6 Máximo              Dynarty (+30)        ← muitos meses
 | Mid armor | Avadon Breastplate `2376`, Avadon Gaiters `2379` |
 | Alto | Tallum Blade `80`, Dark Legion's Edge `2500`, Majestic/Nightmare (IDs S do datapack) |
 
-## Fora de escopo até ADR própria
+## Fora de escopo até implementação / ADR própria
 
-TT, Draconic custom, DK, Fênix, Dynarty, enchant +30, loja de set, doação de gear.
+- TT: design pronto (ADR-007), implementação pendente  
+- Draconic custom, DK, Fênix, Dynarty, enchant +30  
+- loja de set / doação de gear

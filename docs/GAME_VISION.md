@@ -34,7 +34,7 @@ Consulte [`docs/design/GEAR_PROGRESSION.md`](design/GEAR_PROGRESSION.md).
 
 Esta visão não autoriza implementar ainda:
 
-- TT;
+- TT no datapack (design aceito na ADR-007; implementação futura);
 - Draconic custom;
 - DK;
 - armas Fênix;
@@ -42,15 +42,15 @@ Esta visão não autoriza implementar ainda:
 - enchant `+30`;
 - TVT customizado;
 - loja, pagamentos ou doações;
-- itens ou skills customizados.
+- itens ou skills customizados além do autorizado por ADR.
 
 Rates locais de XP/SP foram autorizados pela ADR-005 (500x level / drop retail-like).
-Os demais sistemas acima exigem desenho, balanceamento, testes, auditoria econômica
-e ADR própria.
+O desenho do TT está na ADR-007. Os demais sistemas acima exigem desenho,
+balanceamento, testes, auditoria econômica e ADR própria.
 
 ## Prioridade atual
 
 1. baseline local segura e validada (concluída até Sprint 10);
 2. contrato de progressão de gear (ADR-006 / Sprint 11);
-3. próxima ADR de conteúdo do tier T3 (TT) ou QoL/observabilidade;
-4. somente depois, implementação de itens custom T4–T6.
+3. design do T3 Ashen TT (ADR-007 / Sprint 12);
+4. implementação do TT ou design T4 / QoL — em seguida.

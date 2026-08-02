@@ -25,7 +25,7 @@ XML de item custom, alterar drops, enchant +30 nem abrir rede externa.
 | T0 | Fundação retail | NG → D → C (armas/armor Interlude) | dias | já existe no datapack |
 | T1 | Mid retail | B → A (Avadon, Blue Wolf, Doom, Tallum…) | 1–3 semanas | já existe no datapack |
 | T2 | Alto retail | S-grade Interlude (Majestic / Nightmare / armes S) | 3–8 semanas | já existe no datapack |
-| T3 | Entrada endgame | **TT** (Tier / set de entrada planejada) | +1–2 meses após T2 | futura ADR de conteúdo |
+| T3 | Entrada endgame | **Ashen TT** | +1–2 meses após T2 (4–8 sem. em T3) | especificado na ADR-007; não implementado |
 | T4 | Posterior | **Draconic custom** | meses | futura ADR de item |
 | T5 | Avançado | **DK + armas Fênix** | meses | futura ADR de item |
 | T6 | Máximo | **Dynarty** completo, enchant até `+30` | muitos meses | futura ADR de item |
@@ -75,6 +75,6 @@ Valores são ordem de grandeza para desenho, não SLA.
 
 ## Próximo trabalho autorizado (fora desta ADR)
 
-1. ADR de conteúdo do **T3 (TT)** — definição de peças, origem, tempo.
-2. Ou QoL de playtest (buffer/teleport) sem mudar economia de gear.
-3. Ou observabilidade econômica (tempo-até-tier, adena).
+1. Implementação do **T3 (TT)** sob a ADR-007 (XML/raid/quest + balanceamento).
+2. Ou ADR de conteúdo do **T4 (Draconic custom)**.
+3. Ou QoL de playtest / observabilidade econômica sem mudar economia de gear.
