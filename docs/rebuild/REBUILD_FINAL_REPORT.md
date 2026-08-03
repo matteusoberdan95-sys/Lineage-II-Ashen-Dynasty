@@ -72,3 +72,6 @@ Projeto: Lineage II: Ashen Dynasty
 - Hub custom antigo não aparece mais no mundo após baseline limpa: APROVADO.
 - Persistência SQL validada para personagem ASHENADM (posição e inventário): APROVADO.
 - Pendente apenas validação manual de comandos GM e ciclo completo de relog com alteração de inventário em jogo.
+
+## Confirmação do proprietário
+- validação manual da baseline limpa em jogo: APROVADO

@@ -29,3 +29,7 @@ Data: 2026-08-03
 
 ## Observação
 - Nenhuma validação visual foi marcada como concluída sem abrir o cliente.
+
+## Validação do proprietário
+- baseline limpa sem hub custom legado visível em Giran: APROVADO
+- evidência visual registrada em 2026-08-03: APROVADO
