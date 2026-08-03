@@ -20,7 +20,7 @@ Projeto: Lineage II: Ashen Dynasty
 - FASE 7 registro de IDs: APROVADO
 - FASE 8 baseline limpa: APROVADO COM RESSALVA
 - FASE 9 playtest/persistência: APROVADO COM RESSALVA
-- FASE 10 hub mínimo oficial: NÃO VALIDADO
+- FASE 10 hub mínimo oficial: APLICADO (AGUARDANDO VALIDAÇÃO MANUAL)
 - FASE 11 validação final: PARCIAL
 
 ## Ressalva técnica crítica
@@ -53,7 +53,7 @@ Projeto: Lineage II: Ashen Dynasty
 - [x] Cliente preparado
 - [x] Checklist de login criado
 - [x] Persistência preparada para validação
-- [ ] Hub de testes mínimo criado
+- [x] Hub de testes mínimo criado
 - [x] Nenhum novo set criado
 - [x] Nenhuma nova arma criada
 
@@ -72,6 +72,7 @@ Projeto: Lineage II: Ashen Dynasty
 - Hub custom antigo não aparece mais no mundo após baseline limpa: APROVADO.
 - Persistência SQL validada para personagem ASHENADM (posição e inventário): APROVADO.
 - Pendente apenas validação manual de comandos GM e ciclo completo de relog com alteração de inventário em jogo.
+- Hub mínimo oficial aplicado em overlay (sem TT/Draconic/DK/Dynarty; teleports oficiais; Service Manager TEST_ONLY): AGUARDANDO VALIDAÇÃO MANUAL IN-GAME.
 
 ## Confirmação do proprietário
 - validação manual da baseline limpa em jogo: APROVADO

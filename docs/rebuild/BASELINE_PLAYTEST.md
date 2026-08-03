@@ -26,6 +26,7 @@ Data: 2026-08-03
 15. confirmar posição: APROVADO (validação SQL automática)
 16. reiniciar Game Server: APROVADO
 17. confirmar persistência: APROVADO (validação SQL automática)
+18. validar hub mínimo oficial (menu/teleports/services TEST_ONLY): AGUARDANDO TESTE MANUAL
 
 ## Observação
 - Nenhuma validação visual foi marcada como concluída sem abrir o cliente.
@@ -33,3 +34,4 @@ Data: 2026-08-03
 ## Validação do proprietário
 - baseline limpa sem hub custom legado visível em Giran: APROVADO
 - evidência visual registrada em 2026-08-03: APROVADO
+- overlay Fase 10 aplicado (official minimum + TEST_ONLY): AGUARDANDO VALIDAÇÃO MANUAL
