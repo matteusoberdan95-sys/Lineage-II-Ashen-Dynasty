@@ -1,0 +1,4 @@
+Action	Path	SHA256
+MOVE_TO_QUARANTINE	server/runtime/interlude/game/data/multisell/9301001.xml	32f8fed66a660982c2652e6e0b92912afbdc61b24d5ffb40a8942a3306e66251
+BACKUP_CUSTOM	server/runtime/interlude/game/data/EnchantItemGroups.xml	c58ebc5ad2ce70eebd4537cf287fa2d1359276eb7cf5d75bb07cac6ec1ba0e80
+RESTORE_OFFICIAL	server/runtime/interlude/game/data/EnchantItemGroups.xml	1d1a7edf4842234b8bc897f728d64a9ab79506eeab48f21b0d9c2d159ca76266
