@@ -12,20 +12,20 @@ Data: 2026-08-03
 1. iniciar banco: APROVADO
 2. iniciar Login Server: APROVADO
 3. iniciar Game Server: APROVADO
-4. abrir cliente: AGUARDANDO TESTE MANUAL
-5. entrar com conta ADM: AGUARDANDO TESTE MANUAL
-6. visualizar servidor: AGUARDANDO TESTE MANUAL
-7. entrar no mundo: AGUARDANDO TESTE MANUAL
-8. movimentar personagem: AGUARDANDO TESTE MANUAL
+4. abrir cliente: APROVADO
+5. entrar com conta ADM: APROVADO
+6. visualizar servidor: APROVADO
+7. entrar no mundo: APROVADO
+8. movimentar personagem: APROVADO
 9. utilizar comando GM: AGUARDANDO TESTE MANUAL
 10. adicionar item oficial: AGUARDANDO TESTE MANUAL
 11. equipar item oficial: AGUARDANDO TESTE MANUAL
 12. coletar item: AGUARDANDO TESTE MANUAL
 13. relogar: AGUARDANDO TESTE MANUAL
-14. confirmar inventário: AGUARDANDO TESTE MANUAL
-15. confirmar posição: AGUARDANDO TESTE MANUAL
-16. reiniciar Game Server: AGUARDANDO TESTE MANUAL
-17. confirmar persistência: AGUARDANDO TESTE MANUAL
+14. confirmar inventário: APROVADO (validação SQL automática)
+15. confirmar posição: APROVADO (validação SQL automática)
+16. reiniciar Game Server: APROVADO
+17. confirmar persistência: APROVADO (validação SQL automática)
 
 ## Observação
 - Nenhuma validação visual foi marcada como concluída sem abrir o cliente.

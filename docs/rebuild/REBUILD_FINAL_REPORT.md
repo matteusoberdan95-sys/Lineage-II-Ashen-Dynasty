@@ -19,7 +19,7 @@ Projeto: Lineage II: Ashen Dynasty
 - FASE 6 catálogo de tiers: APROVADO
 - FASE 7 registro de IDs: APROVADO
 - FASE 8 baseline limpa: APROVADO COM RESSALVA
-- FASE 9 playtest/persistência: AGUARDANDO TESTE MANUAL
+- FASE 9 playtest/persistência: APROVADO COM RESSALVA
 - FASE 10 hub mínimo oficial: NÃO VALIDADO
 - FASE 11 validação final: PARCIAL
 
@@ -48,7 +48,7 @@ Projeto: Lineage II: Ashen Dynasty
 - [x] MariaDB conectado
 - [x] Login Server iniciado
 - [x] Game Server iniciado
-- [ ] Conta ADM preservada (falta teste de login manual)
+- [x] Conta ADM preservada
 - [ ] Comandos GM preservados (falta teste manual)
 - [x] Cliente preparado
 - [x] Checklist de login criado
@@ -66,3 +66,9 @@ Projeto: Lineage II: Ashen Dynasty
 - docs/rebuild/raw/current_hashes.tsv
 - docs/rebuild/raw/rebuild_quarantine_hashes.tsv
 - docs/rebuild/raw/runtime_cleanup_actions.tsv
+
+## Atualização da próxima etapa
+- Login em cliente com personagem ADM validado: APROVADO.
+- Hub custom antigo não aparece mais no mundo após baseline limpa: APROVADO.
+- Persistência SQL validada para personagem ASHENADM (posição e inventário): APROVADO.
+- Pendente apenas validação manual de comandos GM e ciclo completo de relog com alteração de inventário em jogo.
