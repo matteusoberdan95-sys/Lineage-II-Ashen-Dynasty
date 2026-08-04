@@ -20,6 +20,16 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass `
 Cobre: listeners, identidade Ashen Dynasty, rates ADR-005, admin Master e
 checklist do personagem `NEIDE157`.
 
+## Automático — conteúdo (T3–T6, craft, quest e hub)
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass `
+  -File .\infrastructure\scripts\run-local-content-playtest.ps1
+```
+
+Gera relatório PASS/FAIL em `docs/setup/playtest-reports/` com checklist manual
+de validação em jogo (tiers TT/Draconic/DK/Dynarty, Q900–Q902, craft e hub).
+
 ## Manual — playtest (`ashen_test` / `NEIDE157`)
 
 1. Login no servidor **Ashen Dynasty**.
